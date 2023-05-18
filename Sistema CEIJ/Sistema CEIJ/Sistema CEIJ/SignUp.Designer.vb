@@ -258,7 +258,6 @@ Partial Class SignUp
         Me.TableAdapterManager.Reservacion_de_CitasTableAdapter = Nothing
         Me.TableAdapterManager.ReservaCursosTableAdapter = Nothing
         Me.TableAdapterManager.ServiciosTableAdapter = Nothing
-        Me.TableAdapterManager.TipoServicioTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.VentaTableAdapter = Nothing
         '

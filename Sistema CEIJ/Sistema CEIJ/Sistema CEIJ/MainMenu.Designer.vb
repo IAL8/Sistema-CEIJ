@@ -29,40 +29,40 @@ Partial Class MainMenu
         Me.SalirPanel = New System.Windows.Forms.Panel()
         Me.Salir = New System.Windows.Forms.PictureBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.IdiomaPanel = New System.Windows.Forms.Panel()
+        Me.ServiciosPanel = New System.Windows.Forms.Panel()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.HistorialPanel = New System.Windows.Forms.Panel()
+        Me.ClientesPanel = New System.Windows.Forms.Panel()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.ActividadPanel = New System.Windows.Forms.Panel()
+        Me.ClientesLabel = New System.Windows.Forms.Label()
+        Me.CursosPanel = New System.Windows.Forms.Panel()
         Me.ActividadesPictureBox = New System.Windows.Forms.PictureBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.CursosLabel = New System.Windows.Forms.Label()
+        Me.InventarioPanel = New System.Windows.Forms.Panel()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.PerfilPanel = New System.Windows.Forms.Panel()
-        Me.Menu = New System.Windows.Forms.Label()
+        Me.MenuLabel = New System.Windows.Forms.Label()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
+        Me.SalirPictureBox = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SalirPanel.SuspendLayout()
         CType(Me.Salir, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.IdiomaPanel.SuspendLayout()
+        Me.ServiciosPanel.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.HistorialPanel.SuspendLayout()
+        Me.ClientesPanel.SuspendLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.ActividadPanel.SuspendLayout()
+        Me.CursosPanel.SuspendLayout()
         CType(Me.ActividadesPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel2.SuspendLayout()
+        Me.InventarioPanel.SuspendLayout()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PerfilPanel.SuspendLayout()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SalirPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -134,16 +134,16 @@ Partial Class MainMenu
         Me.Label6.Text = "Salir"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'IdiomaPanel
+        'ServiciosPanel
         '
-        Me.IdiomaPanel.BackColor = System.Drawing.Color.White
-        Me.IdiomaPanel.Controls.Add(Me.PictureBox3)
-        Me.IdiomaPanel.Controls.Add(Me.Label8)
-        Me.IdiomaPanel.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.IdiomaPanel.Location = New System.Drawing.Point(215, 365)
-        Me.IdiomaPanel.Name = "IdiomaPanel"
-        Me.IdiomaPanel.Size = New System.Drawing.Size(160, 165)
-        Me.IdiomaPanel.TabIndex = 16
+        Me.ServiciosPanel.BackColor = System.Drawing.Color.White
+        Me.ServiciosPanel.Controls.Add(Me.PictureBox3)
+        Me.ServiciosPanel.Controls.Add(Me.Label8)
+        Me.ServiciosPanel.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ServiciosPanel.Location = New System.Drawing.Point(215, 365)
+        Me.ServiciosPanel.Name = "ServiciosPanel"
+        Me.ServiciosPanel.Size = New System.Drawing.Size(160, 165)
+        Me.ServiciosPanel.TabIndex = 16
         '
         'PictureBox3
         '
@@ -165,19 +165,19 @@ Partial Class MainMenu
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(158, 35)
         Me.Label8.TabIndex = 14
-        Me.Label8.Text = "Idioma"
+        Me.Label8.Text = "Servicios"
         Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'HistorialPanel
+        'ClientesPanel
         '
-        Me.HistorialPanel.BackColor = System.Drawing.Color.White
-        Me.HistorialPanel.Controls.Add(Me.PictureBox4)
-        Me.HistorialPanel.Controls.Add(Me.Label2)
-        Me.HistorialPanel.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.HistorialPanel.Location = New System.Drawing.Point(672, 174)
-        Me.HistorialPanel.Name = "HistorialPanel"
-        Me.HistorialPanel.Size = New System.Drawing.Size(160, 165)
-        Me.HistorialPanel.TabIndex = 15
+        Me.ClientesPanel.BackColor = System.Drawing.Color.White
+        Me.ClientesPanel.Controls.Add(Me.PictureBox4)
+        Me.ClientesPanel.Controls.Add(Me.ClientesLabel)
+        Me.ClientesPanel.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ClientesPanel.Location = New System.Drawing.Point(672, 174)
+        Me.ClientesPanel.Name = "ClientesPanel"
+        Me.ClientesPanel.Size = New System.Drawing.Size(160, 165)
+        Me.ClientesPanel.TabIndex = 15
         '
         'PictureBox4
         '
@@ -189,29 +189,29 @@ Partial Class MainMenu
         Me.PictureBox4.TabIndex = 15
         Me.PictureBox4.TabStop = False
         '
-        'Label2
+        'ClientesLabel
         '
-        Me.Label2.BackColor = System.Drawing.Color.DarkKhaki
-        Me.Label2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Label2.Font = New System.Drawing.Font("Arial Black", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label2.Location = New System.Drawing.Point(1, 129)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(158, 35)
-        Me.Label2.TabIndex = 13
-        Me.Label2.Text = "Historial"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.ClientesLabel.BackColor = System.Drawing.Color.DarkKhaki
+        Me.ClientesLabel.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ClientesLabel.Font = New System.Drawing.Font("Arial Black", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ClientesLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.ClientesLabel.Location = New System.Drawing.Point(1, 129)
+        Me.ClientesLabel.Name = "ClientesLabel"
+        Me.ClientesLabel.Size = New System.Drawing.Size(158, 35)
+        Me.ClientesLabel.TabIndex = 13
+        Me.ClientesLabel.Text = "Clientes"
+        Me.ClientesLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'ActividadPanel
+        'CursosPanel
         '
-        Me.ActividadPanel.BackColor = System.Drawing.Color.White
-        Me.ActividadPanel.Controls.Add(Me.ActividadesPictureBox)
-        Me.ActividadPanel.Controls.Add(Me.Label4)
-        Me.ActividadPanel.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ActividadPanel.Location = New System.Drawing.Point(446, 174)
-        Me.ActividadPanel.Name = "ActividadPanel"
-        Me.ActividadPanel.Size = New System.Drawing.Size(160, 165)
-        Me.ActividadPanel.TabIndex = 14
+        Me.CursosPanel.BackColor = System.Drawing.Color.White
+        Me.CursosPanel.Controls.Add(Me.ActividadesPictureBox)
+        Me.CursosPanel.Controls.Add(Me.CursosLabel)
+        Me.CursosPanel.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CursosPanel.Location = New System.Drawing.Point(446, 174)
+        Me.CursosPanel.Name = "CursosPanel"
+        Me.CursosPanel.Size = New System.Drawing.Size(160, 165)
+        Me.CursosPanel.TabIndex = 14
         '
         'ActividadesPictureBox
         '
@@ -223,29 +223,29 @@ Partial Class MainMenu
         Me.ActividadesPictureBox.TabIndex = 6
         Me.ActividadesPictureBox.TabStop = False
         '
-        'Label4
+        'CursosLabel
         '
-        Me.Label4.BackColor = System.Drawing.Color.DarkKhaki
-        Me.Label4.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Label4.Font = New System.Drawing.Font("Arial Black", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label4.Location = New System.Drawing.Point(1, 129)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(158, 35)
-        Me.Label4.TabIndex = 14
-        Me.Label4.Text = "Actividades"
-        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.CursosLabel.BackColor = System.Drawing.Color.DarkKhaki
+        Me.CursosLabel.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CursosLabel.Font = New System.Drawing.Font("Arial Black", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CursosLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.CursosLabel.Location = New System.Drawing.Point(1, 129)
+        Me.CursosLabel.Name = "CursosLabel"
+        Me.CursosLabel.Size = New System.Drawing.Size(158, 35)
+        Me.CursosLabel.TabIndex = 14
+        Me.CursosLabel.Text = "Cursos"
+        Me.CursosLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Panel2
+        'InventarioPanel
         '
-        Me.Panel2.BackColor = System.Drawing.Color.White
-        Me.Panel2.Controls.Add(Me.PictureBox5)
-        Me.Panel2.Controls.Add(Me.Label1)
-        Me.Panel2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Panel2.Location = New System.Drawing.Point(672, 364)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(160, 165)
-        Me.Panel2.TabIndex = 16
+        Me.InventarioPanel.BackColor = System.Drawing.Color.White
+        Me.InventarioPanel.Controls.Add(Me.PictureBox5)
+        Me.InventarioPanel.Controls.Add(Me.Label1)
+        Me.InventarioPanel.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.InventarioPanel.Location = New System.Drawing.Point(672, 364)
+        Me.InventarioPanel.Name = "InventarioPanel"
+        Me.InventarioPanel.Size = New System.Drawing.Size(160, 165)
+        Me.InventarioPanel.TabIndex = 16
         '
         'PictureBox5
         '
@@ -267,7 +267,7 @@ Partial Class MainMenu
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(158, 35)
         Me.Label1.TabIndex = 13
-        Me.Label1.Text = "Historial"
+        Me.Label1.Text = "Inventario"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'PictureBox2
@@ -304,18 +304,18 @@ Partial Class MainMenu
         Me.PerfilPanel.Size = New System.Drawing.Size(160, 165)
         Me.PerfilPanel.TabIndex = 13
         '
-        'Menu
+        'MenuLabel
         '
-        Me.Menu.AutoSize = True
-        Me.Menu.BackColor = System.Drawing.Color.Transparent
-        Me.Menu.Font = New System.Drawing.Font("Arial", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Menu.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.Menu.Location = New System.Drawing.Point(420, 31)
-        Me.Menu.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Menu.Name = "Menu"
-        Me.Menu.Size = New System.Drawing.Size(185, 68)
-        Me.Menu.TabIndex = 18
-        Me.Menu.Text = "Menú"
+        Me.MenuLabel.AutoSize = True
+        Me.MenuLabel.BackColor = System.Drawing.Color.Transparent
+        Me.MenuLabel.Font = New System.Drawing.Font("Arial", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MenuLabel.ForeColor = System.Drawing.Color.DarkKhaki
+        Me.MenuLabel.Location = New System.Drawing.Point(420, 31)
+        Me.MenuLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.MenuLabel.Name = "MenuLabel"
+        Me.MenuLabel.Size = New System.Drawing.Size(185, 68)
+        Me.MenuLabel.TabIndex = 18
+        Me.MenuLabel.Text = "Menú"
         '
         'PictureBox6
         '
@@ -329,17 +329,17 @@ Partial Class MainMenu
         Me.PictureBox6.TabIndex = 19
         Me.PictureBox6.TabStop = False
         '
-        'PictureBox7
+        'SalirPictureBox
         '
-        Me.PictureBox7.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox7.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
-        Me.PictureBox7.Location = New System.Drawing.Point(12, 482)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(64, 68)
-        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox7.TabIndex = 20
-        Me.PictureBox7.TabStop = False
+        Me.SalirPictureBox.BackColor = System.Drawing.Color.Transparent
+        Me.SalirPictureBox.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.SalirPictureBox.Image = CType(resources.GetObject("SalirPictureBox.Image"), System.Drawing.Image)
+        Me.SalirPictureBox.Location = New System.Drawing.Point(12, 482)
+        Me.SalirPictureBox.Name = "SalirPictureBox"
+        Me.SalirPictureBox.Size = New System.Drawing.Size(64, 68)
+        Me.SalirPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.SalirPictureBox.TabIndex = 20
+        Me.SalirPictureBox.TabStop = False
         '
         'MainMenu
         '
@@ -348,15 +348,15 @@ Partial Class MainMenu
         Me.BackgroundImage = Global.Sistema_CEIJ.My.Resources.Resources.v748_toon_111
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(998, 562)
-        Me.Controls.Add(Me.PictureBox7)
+        Me.Controls.Add(Me.SalirPictureBox)
         Me.Controls.Add(Me.PictureBox6)
-        Me.Controls.Add(Me.Menu)
-        Me.Controls.Add(Me.Panel2)
+        Me.Controls.Add(Me.MenuLabel)
+        Me.Controls.Add(Me.InventarioPanel)
         Me.Controls.Add(Me.SalirPanel)
-        Me.Controls.Add(Me.IdiomaPanel)
+        Me.Controls.Add(Me.ServiciosPanel)
         Me.Controls.Add(Me.PerfilPanel)
-        Me.Controls.Add(Me.HistorialPanel)
-        Me.Controls.Add(Me.ActividadPanel)
+        Me.Controls.Add(Me.ClientesPanel)
+        Me.Controls.Add(Me.CursosPanel)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "MainMenu"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -366,18 +366,18 @@ Partial Class MainMenu
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SalirPanel.ResumeLayout(False)
         CType(Me.Salir, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.IdiomaPanel.ResumeLayout(False)
+        Me.ServiciosPanel.ResumeLayout(False)
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.HistorialPanel.ResumeLayout(False)
+        Me.ClientesPanel.ResumeLayout(False)
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.ActividadPanel.ResumeLayout(False)
+        Me.CursosPanel.ResumeLayout(False)
         CType(Me.ActividadesPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel2.ResumeLayout(False)
+        Me.InventarioPanel.ResumeLayout(False)
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PerfilPanel.ResumeLayout(False)
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SalirPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -389,22 +389,22 @@ Partial Class MainMenu
     Friend WithEvents SalirPanel As Panel
     Friend WithEvents Salir As PictureBox
     Friend WithEvents Label6 As Label
-    Friend WithEvents IdiomaPanel As Panel
+    Friend WithEvents ServiciosPanel As Panel
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents Label8 As Label
-    Friend WithEvents HistorialPanel As Panel
+    Friend WithEvents ClientesPanel As Panel
     Friend WithEvents PictureBox4 As PictureBox
-    Friend WithEvents Label2 As Label
-    Friend WithEvents ActividadPanel As Panel
+    Friend WithEvents ClientesLabel As Label
+    Friend WithEvents CursosPanel As Panel
     Friend WithEvents ActividadesPictureBox As PictureBox
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Panel2 As Panel
+    Friend WithEvents CursosLabel As Label
+    Friend WithEvents InventarioPanel As Panel
     Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Label7 As Label
     Friend WithEvents PerfilPanel As Panel
-    Friend WithEvents Menu As Label
+    Friend WithEvents MenuLabel As Label
     Friend WithEvents PictureBox6 As PictureBox
-    Friend WithEvents PictureBox7 As PictureBox
+    Friend WithEvents SalirPictureBox As PictureBox
 End Class
