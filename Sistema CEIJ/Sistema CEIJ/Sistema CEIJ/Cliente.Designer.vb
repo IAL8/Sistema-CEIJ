@@ -220,6 +220,7 @@ Partial Class Cliente
         Me.TableAdapterManager.Reservacion_de_CitasTableAdapter = Nothing
         Me.TableAdapterManager.ReservaCursosTableAdapter = Nothing
         Me.TableAdapterManager.ServiciosTableAdapter = Nothing
+        Me.TableAdapterManager.SolicitudesTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.VentaTableAdapter = Nothing
         '
@@ -357,6 +358,7 @@ Partial Class Cliente
         Me.Controls.Add(NombreLabel)
         Me.Controls.Add(Me.NombreTextBox)
         Me.Name = "Cliente"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Cliente"
         CType(Me.BD_Sistema_CEIJDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ClientesBindingSource, System.ComponentModel.ISupportInitialize).EndInit()

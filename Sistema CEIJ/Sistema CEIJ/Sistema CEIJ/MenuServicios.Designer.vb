@@ -360,6 +360,7 @@ Partial Class MenuServicios
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Sistema_CEIJ.My.Resources.Resources.v748_toon_111
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(992, 535)
         Me.Controls.Add(Me.ServiciosDataGridView)
         Me.Controls.Add(Me.FillToolStrip)

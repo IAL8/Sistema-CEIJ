@@ -36,3 +36,5 @@ C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\PI
 C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\PIA\Sistema-CEIJ\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\obj\Debug\Sistema_CEIJ.Servicio.resources
 C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\PIA\Sistema-CEIJ\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\obj\Debug\Sistema_CEIJ.Cursos.resources
 C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\PIA\Sistema-CEIJ\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\obj\Debug\Sistema_CEIJ.MenuCursos.resources
+C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\PIA\Sistema-CEIJ\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\obj\Debug\Sistema_CEIJ.MenuInventario.resources
+C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\PIA\Sistema-CEIJ\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\obj\Debug\Sistema_CEIJ.Productos.resources

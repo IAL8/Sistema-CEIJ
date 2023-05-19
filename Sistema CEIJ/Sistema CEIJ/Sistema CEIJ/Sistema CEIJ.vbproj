@@ -121,6 +121,12 @@
     <Compile Include="MenuCursos.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="MenuInventario.Designer.vb">
+      <DependentUpon>MenuInventario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuInventario.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MenuServicios.Designer.vb">
       <DependentUpon>MenuServicios.vb</DependentUpon>
     </Compile>
@@ -145,6 +151,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Productos.Designer.vb">
+      <DependentUpon>Productos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Productos.vb">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Servicio.Designer.vb">
       <DependentUpon>Servicio.vb</DependentUpon>
@@ -178,6 +190,9 @@
     <EmbeddedResource Include="MenuCursos.resx">
       <DependentUpon>MenuCursos.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MenuInventario.resx">
+      <DependentUpon>MenuInventario.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuServicios.resx">
       <DependentUpon>MenuServicios.vb</DependentUpon>
     </EmbeddedResource>
@@ -186,6 +201,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Productos.resx">
+      <DependentUpon>Productos.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Servicio.resx">
       <DependentUpon>Servicio.vb</DependentUpon>

@@ -16,13 +16,18 @@
         Me.Hide()
     End Sub
 
-    Private Sub CursosPanel_Click(sender As Object, e As EventArgs) Handles CursosPanel.Click
+    Private Sub CursosPanel_Click(sender As Object, e As EventArgs) Handles CursosPanel.Click, CursosLabel.Click, ActividadesPictureBox.Click
         MenuCursos.Show()
         Me.Hide()
     End Sub
 
     Private Sub ServiciosPanel_Click(sender As Object, e As EventArgs) Handles ServiciosPanel.Click, PictureBox3.Click, Label8.Click
         MenuServicios.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub InventarioPanel_Click(sender As Object, e As EventArgs) Handles InventarioPanel.Click, PictureBox5.Click, Label1.Click
+        MenuInventario.Show()
         Me.Hide()
     End Sub
 End Class
