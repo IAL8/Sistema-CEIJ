@@ -14,7 +14,6 @@ C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\Si
 C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\obj\Debug\Sistema CEIJ.exe
 C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\obj\Debug\Sistema CEIJ.xml
 C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\obj\Debug\Sistema CEIJ.pdb
-C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\PIA\Sistema-CEIJ\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\bin\Debug\BD Sistema CEIJ.accdb
 C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\PIA\Sistema-CEIJ\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\bin\Debug\Sistema CEIJ.exe.config
 C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\PIA\Sistema-CEIJ\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\bin\Debug\Sistema CEIJ.exe
 C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\PIA\Sistema-CEIJ\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\bin\Debug\Sistema CEIJ.pdb
@@ -41,3 +40,7 @@ C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\PI
 C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\PIA\Sistema-CEIJ\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\obj\Debug\Sistema CEIJ.exe
 C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\PIA\Sistema-CEIJ\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\obj\Debug\Sistema CEIJ.xml
 C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\PIA\Sistema-CEIJ\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\obj\Debug\Sistema CEIJ.pdb
+C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\PIA\Sistema-CEIJ\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\obj\Debug\Sistema_CEIJ.NuevaVenta.resources
+C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\PIA\Sistema-CEIJ\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\bin\Debug\BD Sistema CEIJ.accdb
+C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\PIA\Sistema-CEIJ\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\obj\Debug\Sistema_CEIJ.Historial.resources
+C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\PIA\Sistema-CEIJ\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\obj\Debug\Sistema_CEIJ.PuntoDeVenta.resources

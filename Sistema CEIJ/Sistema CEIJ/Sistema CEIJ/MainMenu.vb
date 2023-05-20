@@ -35,4 +35,9 @@
         MenuAgenda.Show()
         Me.Hide()
     End Sub
+
+    Private Sub VentasPanel_Click(sender As Object, e As EventArgs) Handles VentasPanel.Click, VentaLabel.Click, Salir.Click
+        PuntoDeVenta.Show()
+        Me.Hide()
+    End Sub
 End Class

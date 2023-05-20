@@ -26,7 +26,7 @@ Partial Class MainMenu
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.UserLabel = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.SalirPanel = New System.Windows.Forms.Panel()
+        Me.VentasPanel = New System.Windows.Forms.Panel()
         Me.Salir = New System.Windows.Forms.PictureBox()
         Me.VentaLabel = New System.Windows.Forms.Label()
         Me.ServiciosPanel = New System.Windows.Forms.Panel()
@@ -49,7 +49,7 @@ Partial Class MainMenu
         Me.SalirPictureBox = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SalirPanel.SuspendLayout()
+        Me.VentasPanel.SuspendLayout()
         CType(Me.Salir, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ServiciosPanel.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -100,16 +100,16 @@ Partial Class MainMenu
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
-        'SalirPanel
+        'VentasPanel
         '
-        Me.SalirPanel.BackColor = System.Drawing.Color.White
-        Me.SalirPanel.Controls.Add(Me.Salir)
-        Me.SalirPanel.Controls.Add(Me.VentaLabel)
-        Me.SalirPanel.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.SalirPanel.Location = New System.Drawing.Point(446, 365)
-        Me.SalirPanel.Name = "SalirPanel"
-        Me.SalirPanel.Size = New System.Drawing.Size(160, 165)
-        Me.SalirPanel.TabIndex = 17
+        Me.VentasPanel.BackColor = System.Drawing.Color.White
+        Me.VentasPanel.Controls.Add(Me.Salir)
+        Me.VentasPanel.Controls.Add(Me.VentaLabel)
+        Me.VentasPanel.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.VentasPanel.Location = New System.Drawing.Point(446, 365)
+        Me.VentasPanel.Name = "VentasPanel"
+        Me.VentasPanel.Size = New System.Drawing.Size(160, 165)
+        Me.VentasPanel.TabIndex = 17
         '
         'Salir
         '
@@ -352,7 +352,7 @@ Partial Class MainMenu
         Me.Controls.Add(Me.PictureBox6)
         Me.Controls.Add(Me.MenuLabel)
         Me.Controls.Add(Me.InventarioPanel)
-        Me.Controls.Add(Me.SalirPanel)
+        Me.Controls.Add(Me.VentasPanel)
         Me.Controls.Add(Me.ServiciosPanel)
         Me.Controls.Add(Me.AgendalPanel)
         Me.Controls.Add(Me.ClientesPanel)
@@ -364,7 +364,7 @@ Partial Class MainMenu
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.SalirPanel.ResumeLayout(False)
+        Me.VentasPanel.ResumeLayout(False)
         CType(Me.Salir, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ServiciosPanel.ResumeLayout(False)
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
@@ -386,7 +386,7 @@ Partial Class MainMenu
     Friend WithEvents Panel1 As Panel
     Friend WithEvents UserLabel As Label
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents SalirPanel As Panel
+    Friend WithEvents VentasPanel As Panel
     Friend WithEvents Salir As PictureBox
     Friend WithEvents VentaLabel As Label
     Friend WithEvents ServiciosPanel As Panel

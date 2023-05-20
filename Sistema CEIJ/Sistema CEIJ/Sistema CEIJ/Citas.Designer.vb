@@ -58,6 +58,10 @@ Partial Class Citas
         Me.SClienteBTN = New System.Windows.Forms.Button()
         Me.ClienteTextBox = New System.Windows.Forms.TextBox()
         Me.ClientesDataGridView = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ClientesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ClienteLabel = New System.Windows.Forms.Label()
         Me.CitasTableAdapter = New Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.CitasTableAdapter()
@@ -66,10 +70,6 @@ Partial Class Citas
         Me.ClientesTableAdapter = New Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.ClientesTableAdapter()
         Me.SolicitudesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.SolicitudesTableAdapter = New Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.SolicitudesTableAdapter()
-        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         HoraLabel = New System.Windows.Forms.Label()
         FechaLabel = New System.Windows.Forms.Label()
         NombreLabel = New System.Windows.Forms.Label()
@@ -431,6 +431,38 @@ Partial Class Citas
         Me.ClientesDataGridView.Size = New System.Drawing.Size(349, 59)
         Me.ClientesDataGridView.TabIndex = 90
         '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "Id"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "Id"
+        Me.DataGridViewTextBoxColumn3.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        Me.DataGridViewTextBoxColumn3.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.DataPropertyName = "Nombre"
+        Me.DataGridViewTextBoxColumn5.HeaderText = "Nombre"
+        Me.DataGridViewTextBoxColumn5.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        Me.DataGridViewTextBoxColumn5.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        Me.DataGridViewTextBoxColumn6.DataPropertyName = "Apellido"
+        Me.DataGridViewTextBoxColumn6.HeaderText = "Apellido"
+        Me.DataGridViewTextBoxColumn6.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        Me.DataGridViewTextBoxColumn6.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn7
+        '
+        Me.DataGridViewTextBoxColumn7.DataPropertyName = "Telefono"
+        Me.DataGridViewTextBoxColumn7.HeaderText = "Telefono"
+        Me.DataGridViewTextBoxColumn7.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
+        Me.DataGridViewTextBoxColumn7.ReadOnly = True
+        '
         'ClientesBindingSource
         '
         Me.ClientesBindingSource.DataMember = "Clientes"
@@ -484,38 +516,6 @@ Partial Class Citas
         'SolicitudesTableAdapter
         '
         Me.SolicitudesTableAdapter.ClearBeforeFill = True
-        '
-        'DataGridViewTextBoxColumn3
-        '
-        Me.DataGridViewTextBoxColumn3.DataPropertyName = "Id"
-        Me.DataGridViewTextBoxColumn3.HeaderText = "Id"
-        Me.DataGridViewTextBoxColumn3.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        Me.DataGridViewTextBoxColumn3.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn5
-        '
-        Me.DataGridViewTextBoxColumn5.DataPropertyName = "Nombre"
-        Me.DataGridViewTextBoxColumn5.HeaderText = "Nombre"
-        Me.DataGridViewTextBoxColumn5.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
-        Me.DataGridViewTextBoxColumn5.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn6
-        '
-        Me.DataGridViewTextBoxColumn6.DataPropertyName = "Apellido"
-        Me.DataGridViewTextBoxColumn6.HeaderText = "Apellido"
-        Me.DataGridViewTextBoxColumn6.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
-        Me.DataGridViewTextBoxColumn6.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn7
-        '
-        Me.DataGridViewTextBoxColumn7.DataPropertyName = "Telefono"
-        Me.DataGridViewTextBoxColumn7.HeaderText = "Telefono"
-        Me.DataGridViewTextBoxColumn7.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
-        Me.DataGridViewTextBoxColumn7.ReadOnly = True
         '
         'Citas
         '
