@@ -97,11 +97,6 @@ Sistema CEIJ
 Represents a strongly typed in-memory cache of data.
 </summary>
 </member>
-<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.Agenda_de_CitasDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
 <member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.ClientesDataTable">
 <summary>
 Represents the strongly named DataTable class.
@@ -117,7 +112,12 @@ Represents the strongly named DataTable class.
 Represents the strongly named DataTable class.
 </summary>
 </member>
-<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.Horario_de_CitasDataTable">
+<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.CursosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.InscripcionesDataTable">
 <summary>
 Represents the strongly named DataTable class.
 </summary>
@@ -127,27 +127,7 @@ Represents the strongly named DataTable class.
 Represents the strongly named DataTable class.
 </summary>
 </member>
-<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.PagosDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.Reservacion_de_CitasDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.ReservaCursosDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
 <member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.ServiciosDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.VentaDataTable">
 <summary>
 Represents the strongly named DataTable class.
 </summary>
@@ -157,14 +137,24 @@ Represents the strongly named DataTable class.
 Represents the strongly named DataTable class.
 </summary>
 </member>
-<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.CursosDataTable">
+<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.OrdenDataTable">
 <summary>
 Represents the strongly named DataTable class.
 </summary>
 </member>
-<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.Agenda_de_CitasRow">
+<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.CitasDataTable">
 <summary>
-Represents strongly named DataRow class.
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.AlumnosDataTableDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.AgendaDataTableDataTable">
+<summary>
+Represents the strongly named DataTable class.
 </summary>
 </member>
 <member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.ClientesRow">
@@ -182,7 +172,12 @@ Represents strongly named DataRow class.
 Represents strongly named DataRow class.
 </summary>
 </member>
-<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.Horario_de_CitasRow">
+<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.CursosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.InscripcionesRow">
 <summary>
 Represents strongly named DataRow class.
 </summary>
@@ -192,27 +187,7 @@ Represents strongly named DataRow class.
 Represents strongly named DataRow class.
 </summary>
 </member>
-<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.PagosRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.Reservacion_de_CitasRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.ReservaCursosRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
 <member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.ServiciosRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.VentaRow">
 <summary>
 Represents strongly named DataRow class.
 </summary>
@@ -222,14 +197,24 @@ Represents strongly named DataRow class.
 Represents strongly named DataRow class.
 </summary>
 </member>
-<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.CursosRow">
+<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.OrdenRow">
 <summary>
 Represents strongly named DataRow class.
 </summary>
 </member>
-<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.Agenda_de_CitasRowChangeEvent">
+<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.CitasRow">
 <summary>
-Row event argument class
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.AlumnosDataTableRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.AgendaDataTableRow">
+<summary>
+Represents strongly named DataRow class.
 </summary>
 </member>
 <member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.ClientesRowChangeEvent">
@@ -247,7 +232,12 @@ Row event argument class
 Row event argument class
 </summary>
 </member>
-<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.Horario_de_CitasRowChangeEvent">
+<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.CursosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.InscripcionesRowChangeEvent">
 <summary>
 Row event argument class
 </summary>
@@ -257,27 +247,7 @@ Row event argument class
 Row event argument class
 </summary>
 </member>
-<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.PagosRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.Reservacion_de_CitasRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.ReservaCursosRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
 <member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.ServiciosRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.VentaRowChangeEvent">
 <summary>
 Row event argument class
 </summary>
@@ -287,14 +257,24 @@ Row event argument class
 Row event argument class
 </summary>
 </member>
-<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.CursosRowChangeEvent">
+<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.OrdenRowChangeEvent">
 <summary>
 Row event argument class
 </summary>
 </member>
-<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.Agenda_de_CitasTableAdapter">
+<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.CitasRowChangeEvent">
 <summary>
-Represents the connection and commands used to retrieve and save data.
+Row event argument class
+</summary>
+</member>
+<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.AlumnosDataTableRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.AgendaDataTableRowChangeEvent">
+<summary>
+Row event argument class
 </summary>
 </member>
 <member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.ClientesTableAdapter">
@@ -312,7 +292,12 @@ Represents the connection and commands used to retrieve and save data.
 Represents the connection and commands used to retrieve and save data.
 </summary>
 </member>
-<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.Horario_de_CitasTableAdapter">
+<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.CursosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.InscripcionesTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
@@ -322,27 +307,7 @@ Represents the connection and commands used to retrieve and save data.
 Represents the connection and commands used to retrieve and save data.
 </summary>
 </member>
-<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.PagosTableAdapter">
-<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member>
-<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.Reservacion_de_CitasTableAdapter">
-<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member>
-<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.ReservaCursosTableAdapter">
-<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member>
 <member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.ServiciosTableAdapter">
-<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member>
-<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.VentaTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
@@ -352,7 +317,22 @@ Represents the connection and commands used to retrieve and save data.
 Represents the connection and commands used to retrieve and save data.
 </summary>
 </member>
-<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.CursosTableAdapter">
+<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.OrdenTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.CitasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.AlumnosDataTableTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.AgendaDataTableTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>

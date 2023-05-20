@@ -76,6 +76,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Alumnos.Designer.vb">
+      <DependentUpon>Alumnos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Alumnos.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="BD_Sistema_CEIJDataSet.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -83,6 +89,12 @@
     </Compile>
     <Compile Include="BD_Sistema_CEIJDataSet.vb">
       <DependentUpon>BD_Sistema_CEIJDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Citas.Designer.vb">
+      <DependentUpon>Citas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Citas.vb">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Cliente.Designer.vb">
       <DependentUpon>Cliente.vb</DependentUpon>
@@ -107,6 +119,12 @@
       <DependentUpon>MainMenu.vb</DependentUpon>
     </Compile>
     <Compile Include="MainMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuAgenda.Designer.vb">
+      <DependentUpon>MenuAgenda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuAgenda.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MenuClientes.Designer.vb">
@@ -172,6 +190,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Alumnos.resx">
+      <DependentUpon>Alumnos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Citas.resx">
+      <DependentUpon>Citas.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cliente.resx">
       <DependentUpon>Cliente.vb</DependentUpon>
     </EmbeddedResource>
@@ -183,6 +207,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuAgenda.resx">
+      <DependentUpon>MenuAgenda.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuClientes.resx">
       <DependentUpon>MenuClientes.vb</DependentUpon>

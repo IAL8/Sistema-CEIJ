@@ -30,4 +30,9 @@
         MenuInventario.Show()
         Me.Hide()
     End Sub
+
+    Private Sub AgendalPanel_Click(sender As Object, e As EventArgs) Handles AgendalPanel.Click, PictureBox2.Click, AgendaLabel.Click
+        MenuAgenda.Show()
+        Me.Hide()
+    End Sub
 End Class

@@ -209,21 +209,15 @@ Partial Class Servicio
         '
         'TableAdapterManager
         '
-        Me.TableAdapterManager.Agenda_de_CitasTableAdapter = Nothing
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
         Me.TableAdapterManager.ClientesTableAdapter = Nothing
         Me.TableAdapterManager.CompraTableAdapter = Nothing
         Me.TableAdapterManager.CuentasTableAdapter = Nothing
         Me.TableAdapterManager.CursosTableAdapter = Nothing
-        Me.TableAdapterManager.Horario_de_CitasTableAdapter = Nothing
         Me.TableAdapterManager.InventarioTableAdapter = Nothing
-        Me.TableAdapterManager.PagosTableAdapter = Nothing
-        Me.TableAdapterManager.Reservacion_de_CitasTableAdapter = Nothing
-        Me.TableAdapterManager.ReservaCursosTableAdapter = Nothing
         Me.TableAdapterManager.ServiciosTableAdapter = Me.ServiciosTableAdapter
         Me.TableAdapterManager.SolicitudesTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
-        Me.TableAdapterManager.VentaTableAdapter = Nothing
         '
         'ServiciosBindingNavigator
         '

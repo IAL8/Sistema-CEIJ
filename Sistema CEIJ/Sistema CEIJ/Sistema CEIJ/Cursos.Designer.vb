@@ -27,8 +27,8 @@ Partial Class Cursos
         Dim PrecioLabel As System.Windows.Forms.Label
         Dim FechaLabel As System.Windows.Forms.Label
         Dim NombreLabel As System.Windows.Forms.Label
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Cursos))
         Dim Label1 As System.Windows.Forms.Label
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Cursos))
         Me.CursoLabel = New System.Windows.Forms.Label()
         Me.CancelarBTN = New System.Windows.Forms.Button()
         Me.RegistrarBTN = New System.Windows.Forms.Button()
@@ -37,6 +37,8 @@ Partial Class Cursos
         Me.FechaDateTimePicker = New System.Windows.Forms.DateTimePicker()
         Me.CursosBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
         Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
+        Me.CursosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.BD_Sistema_CEIJDataSet = New Sistema_CEIJ.BD_Sistema_CEIJDataSet()
         Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
         Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
@@ -48,8 +50,6 @@ Partial Class Cursos
         Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.CursosBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
-        Me.CursosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.BD_Sistema_CEIJDataSet = New Sistema_CEIJ.BD_Sistema_CEIJDataSet()
         Me.CursosTableAdapter = New Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.CursosTableAdapter()
         Me.TableAdapterManager = New Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.TableAdapterManager()
         Me.HoraIDateTimePicker = New System.Windows.Forms.DateTimePicker()
@@ -116,6 +116,19 @@ Partial Class Cursos
         NombreLabel.Size = New System.Drawing.Size(90, 22)
         NombreLabel.TabIndex = 58
         NombreLabel.Text = "Nombre:"
+        '
+        'Label1
+        '
+        Label1.AutoSize = True
+        Label1.BackColor = System.Drawing.Color.Transparent
+        Label1.Font = New System.Drawing.Font("Arial", 11.0!, System.Drawing.FontStyle.Bold)
+        Label1.ForeColor = System.Drawing.Color.DarkKhaki
+        Label1.Location = New System.Drawing.Point(279, 247)
+        Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Label1.Name = "Label1"
+        Label1.Size = New System.Drawing.Size(16, 22)
+        Label1.TabIndex = 71
+        Label1.Text = "-"
         '
         'CursoLabel
         '
@@ -218,6 +231,16 @@ Partial Class Cursos
         Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(29, 24)
         Me.BindingNavigatorAddNewItem.Text = "Agregar nuevo"
         '
+        'CursosBindingSource
+        '
+        Me.CursosBindingSource.DataMember = "Cursos"
+        Me.CursosBindingSource.DataSource = Me.BD_Sistema_CEIJDataSet
+        '
+        'BD_Sistema_CEIJDataSet
+        '
+        Me.BD_Sistema_CEIJDataSet.DataSetName = "BD_Sistema_CEIJDataSet"
+        Me.BD_Sistema_CEIJDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
         'BindingNavigatorCountItem
         '
         Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
@@ -303,50 +326,24 @@ Partial Class Cursos
         Me.CursosBindingNavigatorSaveItem.Size = New System.Drawing.Size(29, 24)
         Me.CursosBindingNavigatorSaveItem.Text = "Guardar datos"
         '
-        'Label1
-        '
-        Label1.AutoSize = True
-        Label1.BackColor = System.Drawing.Color.Transparent
-        Label1.Font = New System.Drawing.Font("Arial", 11.0!, System.Drawing.FontStyle.Bold)
-        Label1.ForeColor = System.Drawing.Color.DarkKhaki
-        Label1.Location = New System.Drawing.Point(279, 247)
-        Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Label1.Name = "Label1"
-        Label1.Size = New System.Drawing.Size(16, 22)
-        Label1.TabIndex = 71
-        Label1.Text = "-"
-        '
-        'CursosBindingSource
-        '
-        Me.CursosBindingSource.DataMember = "Cursos"
-        Me.CursosBindingSource.DataSource = Me.BD_Sistema_CEIJDataSet
-        '
-        'BD_Sistema_CEIJDataSet
-        '
-        Me.BD_Sistema_CEIJDataSet.DataSetName = "BD_Sistema_CEIJDataSet"
-        Me.BD_Sistema_CEIJDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
         'CursosTableAdapter
         '
         Me.CursosTableAdapter.ClearBeforeFill = True
         '
         'TableAdapterManager
         '
-        Me.TableAdapterManager.Agenda_de_CitasTableAdapter = Nothing
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.CitasTableAdapter = Nothing
         Me.TableAdapterManager.ClientesTableAdapter = Nothing
         Me.TableAdapterManager.CompraTableAdapter = Nothing
         Me.TableAdapterManager.CuentasTableAdapter = Nothing
         Me.TableAdapterManager.CursosTableAdapter = Me.CursosTableAdapter
-        Me.TableAdapterManager.Horario_de_CitasTableAdapter = Nothing
+        Me.TableAdapterManager.InscripcionesTableAdapter = Nothing
         Me.TableAdapterManager.InventarioTableAdapter = Nothing
-        Me.TableAdapterManager.PagosTableAdapter = Nothing
-        Me.TableAdapterManager.Reservacion_de_CitasTableAdapter = Nothing
-        Me.TableAdapterManager.ReservaCursosTableAdapter = Nothing
+        Me.TableAdapterManager.OrdenTableAdapter = Nothing
         Me.TableAdapterManager.ServiciosTableAdapter = Nothing
         Me.TableAdapterManager.SolicitudesTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
-        Me.TableAdapterManager.VentaTableAdapter = Nothing
         '
         'HoraIDateTimePicker
         '

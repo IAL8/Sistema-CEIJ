@@ -29,10 +29,6 @@ Partial Class MenuCursos
         Me.EditarBTN = New System.Windows.Forms.Button()
         Me.EliminarBTN = New System.Windows.Forms.Button()
         Me.SalirPictureBox = New System.Windows.Forms.PictureBox()
-        Me.BD_Sistema_CEIJDataSet = New Sistema_CEIJ.BD_Sistema_CEIJDataSet()
-        Me.CursosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.CursosTableAdapter = New Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.CursosTableAdapter()
-        Me.TableAdapterManager = New Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.TableAdapterManager()
         Me.CursosBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
         Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
@@ -47,27 +43,32 @@ Partial Class MenuCursos
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.CursosBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
         Me.CursosDataGridView = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Nombre_Cur = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.HoraI_Cur = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.HoraF_Cur = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.FillToolStrip = New System.Windows.Forms.ToolStrip()
         Me.FillToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.FillToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.FillToolStripButton1 = New System.Windows.Forms.ToolStripButton()
         Me.FillByToolStrip = New System.Windows.Forms.ToolStrip()
         Me.FillByToolStripButton = New System.Windows.Forms.ToolStripButton()
+        Me.AlumnosBTN = New System.Windows.Forms.Button()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CursosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.BD_Sistema_CEIJDataSet = New Sistema_CEIJ.BD_Sistema_CEIJDataSet()
+        Me.CursosTableAdapter = New Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.CursosTableAdapter()
+        Me.TableAdapterManager = New Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.TableAdapterManager()
         CType(Me.SalirPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.BD_Sistema_CEIJDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.CursosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CursosBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.CursosBindingNavigator.SuspendLayout()
         CType(Me.CursosDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.FillToolStrip.SuspendLayout()
         Me.FillToolStrip1.SuspendLayout()
         Me.FillByToolStrip.SuspendLayout()
+        CType(Me.CursosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BD_Sistema_CEIJDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'NuevoBTN
@@ -105,7 +106,7 @@ Partial Class MenuCursos
         Me.EditarBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.EditarBTN.Font = New System.Drawing.Font("Arial Narrow", 13.0!, System.Drawing.FontStyle.Bold)
         Me.EditarBTN.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.EditarBTN.Location = New System.Drawing.Point(656, 423)
+        Me.EditarBTN.Location = New System.Drawing.Point(667, 423)
         Me.EditarBTN.Margin = New System.Windows.Forms.Padding(4)
         Me.EditarBTN.Name = "EditarBTN"
         Me.EditarBTN.Size = New System.Drawing.Size(137, 44)
@@ -120,7 +121,7 @@ Partial Class MenuCursos
         Me.EliminarBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.EliminarBTN.Font = New System.Drawing.Font("Arial Narrow", 13.0!, System.Drawing.FontStyle.Bold)
         Me.EliminarBTN.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.EliminarBTN.Location = New System.Drawing.Point(324, 423)
+        Me.EliminarBTN.Location = New System.Drawing.Point(471, 423)
         Me.EliminarBTN.Margin = New System.Windows.Forms.Padding(4)
         Me.EliminarBTN.Name = "EliminarBTN"
         Me.EliminarBTN.Size = New System.Drawing.Size(137, 44)
@@ -139,38 +140,6 @@ Partial Class MenuCursos
         Me.SalirPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.SalirPictureBox.TabIndex = 34
         Me.SalirPictureBox.TabStop = False
-        '
-        'BD_Sistema_CEIJDataSet
-        '
-        Me.BD_Sistema_CEIJDataSet.DataSetName = "BD_Sistema_CEIJDataSet"
-        Me.BD_Sistema_CEIJDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'CursosBindingSource
-        '
-        Me.CursosBindingSource.DataMember = "Cursos"
-        Me.CursosBindingSource.DataSource = Me.BD_Sistema_CEIJDataSet
-        '
-        'CursosTableAdapter
-        '
-        Me.CursosTableAdapter.ClearBeforeFill = True
-        '
-        'TableAdapterManager
-        '
-        Me.TableAdapterManager.Agenda_de_CitasTableAdapter = Nothing
-        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager.ClientesTableAdapter = Nothing
-        Me.TableAdapterManager.CompraTableAdapter = Nothing
-        Me.TableAdapterManager.CuentasTableAdapter = Nothing
-        Me.TableAdapterManager.CursosTableAdapter = Me.CursosTableAdapter
-        Me.TableAdapterManager.Horario_de_CitasTableAdapter = Nothing
-        Me.TableAdapterManager.InventarioTableAdapter = Nothing
-        Me.TableAdapterManager.PagosTableAdapter = Nothing
-        Me.TableAdapterManager.Reservacion_de_CitasTableAdapter = Nothing
-        Me.TableAdapterManager.ReservaCursosTableAdapter = Nothing
-        Me.TableAdapterManager.ServiciosTableAdapter = Nothing
-        Me.TableAdapterManager.SolicitudesTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
-        Me.TableAdapterManager.VentaTableAdapter = Nothing
         '
         'CursosBindingNavigator
         '
@@ -244,6 +213,7 @@ Partial Class MenuCursos
         '
         Me.BindingNavigatorPositionItem.AccessibleName = "Posición"
         Me.BindingNavigatorPositionItem.AutoSize = False
+        Me.BindingNavigatorPositionItem.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BindingNavigatorPositionItem.Name = "BindingNavigatorPositionItem"
         Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(50, 27)
         Me.BindingNavigatorPositionItem.Text = "0"
@@ -304,14 +274,6 @@ Partial Class MenuCursos
         Me.CursosDataGridView.Size = New System.Drawing.Size(844, 220)
         Me.CursosDataGridView.TabIndex = 35
         '
-        'DataGridViewTextBoxColumn6
-        '
-        Me.DataGridViewTextBoxColumn6.DataPropertyName = "Id_Curso"
-        Me.DataGridViewTextBoxColumn6.HeaderText = "Id_Curso"
-        Me.DataGridViewTextBoxColumn6.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
-        Me.DataGridViewTextBoxColumn6.ReadOnly = True
-        '
         'Nombre_Cur
         '
         Me.Nombre_Cur.DataPropertyName = "Nombre_Cur"
@@ -319,14 +281,6 @@ Partial Class MenuCursos
         Me.Nombre_Cur.MinimumWidth = 6
         Me.Nombre_Cur.Name = "Nombre_Cur"
         Me.Nombre_Cur.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn2
-        '
-        Me.DataGridViewTextBoxColumn2.DataPropertyName = "Fecha_Cur"
-        Me.DataGridViewTextBoxColumn2.HeaderText = "Fecha_Cur"
-        Me.DataGridViewTextBoxColumn2.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        Me.DataGridViewTextBoxColumn2.ReadOnly = True
         '
         'HoraI_Cur
         '
@@ -343,14 +297,6 @@ Partial Class MenuCursos
         Me.HoraF_Cur.MinimumWidth = 6
         Me.HoraF_Cur.Name = "HoraF_Cur"
         Me.HoraF_Cur.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn4
-        '
-        Me.DataGridViewTextBoxColumn4.DataPropertyName = "Costo_Cur"
-        Me.DataGridViewTextBoxColumn4.HeaderText = "Costo_Cur"
-        Me.DataGridViewTextBoxColumn4.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
-        Me.DataGridViewTextBoxColumn4.ReadOnly = True
         '
         'FillToolStrip
         '
@@ -397,22 +343,94 @@ Partial Class MenuCursos
         Me.FillByToolStrip.Size = New System.Drawing.Size(1009, 27)
         Me.FillByToolStrip.TabIndex = 38
         Me.FillByToolStrip.Text = "FillByToolStrip"
+        Me.FillByToolStrip.Visible = False
         '
         'FillByToolStripButton
         '
         Me.FillByToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
         Me.FillByToolStripButton.Name = "FillByToolStripButton"
-        Me.FillByToolStripButton.Size = New System.Drawing.Size(48, 22)
+        Me.FillByToolStripButton.Size = New System.Drawing.Size(48, 24)
         Me.FillByToolStripButton.Text = "FillBy"
+        '
+        'AlumnosBTN
+        '
+        Me.AlumnosBTN.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.AlumnosBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.AlumnosBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.AlumnosBTN.Font = New System.Drawing.Font("Arial Narrow", 13.0!, System.Drawing.FontStyle.Bold)
+        Me.AlumnosBTN.ForeColor = System.Drawing.Color.DarkKhaki
+        Me.AlumnosBTN.Location = New System.Drawing.Point(242, 423)
+        Me.AlumnosBTN.Margin = New System.Windows.Forms.Padding(4)
+        Me.AlumnosBTN.Name = "AlumnosBTN"
+        Me.AlumnosBTN.Size = New System.Drawing.Size(178, 44)
+        Me.AlumnosBTN.TabIndex = 39
+        Me.AlumnosBTN.Text = "Ver Alumnos"
+        Me.AlumnosBTN.UseVisualStyleBackColor = False
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        Me.DataGridViewTextBoxColumn6.DataPropertyName = "Id_Curso"
+        Me.DataGridViewTextBoxColumn6.HeaderText = "Id_Curso"
+        Me.DataGridViewTextBoxColumn6.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        Me.DataGridViewTextBoxColumn6.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "Fecha_Cur"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "Fecha_Cur"
+        Me.DataGridViewTextBoxColumn2.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        Me.DataGridViewTextBoxColumn2.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn4
+        '
+        Me.DataGridViewTextBoxColumn4.DataPropertyName = "Costo_Cur"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "Costo_Cur"
+        Me.DataGridViewTextBoxColumn4.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        Me.DataGridViewTextBoxColumn4.ReadOnly = True
+        '
+        'CursosBindingSource
+        '
+        Me.CursosBindingSource.DataMember = "Cursos"
+        Me.CursosBindingSource.DataSource = Me.BD_Sistema_CEIJDataSet
+        '
+        'BD_Sistema_CEIJDataSet
+        '
+        Me.BD_Sistema_CEIJDataSet.DataSetName = "BD_Sistema_CEIJDataSet"
+        Me.BD_Sistema_CEIJDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'CursosTableAdapter
+        '
+        Me.CursosTableAdapter.ClearBeforeFill = True
+        '
+        'TableAdapterManager
+        '
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.CitasTableAdapter = Nothing
+        Me.TableAdapterManager.ClientesTableAdapter = Nothing
+        Me.TableAdapterManager.CompraTableAdapter = Nothing
+        Me.TableAdapterManager.CuentasTableAdapter = Nothing
+        Me.TableAdapterManager.CursosTableAdapter = Me.CursosTableAdapter
+        Me.TableAdapterManager.InscripcionesTableAdapter = Nothing
+        Me.TableAdapterManager.InventarioTableAdapter = Nothing
+        Me.TableAdapterManager.OrdenTableAdapter = Nothing
+        Me.TableAdapterManager.ServiciosTableAdapter = Nothing
+        Me.TableAdapterManager.SolicitudesTableAdapter = Nothing
+        Me.TableAdapterManager.UpdateOrder = Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         '
         'MenuCursos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.Sistema_CEIJ.My.Resources.Resources.v748_toon_111
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1009, 534)
-        Me.Controls.Add(Me.FillByToolStrip)
-        Me.Controls.Add(Me.FillToolStrip1)
+        Me.Controls.Add(Me.AlumnosBTN)
         Me.Controls.Add(Me.FillToolStrip)
+        Me.Controls.Add(Me.FillToolStrip1)
+        Me.Controls.Add(Me.FillByToolStrip)
         Me.Controls.Add(Me.CursosDataGridView)
         Me.Controls.Add(Me.CursosBindingNavigator)
         Me.Controls.Add(Me.SalirPictureBox)
@@ -421,10 +439,9 @@ Partial Class MenuCursos
         Me.Controls.Add(Me.NuevoBTN)
         Me.Controls.Add(Me.CursosLabel)
         Me.Name = "MenuCursos"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "MenuCursos"
         CType(Me.SalirPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.BD_Sistema_CEIJDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.CursosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CursosBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
         Me.CursosBindingNavigator.ResumeLayout(False)
         Me.CursosBindingNavigator.PerformLayout()
@@ -435,6 +452,8 @@ Partial Class MenuCursos
         Me.FillToolStrip1.PerformLayout()
         Me.FillByToolStrip.ResumeLayout(False)
         Me.FillByToolStrip.PerformLayout()
+        CType(Me.CursosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BD_Sistema_CEIJDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -478,4 +497,5 @@ Partial Class MenuCursos
     Friend WithEvents DataGridViewTextBoxColumn4 As DataGridViewTextBoxColumn
     Friend WithEvents FillByToolStrip As ToolStrip
     Friend WithEvents FillByToolStripButton As ToolStripButton
+    Friend WithEvents AlumnosBTN As Button
 End Class

@@ -29,36 +29,36 @@ Partial Class MenuInventario
         Me.NuevoBTN = New System.Windows.Forms.Button()
         Me.CursosLabel = New System.Windows.Forms.Label()
         Me.InventarioBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
+        Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
+        Me.InventarioBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.BD_Sistema_CEIJDataSet = New Sistema_CEIJ.BD_Sistema_CEIJDataSet()
         Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
+        Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorMovePreviousItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorSeparator = New System.Windows.Forms.ToolStripSeparator()
         Me.BindingNavigatorPositionItem = New System.Windows.Forms.ToolStripTextBox()
         Me.BindingNavigatorSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.BindingNavigatorMoveNextItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
+        Me.InventarioBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
         Me.InventarioDataGridView = New System.Windows.Forms.DataGridView()
-        Me.FillToolStrip = New System.Windows.Forms.ToolStrip()
-        Me.FillToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.InventarioBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.BD_Sistema_CEIJDataSet = New Sistema_CEIJ.BD_Sistema_CEIJDataSet()
+        Me.FillToolStrip = New System.Windows.Forms.ToolStrip()
+        Me.FillToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.InventarioTableAdapter = New Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.InventarioTableAdapter()
         Me.TableAdapterManager = New Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.TableAdapterManager()
-        Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorMovePreviousItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorMoveNextItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
-        Me.InventarioBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
         Me.SalirPictureBox = New System.Windows.Forms.PictureBox()
         CType(Me.InventarioBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.InventarioBindingNavigator.SuspendLayout()
-        CType(Me.InventarioDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.FillToolStrip.SuspendLayout()
         CType(Me.InventarioBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BD_Sistema_CEIJDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.InventarioDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.FillToolStrip.SuspendLayout()
         CType(Me.SalirPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -140,12 +140,58 @@ Partial Class MenuInventario
         Me.InventarioBindingNavigator.Text = "BindingNavigator1"
         Me.InventarioBindingNavigator.Visible = False
         '
+        'BindingNavigatorAddNewItem
+        '
+        Me.BindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
+        Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorAddNewItem.Text = "Agregar nuevo"
+        '
+        'InventarioBindingSource
+        '
+        Me.InventarioBindingSource.DataMember = "Inventario"
+        Me.InventarioBindingSource.DataSource = Me.BD_Sistema_CEIJDataSet
+        '
+        'BD_Sistema_CEIJDataSet
+        '
+        Me.BD_Sistema_CEIJDataSet.DataSetName = "BD_Sistema_CEIJDataSet"
+        Me.BD_Sistema_CEIJDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
         'BindingNavigatorCountItem
         '
         Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
         Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(48, 24)
         Me.BindingNavigatorCountItem.Text = "de {0}"
         Me.BindingNavigatorCountItem.ToolTipText = "Número total de elementos"
+        '
+        'BindingNavigatorDeleteItem
+        '
+        Me.BindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
+        Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorDeleteItem.Text = "Eliminar"
+        '
+        'BindingNavigatorMoveFirstItem
+        '
+        Me.BindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorMoveFirstItem.Image = CType(resources.GetObject("BindingNavigatorMoveFirstItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
+        Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorMoveFirstItem.Text = "Mover primero"
+        '
+        'BindingNavigatorMovePreviousItem
+        '
+        Me.BindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorMovePreviousItem.Image = CType(resources.GetObject("BindingNavigatorMovePreviousItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorMovePreviousItem.Name = "BindingNavigatorMovePreviousItem"
+        Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorMovePreviousItem.Text = "Mover anterior"
         '
         'BindingNavigatorSeparator
         '
@@ -167,10 +213,36 @@ Partial Class MenuInventario
         Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator1"
         Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 27)
         '
+        'BindingNavigatorMoveNextItem
+        '
+        Me.BindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorMoveNextItem.Image = CType(resources.GetObject("BindingNavigatorMoveNextItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
+        Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorMoveNextItem.Text = "Mover siguiente"
+        '
+        'BindingNavigatorMoveLastItem
+        '
+        Me.BindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorMoveLastItem.Image = CType(resources.GetObject("BindingNavigatorMoveLastItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
+        Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorMoveLastItem.Text = "Mover último"
+        '
         'BindingNavigatorSeparator2
         '
         Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
         Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 27)
+        '
+        'InventarioBindingNavigatorSaveItem
+        '
+        Me.InventarioBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.InventarioBindingNavigatorSaveItem.Image = CType(resources.GetObject("InventarioBindingNavigatorSaveItem.Image"), System.Drawing.Image)
+        Me.InventarioBindingNavigatorSaveItem.Name = "InventarioBindingNavigatorSaveItem"
+        Me.InventarioBindingNavigatorSaveItem.Size = New System.Drawing.Size(29, 24)
+        Me.InventarioBindingNavigatorSaveItem.Text = "Guardar datos"
         '
         'InventarioDataGridView
         '
@@ -189,23 +261,6 @@ Partial Class MenuInventario
         Me.InventarioDataGridView.RowTemplate.Height = 24
         Me.InventarioDataGridView.Size = New System.Drawing.Size(771, 220)
         Me.InventarioDataGridView.TabIndex = 40
-        '
-        'FillToolStrip
-        '
-        Me.FillToolStrip.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.FillToolStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FillToolStripButton})
-        Me.FillToolStrip.Location = New System.Drawing.Point(0, 0)
-        Me.FillToolStrip.Name = "FillToolStrip"
-        Me.FillToolStrip.Size = New System.Drawing.Size(993, 27)
-        Me.FillToolStrip.TabIndex = 41
-        Me.FillToolStrip.Text = "FillToolStrip"
-        '
-        'FillToolStripButton
-        '
-        Me.FillToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
-        Me.FillToolStripButton.Name = "FillToolStripButton"
-        Me.FillToolStripButton.Size = New System.Drawing.Size(32, 28)
-        Me.FillToolStripButton.Text = "Fill"
         '
         'DataGridViewTextBoxColumn1
         '
@@ -239,15 +294,23 @@ Partial Class MenuInventario
         Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
         Me.DataGridViewTextBoxColumn4.ReadOnly = True
         '
-        'InventarioBindingSource
+        'FillToolStrip
         '
-        Me.InventarioBindingSource.DataMember = "Inventario"
-        Me.InventarioBindingSource.DataSource = Me.BD_Sistema_CEIJDataSet
+        Me.FillToolStrip.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.FillToolStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FillToolStripButton})
+        Me.FillToolStrip.Location = New System.Drawing.Point(0, 0)
+        Me.FillToolStrip.Name = "FillToolStrip"
+        Me.FillToolStrip.Size = New System.Drawing.Size(993, 27)
+        Me.FillToolStrip.TabIndex = 41
+        Me.FillToolStrip.Text = "FillToolStrip"
+        Me.FillToolStrip.Visible = False
         '
-        'BD_Sistema_CEIJDataSet
+        'FillToolStripButton
         '
-        Me.BD_Sistema_CEIJDataSet.DataSetName = "BD_Sistema_CEIJDataSet"
-        Me.BD_Sistema_CEIJDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        Me.FillToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
+        Me.FillToolStripButton.Name = "FillToolStripButton"
+        Me.FillToolStripButton.Size = New System.Drawing.Size(32, 24)
+        Me.FillToolStripButton.Text = "Fill"
         '
         'InventarioTableAdapter
         '
@@ -255,83 +318,18 @@ Partial Class MenuInventario
         '
         'TableAdapterManager
         '
-        Me.TableAdapterManager.Agenda_de_CitasTableAdapter = Nothing
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.CitasTableAdapter = Nothing
         Me.TableAdapterManager.ClientesTableAdapter = Nothing
         Me.TableAdapterManager.CompraTableAdapter = Nothing
         Me.TableAdapterManager.CuentasTableAdapter = Nothing
         Me.TableAdapterManager.CursosTableAdapter = Nothing
-        Me.TableAdapterManager.Horario_de_CitasTableAdapter = Nothing
+        Me.TableAdapterManager.InscripcionesTableAdapter = Nothing
         Me.TableAdapterManager.InventarioTableAdapter = Me.InventarioTableAdapter
-        Me.TableAdapterManager.PagosTableAdapter = Nothing
-        Me.TableAdapterManager.Reservacion_de_CitasTableAdapter = Nothing
-        Me.TableAdapterManager.ReservaCursosTableAdapter = Nothing
+        Me.TableAdapterManager.OrdenTableAdapter = Nothing
         Me.TableAdapterManager.ServiciosTableAdapter = Nothing
         Me.TableAdapterManager.SolicitudesTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
-        Me.TableAdapterManager.VentaTableAdapter = Nothing
-        '
-        'BindingNavigatorAddNewItem
-        '
-        Me.BindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
-        Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(29, 24)
-        Me.BindingNavigatorAddNewItem.Text = "Agregar nuevo"
-        '
-        'BindingNavigatorDeleteItem
-        '
-        Me.BindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
-        Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(29, 24)
-        Me.BindingNavigatorDeleteItem.Text = "Eliminar"
-        '
-        'BindingNavigatorMoveFirstItem
-        '
-        Me.BindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorMoveFirstItem.Image = CType(resources.GetObject("BindingNavigatorMoveFirstItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
-        Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(29, 24)
-        Me.BindingNavigatorMoveFirstItem.Text = "Mover primero"
-        '
-        'BindingNavigatorMovePreviousItem
-        '
-        Me.BindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorMovePreviousItem.Image = CType(resources.GetObject("BindingNavigatorMovePreviousItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorMovePreviousItem.Name = "BindingNavigatorMovePreviousItem"
-        Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(29, 24)
-        Me.BindingNavigatorMovePreviousItem.Text = "Mover anterior"
-        '
-        'BindingNavigatorMoveNextItem
-        '
-        Me.BindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorMoveNextItem.Image = CType(resources.GetObject("BindingNavigatorMoveNextItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
-        Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(29, 24)
-        Me.BindingNavigatorMoveNextItem.Text = "Mover siguiente"
-        '
-        'BindingNavigatorMoveLastItem
-        '
-        Me.BindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorMoveLastItem.Image = CType(resources.GetObject("BindingNavigatorMoveLastItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
-        Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(29, 24)
-        Me.BindingNavigatorMoveLastItem.Text = "Mover último"
-        '
-        'InventarioBindingNavigatorSaveItem
-        '
-        Me.InventarioBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.InventarioBindingNavigatorSaveItem.Image = CType(resources.GetObject("InventarioBindingNavigatorSaveItem.Image"), System.Drawing.Image)
-        Me.InventarioBindingNavigatorSaveItem.Name = "InventarioBindingNavigatorSaveItem"
-        Me.InventarioBindingNavigatorSaveItem.Size = New System.Drawing.Size(29, 24)
-        Me.InventarioBindingNavigatorSaveItem.Text = "Guardar datos"
         '
         'SalirPictureBox
         '
@@ -366,11 +364,11 @@ Partial Class MenuInventario
         CType(Me.InventarioBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
         Me.InventarioBindingNavigator.ResumeLayout(False)
         Me.InventarioBindingNavigator.PerformLayout()
+        CType(Me.InventarioBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BD_Sistema_CEIJDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.InventarioDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.FillToolStrip.ResumeLayout(False)
         Me.FillToolStrip.PerformLayout()
-        CType(Me.InventarioBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.BD_Sistema_CEIJDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SalirPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

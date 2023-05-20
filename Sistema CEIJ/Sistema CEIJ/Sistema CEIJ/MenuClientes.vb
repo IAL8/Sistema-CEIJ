@@ -32,10 +32,14 @@
     End Sub
 
     Private Sub EliminarBTN_Click(sender As Object, e As EventArgs) Handles EliminarBTN.Click
-        Me.ClientesTableAdapter.DCliente(Id_Cliente)
-        Me.ClientesTableAdapter.Fill(Me.BD_Sistema_CEIJDataSet.Clientes)
-        MsgBox("El cliente  se ha eliminado")
-        Me.ClientesTableAdapter.Fill(Me.BD_Sistema_CEIJDataSet.Clientes)
+        Try
+            Me.ClientesTableAdapter.DCliente(Id_Cliente)
+            Me.ClientesTableAdapter.Fill(Me.BD_Sistema_CEIJDataSet.Clientes)
+            MsgBox("El cliente  se ha eliminado")
+            Me.ClientesTableAdapter.Fill(Me.BD_Sistema_CEIJDataSet.Clientes)
+        Catch ex As System.Exception
+            MsgBox("El usuario tiene asuntos pendientes")
+        End Try
     End Sub
 
     Private Sub EditarBTN_Click(sender As Object, e As EventArgs) Handles EditarBTN.Click

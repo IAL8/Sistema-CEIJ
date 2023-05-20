@@ -9,7 +9,7 @@
     Private Sub MenuCursos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: esta línea de código carga datos en la tabla 'BD_Sistema_CEIJDataSet.Cursos' Puede moverla o quitarla según sea necesario.
         Me.CursosTableAdapter.Fill(Me.BD_Sistema_CEIJDataSet.Cursos)
-
+        Cu_Fecha = Nothing
     End Sub
 
     Private Sub EliminarBTN_Click(sender As Object, e As EventArgs) Handles EliminarBTN.Click
@@ -20,6 +20,7 @@
 
     Private Sub MenuCursos_VisibleChanged(sender As Object, e As EventArgs) Handles MyBase.VisibleChanged
         Me.CursosTableAdapter.Fill(Me.BD_Sistema_CEIJDataSet.Cursos)
+        Cu_Fecha = Nothing
     End Sub
 
     Private Sub FillToolStripButton_Click(sender As Object, e As EventArgs) Handles FillToolStripButton.Click
@@ -59,7 +60,6 @@
     End Sub
 
     Private Sub SalirPictureBox_Click(sender As Object, e As EventArgs) Handles SalirPictureBox.Click
-        MainMenu.Show()
         Me.Close()
     End Sub
 
@@ -72,13 +72,16 @@
 
     End Sub
 
-    Private Sub FillByToolStripButton_Click(sender As Object, e As EventArgs) Handles FillByToolStripButton.Click
-        Try
-            Me.CursosTableAdapter.FillBy(Me.BD_Sistema_CEIJDataSet.Cursos)
-        Catch ex As System.Exception
-            System.Windows.Forms.MessageBox.Show(ex.Message)
-        End Try
-
+    Private Sub AlumnosBTN_Click(sender As Object, e As EventArgs) Handles AlumnosBTN.Click
+        If (Id_Curso <> 0) Then
+            Alumnos.Show()
+            Me.Hide()
+        Else
+            MsgBox("Debe seleccionar algun elemento para acceder a esta función")
+        End If
     End Sub
 
+    Private Sub MenuCursos_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
+        MainMenu.Show()
+    End Sub
 End Class

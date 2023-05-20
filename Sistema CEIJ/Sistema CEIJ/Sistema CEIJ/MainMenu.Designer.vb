@@ -28,7 +28,7 @@ Partial Class MainMenu
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.SalirPanel = New System.Windows.Forms.Panel()
         Me.Salir = New System.Windows.Forms.PictureBox()
-        Me.Label6 = New System.Windows.Forms.Label()
+        Me.VentaLabel = New System.Windows.Forms.Label()
         Me.ServiciosPanel = New System.Windows.Forms.Panel()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -42,8 +42,8 @@ Partial Class MainMenu
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.PerfilPanel = New System.Windows.Forms.Panel()
+        Me.AgendaLabel = New System.Windows.Forms.Label()
+        Me.AgendalPanel = New System.Windows.Forms.Panel()
         Me.MenuLabel = New System.Windows.Forms.Label()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.SalirPictureBox = New System.Windows.Forms.PictureBox()
@@ -60,7 +60,7 @@ Partial Class MainMenu
         Me.InventarioPanel.SuspendLayout()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.PerfilPanel.SuspendLayout()
+        Me.AgendalPanel.SuspendLayout()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SalirPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -104,7 +104,7 @@ Partial Class MainMenu
         '
         Me.SalirPanel.BackColor = System.Drawing.Color.White
         Me.SalirPanel.Controls.Add(Me.Salir)
-        Me.SalirPanel.Controls.Add(Me.Label6)
+        Me.SalirPanel.Controls.Add(Me.VentaLabel)
         Me.SalirPanel.Cursor = System.Windows.Forms.Cursors.Hand
         Me.SalirPanel.Location = New System.Drawing.Point(446, 365)
         Me.SalirPanel.Name = "SalirPanel"
@@ -121,18 +121,18 @@ Partial Class MainMenu
         Me.Salir.TabIndex = 3
         Me.Salir.TabStop = False
         '
-        'Label6
+        'VentaLabel
         '
-        Me.Label6.BackColor = System.Drawing.Color.DarkKhaki
-        Me.Label6.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Label6.Font = New System.Drawing.Font("Arial Black", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label6.Location = New System.Drawing.Point(1, 129)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(158, 35)
-        Me.Label6.TabIndex = 14
-        Me.Label6.Text = "Salir"
-        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.VentaLabel.BackColor = System.Drawing.Color.DarkKhaki
+        Me.VentaLabel.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.VentaLabel.Font = New System.Drawing.Font("Arial Black", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.VentaLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.VentaLabel.Location = New System.Drawing.Point(1, 129)
+        Me.VentaLabel.Name = "VentaLabel"
+        Me.VentaLabel.Size = New System.Drawing.Size(158, 35)
+        Me.VentaLabel.TabIndex = 14
+        Me.VentaLabel.Text = "Venta"
+        Me.VentaLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'ServiciosPanel
         '
@@ -280,29 +280,29 @@ Partial Class MainMenu
         Me.PictureBox2.TabIndex = 4
         Me.PictureBox2.TabStop = False
         '
-        'Label7
+        'AgendaLabel
         '
-        Me.Label7.BackColor = System.Drawing.Color.DarkKhaki
-        Me.Label7.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Label7.Font = New System.Drawing.Font("Arial Black", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label7.Location = New System.Drawing.Point(1, 129)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(158, 35)
-        Me.Label7.TabIndex = 14
-        Me.Label7.Text = "Perfil"
-        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.AgendaLabel.BackColor = System.Drawing.Color.DarkKhaki
+        Me.AgendaLabel.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.AgendaLabel.Font = New System.Drawing.Font("Arial Black", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AgendaLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.AgendaLabel.Location = New System.Drawing.Point(1, 129)
+        Me.AgendaLabel.Name = "AgendaLabel"
+        Me.AgendaLabel.Size = New System.Drawing.Size(158, 35)
+        Me.AgendaLabel.TabIndex = 14
+        Me.AgendaLabel.Text = "Agenda"
+        Me.AgendaLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'PerfilPanel
+        'AgendalPanel
         '
-        Me.PerfilPanel.BackColor = System.Drawing.Color.White
-        Me.PerfilPanel.Controls.Add(Me.Label7)
-        Me.PerfilPanel.Controls.Add(Me.PictureBox2)
-        Me.PerfilPanel.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PerfilPanel.Location = New System.Drawing.Point(215, 174)
-        Me.PerfilPanel.Name = "PerfilPanel"
-        Me.PerfilPanel.Size = New System.Drawing.Size(160, 165)
-        Me.PerfilPanel.TabIndex = 13
+        Me.AgendalPanel.BackColor = System.Drawing.Color.White
+        Me.AgendalPanel.Controls.Add(Me.AgendaLabel)
+        Me.AgendalPanel.Controls.Add(Me.PictureBox2)
+        Me.AgendalPanel.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.AgendalPanel.Location = New System.Drawing.Point(215, 174)
+        Me.AgendalPanel.Name = "AgendalPanel"
+        Me.AgendalPanel.Size = New System.Drawing.Size(160, 165)
+        Me.AgendalPanel.TabIndex = 13
         '
         'MenuLabel
         '
@@ -354,7 +354,7 @@ Partial Class MainMenu
         Me.Controls.Add(Me.InventarioPanel)
         Me.Controls.Add(Me.SalirPanel)
         Me.Controls.Add(Me.ServiciosPanel)
-        Me.Controls.Add(Me.PerfilPanel)
+        Me.Controls.Add(Me.AgendalPanel)
         Me.Controls.Add(Me.ClientesPanel)
         Me.Controls.Add(Me.CursosPanel)
         Me.Controls.Add(Me.Panel1)
@@ -375,7 +375,7 @@ Partial Class MainMenu
         Me.InventarioPanel.ResumeLayout(False)
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.PerfilPanel.ResumeLayout(False)
+        Me.AgendalPanel.ResumeLayout(False)
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SalirPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -388,7 +388,7 @@ Partial Class MainMenu
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents SalirPanel As Panel
     Friend WithEvents Salir As PictureBox
-    Friend WithEvents Label6 As Label
+    Friend WithEvents VentaLabel As Label
     Friend WithEvents ServiciosPanel As Panel
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents Label8 As Label
@@ -402,8 +402,8 @@ Partial Class MainMenu
     Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents Label7 As Label
-    Friend WithEvents PerfilPanel As Panel
+    Friend WithEvents AgendaLabel As Label
+    Friend WithEvents AgendalPanel As Panel
     Friend WithEvents MenuLabel As Label
     Friend WithEvents PictureBox6 As PictureBox
     Friend WithEvents SalirPictureBox As PictureBox
