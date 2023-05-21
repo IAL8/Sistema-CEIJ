@@ -67,12 +67,11 @@ Partial Class MenuInventario
         Me.EditarBTN.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.EditarBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.EditarBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.EditarBTN.Font = New System.Drawing.Font("Arial Narrow", 13.0!, System.Drawing.FontStyle.Bold)
+        Me.EditarBTN.Font = New System.Drawing.Font("Arial Narrow", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.EditarBTN.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.EditarBTN.Location = New System.Drawing.Point(658, 405)
-        Me.EditarBTN.Margin = New System.Windows.Forms.Padding(4)
+        Me.EditarBTN.Location = New System.Drawing.Point(672, 588)
         Me.EditarBTN.Name = "EditarBTN"
-        Me.EditarBTN.Size = New System.Drawing.Size(137, 44)
+        Me.EditarBTN.Size = New System.Drawing.Size(151, 62)
         Me.EditarBTN.TabIndex = 38
         Me.EditarBTN.Text = "Editar"
         Me.EditarBTN.UseVisualStyleBackColor = False
@@ -82,12 +81,11 @@ Partial Class MenuInventario
         Me.EliminarBTN.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.EliminarBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.EliminarBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.EliminarBTN.Font = New System.Drawing.Font("Arial Narrow", 13.0!, System.Drawing.FontStyle.Bold)
+        Me.EliminarBTN.Font = New System.Drawing.Font("Arial Narrow", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.EliminarBTN.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.EliminarBTN.Location = New System.Drawing.Point(326, 405)
-        Me.EliminarBTN.Margin = New System.Windows.Forms.Padding(4)
+        Me.EliminarBTN.Location = New System.Drawing.Point(454, 588)
         Me.EliminarBTN.Name = "EliminarBTN"
-        Me.EliminarBTN.Size = New System.Drawing.Size(137, 44)
+        Me.EliminarBTN.Size = New System.Drawing.Size(151, 62)
         Me.EliminarBTN.TabIndex = 37
         Me.EliminarBTN.Text = "Eliminar"
         Me.EliminarBTN.UseVisualStyleBackColor = False
@@ -97,12 +95,11 @@ Partial Class MenuInventario
         Me.NuevoBTN.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.NuevoBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.NuevoBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.NuevoBTN.Font = New System.Drawing.Font("Arial Narrow", 13.0!, System.Drawing.FontStyle.Bold)
+        Me.NuevoBTN.Font = New System.Drawing.Font("Arial Narrow", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.NuevoBTN.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.NuevoBTN.Location = New System.Drawing.Point(809, 92)
-        Me.NuevoBTN.Margin = New System.Windows.Forms.Padding(4)
+        Me.NuevoBTN.Location = New System.Drawing.Point(902, 588)
         Me.NuevoBTN.Name = "NuevoBTN"
-        Me.NuevoBTN.Size = New System.Drawing.Size(137, 44)
+        Me.NuevoBTN.Size = New System.Drawing.Size(151, 62)
         Me.NuevoBTN.TabIndex = 36
         Me.NuevoBTN.Text = "Nuevo"
         Me.NuevoBTN.UseVisualStyleBackColor = False
@@ -113,10 +110,9 @@ Partial Class MenuInventario
         Me.CursosLabel.BackColor = System.Drawing.Color.Transparent
         Me.CursosLabel.Font = New System.Drawing.Font("Arial", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CursosLabel.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.CursosLabel.Location = New System.Drawing.Point(388, 9)
-        Me.CursosLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.CursosLabel.Location = New System.Drawing.Point(648, 99)
         Me.CursosLabel.Name = "CursosLabel"
-        Me.CursosLabel.Size = New System.Drawing.Size(315, 68)
+        Me.CursosLabel.Size = New System.Drawing.Size(252, 55)
         Me.CursosLabel.TabIndex = 35
         Me.CursosLabel.Text = "Inventario"
         '
@@ -135,7 +131,7 @@ Partial Class MenuInventario
         Me.InventarioBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
         Me.InventarioBindingNavigator.Name = "InventarioBindingNavigator"
         Me.InventarioBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.InventarioBindingNavigator.Size = New System.Drawing.Size(966, 27)
+        Me.InventarioBindingNavigator.Size = New System.Drawing.Size(724, 22)
         Me.InventarioBindingNavigator.TabIndex = 40
         Me.InventarioBindingNavigator.Text = "BindingNavigator1"
         Me.InventarioBindingNavigator.Visible = False
@@ -146,7 +142,7 @@ Partial Class MenuInventario
         Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
         Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(24, 19)
         Me.BindingNavigatorAddNewItem.Text = "Agregar nuevo"
         '
         'InventarioBindingSource
@@ -162,7 +158,7 @@ Partial Class MenuInventario
         'BindingNavigatorCountItem
         '
         Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(48, 24)
+        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(37, 19)
         Me.BindingNavigatorCountItem.Text = "de {0}"
         Me.BindingNavigatorCountItem.ToolTipText = "Número total de elementos"
         '
@@ -172,7 +168,7 @@ Partial Class MenuInventario
         Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
         Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(24, 19)
         Me.BindingNavigatorDeleteItem.Text = "Eliminar"
         '
         'BindingNavigatorMoveFirstItem
@@ -181,7 +177,7 @@ Partial Class MenuInventario
         Me.BindingNavigatorMoveFirstItem.Image = CType(resources.GetObject("BindingNavigatorMoveFirstItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
         Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(24, 19)
         Me.BindingNavigatorMoveFirstItem.Text = "Mover primero"
         '
         'BindingNavigatorMovePreviousItem
@@ -190,13 +186,13 @@ Partial Class MenuInventario
         Me.BindingNavigatorMovePreviousItem.Image = CType(resources.GetObject("BindingNavigatorMovePreviousItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMovePreviousItem.Name = "BindingNavigatorMovePreviousItem"
         Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(24, 19)
         Me.BindingNavigatorMovePreviousItem.Text = "Mover anterior"
         '
         'BindingNavigatorSeparator
         '
         Me.BindingNavigatorSeparator.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 27)
+        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 22)
         '
         'BindingNavigatorPositionItem
         '
@@ -204,14 +200,14 @@ Partial Class MenuInventario
         Me.BindingNavigatorPositionItem.AutoSize = False
         Me.BindingNavigatorPositionItem.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BindingNavigatorPositionItem.Name = "BindingNavigatorPositionItem"
-        Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(50, 27)
+        Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(38, 23)
         Me.BindingNavigatorPositionItem.Text = "0"
         Me.BindingNavigatorPositionItem.ToolTipText = "Posición actual"
         '
         'BindingNavigatorSeparator1
         '
         Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator1"
-        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 27)
+        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 22)
         '
         'BindingNavigatorMoveNextItem
         '
@@ -219,7 +215,7 @@ Partial Class MenuInventario
         Me.BindingNavigatorMoveNextItem.Image = CType(resources.GetObject("BindingNavigatorMoveNextItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
         Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(24, 19)
         Me.BindingNavigatorMoveNextItem.Text = "Mover siguiente"
         '
         'BindingNavigatorMoveLastItem
@@ -228,20 +224,20 @@ Partial Class MenuInventario
         Me.BindingNavigatorMoveLastItem.Image = CType(resources.GetObject("BindingNavigatorMoveLastItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
         Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(24, 19)
         Me.BindingNavigatorMoveLastItem.Text = "Mover último"
         '
         'BindingNavigatorSeparator2
         '
         Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
-        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 27)
+        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 22)
         '
         'InventarioBindingNavigatorSaveItem
         '
         Me.InventarioBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.InventarioBindingNavigatorSaveItem.Image = CType(resources.GetObject("InventarioBindingNavigatorSaveItem.Image"), System.Drawing.Image)
         Me.InventarioBindingNavigatorSaveItem.Name = "InventarioBindingNavigatorSaveItem"
-        Me.InventarioBindingNavigatorSaveItem.Size = New System.Drawing.Size(29, 24)
+        Me.InventarioBindingNavigatorSaveItem.Size = New System.Drawing.Size(24, 19)
         Me.InventarioBindingNavigatorSaveItem.Text = "Guardar datos"
         '
         'InventarioDataGridView
@@ -254,12 +250,13 @@ Partial Class MenuInventario
         Me.InventarioDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.InventarioDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4})
         Me.InventarioDataGridView.DataSource = Me.InventarioBindingSource
-        Me.InventarioDataGridView.Location = New System.Drawing.Point(114, 153)
+        Me.InventarioDataGridView.Location = New System.Drawing.Point(343, 211)
+        Me.InventarioDataGridView.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.InventarioDataGridView.Name = "InventarioDataGridView"
         Me.InventarioDataGridView.ReadOnly = True
         Me.InventarioDataGridView.RowHeadersWidth = 51
         Me.InventarioDataGridView.RowTemplate.Height = 24
-        Me.InventarioDataGridView.Size = New System.Drawing.Size(771, 220)
+        Me.InventarioDataGridView.Size = New System.Drawing.Size(753, 293)
         Me.InventarioDataGridView.TabIndex = 40
         '
         'DataGridViewTextBoxColumn1
@@ -300,7 +297,7 @@ Partial Class MenuInventario
         Me.FillToolStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FillToolStripButton})
         Me.FillToolStrip.Location = New System.Drawing.Point(0, 0)
         Me.FillToolStrip.Name = "FillToolStrip"
-        Me.FillToolStrip.Size = New System.Drawing.Size(993, 27)
+        Me.FillToolStrip.Size = New System.Drawing.Size(745, 22)
         Me.FillToolStrip.TabIndex = 41
         Me.FillToolStrip.Text = "FillToolStrip"
         Me.FillToolStrip.Visible = False
@@ -309,7 +306,7 @@ Partial Class MenuInventario
         '
         Me.FillToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
         Me.FillToolStripButton.Name = "FillToolStripButton"
-        Me.FillToolStripButton.Size = New System.Drawing.Size(32, 24)
+        Me.FillToolStripButton.Size = New System.Drawing.Size(26, 19)
         Me.FillToolStripButton.Text = "Fill"
         '
         'InventarioTableAdapter
@@ -336,20 +333,21 @@ Partial Class MenuInventario
         Me.SalirPictureBox.BackColor = System.Drawing.Color.Transparent
         Me.SalirPictureBox.Cursor = System.Windows.Forms.Cursors.Hand
         Me.SalirPictureBox.Image = CType(resources.GetObject("SalirPictureBox.Image"), System.Drawing.Image)
-        Me.SalirPictureBox.Location = New System.Drawing.Point(14, 421)
+        Me.SalirPictureBox.Location = New System.Drawing.Point(1340, 695)
+        Me.SalirPictureBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.SalirPictureBox.Name = "SalirPictureBox"
-        Me.SalirPictureBox.Size = New System.Drawing.Size(64, 68)
+        Me.SalirPictureBox.Size = New System.Drawing.Size(74, 80)
         Me.SalirPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.SalirPictureBox.TabIndex = 39
         Me.SalirPictureBox.TabStop = False
         '
         'MenuInventario
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Sistema_CEIJ.My.Resources.Resources.v748_toon_111
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(993, 509)
+        Me.ClientSize = New System.Drawing.Size(1488, 839)
         Me.Controls.Add(Me.FillToolStrip)
         Me.Controls.Add(Me.InventarioDataGridView)
         Me.Controls.Add(Me.InventarioBindingNavigator)
@@ -358,9 +356,11 @@ Partial Class MenuInventario
         Me.Controls.Add(Me.EliminarBTN)
         Me.Controls.Add(Me.NuevoBTN)
         Me.Controls.Add(Me.CursosLabel)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "MenuInventario"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "MenuInventario"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.InventarioBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
         Me.InventarioBindingNavigator.ResumeLayout(False)
         Me.InventarioBindingNavigator.PerformLayout()

@@ -66,12 +66,11 @@ Partial Class Servicio
         '
         CorreoLabel.AutoSize = True
         CorreoLabel.BackColor = System.Drawing.Color.Transparent
-        CorreoLabel.Font = New System.Drawing.Font("Arial", 11.0!, System.Drawing.FontStyle.Bold)
+        CorreoLabel.Font = New System.Drawing.Font("Arial", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         CorreoLabel.ForeColor = System.Drawing.Color.DarkKhaki
-        CorreoLabel.Location = New System.Drawing.Point(26, 313)
-        CorreoLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        CorreoLabel.Location = New System.Drawing.Point(575, 447)
         CorreoLabel.Name = "CorreoLabel"
-        CorreoLabel.Size = New System.Drawing.Size(150, 22)
+        CorreoLabel.Size = New System.Drawing.Size(216, 32)
         CorreoLabel.TabIndex = 52
         CorreoLabel.Text = "Disponibilidad:"
         '
@@ -79,12 +78,11 @@ Partial Class Servicio
         '
         PrecioLabel.AutoSize = True
         PrecioLabel.BackColor = System.Drawing.Color.Transparent
-        PrecioLabel.Font = New System.Drawing.Font("Arial", 11.0!, System.Drawing.FontStyle.Bold)
+        PrecioLabel.Font = New System.Drawing.Font("Arial", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         PrecioLabel.ForeColor = System.Drawing.Color.DarkKhaki
-        PrecioLabel.Location = New System.Drawing.Point(26, 249)
-        PrecioLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        PrecioLabel.Location = New System.Drawing.Point(575, 365)
         PrecioLabel.Name = "PrecioLabel"
-        PrecioLabel.Size = New System.Drawing.Size(77, 22)
+        PrecioLabel.Size = New System.Drawing.Size(108, 32)
         PrecioLabel.TabIndex = 51
         PrecioLabel.Text = "Precio:"
         '
@@ -92,12 +90,11 @@ Partial Class Servicio
         '
         CategoriaLabel.AutoSize = True
         CategoriaLabel.BackColor = System.Drawing.Color.Transparent
-        CategoriaLabel.Font = New System.Drawing.Font("Arial", 11.0!, System.Drawing.FontStyle.Bold)
+        CategoriaLabel.Font = New System.Drawing.Font("Arial", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         CategoriaLabel.ForeColor = System.Drawing.Color.DarkKhaki
-        CategoriaLabel.Location = New System.Drawing.Point(26, 193)
-        CategoriaLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        CategoriaLabel.Location = New System.Drawing.Point(575, 288)
         CategoriaLabel.Name = "CategoriaLabel"
-        CategoriaLabel.Size = New System.Drawing.Size(107, 22)
+        CategoriaLabel.Size = New System.Drawing.Size(151, 32)
         CategoriaLabel.TabIndex = 48
         CategoriaLabel.Text = "Categoria:"
         '
@@ -105,12 +102,11 @@ Partial Class Servicio
         '
         NombreLabel.AutoSize = True
         NombreLabel.BackColor = System.Drawing.Color.Transparent
-        NombreLabel.Font = New System.Drawing.Font("Arial", 11.0!, System.Drawing.FontStyle.Bold)
+        NombreLabel.Font = New System.Drawing.Font("Arial", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         NombreLabel.ForeColor = System.Drawing.Color.DarkKhaki
-        NombreLabel.Location = New System.Drawing.Point(26, 134)
-        NombreLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        NombreLabel.Location = New System.Drawing.Point(575, 214)
         NombreLabel.Name = "NombreLabel"
-        NombreLabel.Size = New System.Drawing.Size(90, 22)
+        NombreLabel.Size = New System.Drawing.Size(130, 32)
         NombreLabel.TabIndex = 47
         NombreLabel.Text = "Nombre:"
         '
@@ -120,10 +116,9 @@ Partial Class Servicio
         Me.ClienteLabel.BackColor = System.Drawing.Color.Transparent
         Me.ClienteLabel.Font = New System.Drawing.Font("Arial", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ClienteLabel.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.ClienteLabel.Location = New System.Drawing.Point(68, 25)
-        Me.ClienteLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.ClienteLabel.Location = New System.Drawing.Point(648, 99)
         Me.ClienteLabel.Name = "ClienteLabel"
-        Me.ClienteLabel.Size = New System.Drawing.Size(262, 68)
+        Me.ClienteLabel.Size = New System.Drawing.Size(211, 55)
         Me.ClienteLabel.TabIndex = 53
         Me.ClienteLabel.Text = "Servicio"
         '
@@ -131,12 +126,11 @@ Partial Class Servicio
         '
         Me.CancelarBTN.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.CancelarBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CancelarBTN.Font = New System.Drawing.Font("Arial Narrow", 13.0!, System.Drawing.FontStyle.Bold)
+        Me.CancelarBTN.Font = New System.Drawing.Font("Arial Narrow", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CancelarBTN.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.CancelarBTN.Location = New System.Drawing.Point(239, 393)
-        Me.CancelarBTN.Margin = New System.Windows.Forms.Padding(4)
+        Me.CancelarBTN.Location = New System.Drawing.Point(798, 569)
         Me.CancelarBTN.Name = "CancelarBTN"
-        Me.CancelarBTN.Size = New System.Drawing.Size(137, 44)
+        Me.CancelarBTN.Size = New System.Drawing.Size(136, 56)
         Me.CancelarBTN.TabIndex = 50
         Me.CancelarBTN.Text = "Cancelar"
         Me.CancelarBTN.UseVisualStyleBackColor = False
@@ -146,12 +140,11 @@ Partial Class Servicio
         Me.RegistrarBTN.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.RegistrarBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.RegistrarBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.RegistrarBTN.Font = New System.Drawing.Font("Arial Narrow", 13.0!, System.Drawing.FontStyle.Bold)
+        Me.RegistrarBTN.Font = New System.Drawing.Font("Arial Narrow", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RegistrarBTN.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.RegistrarBTN.Location = New System.Drawing.Point(30, 393)
-        Me.RegistrarBTN.Margin = New System.Windows.Forms.Padding(4)
+        Me.RegistrarBTN.Location = New System.Drawing.Point(590, 569)
         Me.RegistrarBTN.Name = "RegistrarBTN"
-        Me.RegistrarBTN.Size = New System.Drawing.Size(137, 44)
+        Me.RegistrarBTN.Size = New System.Drawing.Size(136, 56)
         Me.RegistrarBTN.TabIndex = 49
         Me.RegistrarBTN.Text = "Guardar"
         Me.RegistrarBTN.UseVisualStyleBackColor = False
@@ -159,37 +152,35 @@ Partial Class Servicio
         'PrecioTextBox
         '
         Me.PrecioTextBox.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PrecioTextBox.Location = New System.Drawing.Point(198, 235)
-        Me.PrecioTextBox.Margin = New System.Windows.Forms.Padding(4)
+        Me.PrecioTextBox.Location = New System.Drawing.Point(689, 365)
         Me.PrecioTextBox.Name = "PrecioTextBox"
-        Me.PrecioTextBox.Size = New System.Drawing.Size(166, 34)
+        Me.PrecioTextBox.Size = New System.Drawing.Size(216, 29)
         Me.PrecioTextBox.TabIndex = 45
         '
         'CategoriaTextBox
         '
         Me.CategoriaTextBox.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CategoriaTextBox.Location = New System.Drawing.Point(198, 179)
-        Me.CategoriaTextBox.Margin = New System.Windows.Forms.Padding(4)
+        Me.CategoriaTextBox.Location = New System.Drawing.Point(703, 276)
         Me.CategoriaTextBox.Name = "CategoriaTextBox"
-        Me.CategoriaTextBox.Size = New System.Drawing.Size(166, 34)
+        Me.CategoriaTextBox.Size = New System.Drawing.Size(202, 29)
         Me.CategoriaTextBox.TabIndex = 44
         '
         'NombreTextBox
         '
         Me.NombreTextBox.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NombreTextBox.Location = New System.Drawing.Point(198, 127)
-        Me.NombreTextBox.Margin = New System.Windows.Forms.Padding(4)
+        Me.NombreTextBox.Location = New System.Drawing.Point(703, 208)
         Me.NombreTextBox.Name = "NombreTextBox"
-        Me.NombreTextBox.Size = New System.Drawing.Size(166, 34)
+        Me.NombreTextBox.Size = New System.Drawing.Size(202, 29)
         Me.NombreTextBox.TabIndex = 43
         '
         'DisponibilidadCheclbox
         '
         Me.DisponibilidadCheclbox.AutoSize = True
         Me.DisponibilidadCheclbox.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DisponibilidadCheclbox.Location = New System.Drawing.Point(198, 311)
+        Me.DisponibilidadCheclbox.Location = New System.Drawing.Point(814, 460)
+        Me.DisponibilidadCheclbox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.DisponibilidadCheclbox.Name = "DisponibilidadCheclbox"
-        Me.DisponibilidadCheclbox.Size = New System.Drawing.Size(18, 17)
+        Me.DisponibilidadCheclbox.Size = New System.Drawing.Size(15, 14)
         Me.DisponibilidadCheclbox.TabIndex = 54
         Me.DisponibilidadCheclbox.UseVisualStyleBackColor = True
         '
@@ -210,11 +201,14 @@ Partial Class Servicio
         'TableAdapterManager
         '
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.CitasTableAdapter = Nothing
         Me.TableAdapterManager.ClientesTableAdapter = Nothing
         Me.TableAdapterManager.CompraTableAdapter = Nothing
         Me.TableAdapterManager.CuentasTableAdapter = Nothing
         Me.TableAdapterManager.CursosTableAdapter = Nothing
+        Me.TableAdapterManager.InscripcionesTableAdapter = Nothing
         Me.TableAdapterManager.InventarioTableAdapter = Nothing
+        Me.TableAdapterManager.OrdenTableAdapter = Nothing
         Me.TableAdapterManager.ServiciosTableAdapter = Me.ServiciosTableAdapter
         Me.TableAdapterManager.SolicitudesTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
@@ -234,7 +228,7 @@ Partial Class Servicio
         Me.ServiciosBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
         Me.ServiciosBindingNavigator.Name = "ServiciosBindingNavigator"
         Me.ServiciosBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.ServiciosBindingNavigator.Size = New System.Drawing.Size(435, 27)
+        Me.ServiciosBindingNavigator.Size = New System.Drawing.Size(326, 22)
         Me.ServiciosBindingNavigator.TabIndex = 55
         Me.ServiciosBindingNavigator.Text = "BindingNavigator1"
         Me.ServiciosBindingNavigator.Visible = False
@@ -245,13 +239,13 @@ Partial Class Servicio
         Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
         Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(24, 19)
         Me.BindingNavigatorAddNewItem.Text = "Agregar nuevo"
         '
         'BindingNavigatorCountItem
         '
         Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(48, 24)
+        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(37, 19)
         Me.BindingNavigatorCountItem.Text = "de {0}"
         Me.BindingNavigatorCountItem.ToolTipText = "Número total de elementos"
         '
@@ -261,7 +255,7 @@ Partial Class Servicio
         Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
         Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(24, 19)
         Me.BindingNavigatorDeleteItem.Text = "Eliminar"
         '
         'BindingNavigatorMoveFirstItem
@@ -270,7 +264,7 @@ Partial Class Servicio
         Me.BindingNavigatorMoveFirstItem.Image = CType(resources.GetObject("BindingNavigatorMoveFirstItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
         Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(24, 19)
         Me.BindingNavigatorMoveFirstItem.Text = "Mover primero"
         '
         'BindingNavigatorMovePreviousItem
@@ -279,13 +273,13 @@ Partial Class Servicio
         Me.BindingNavigatorMovePreviousItem.Image = CType(resources.GetObject("BindingNavigatorMovePreviousItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMovePreviousItem.Name = "BindingNavigatorMovePreviousItem"
         Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(24, 19)
         Me.BindingNavigatorMovePreviousItem.Text = "Mover anterior"
         '
         'BindingNavigatorSeparator
         '
         Me.BindingNavigatorSeparator.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 27)
+        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 22)
         '
         'BindingNavigatorPositionItem
         '
@@ -293,14 +287,14 @@ Partial Class Servicio
         Me.BindingNavigatorPositionItem.AutoSize = False
         Me.BindingNavigatorPositionItem.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BindingNavigatorPositionItem.Name = "BindingNavigatorPositionItem"
-        Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(50, 27)
+        Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(38, 23)
         Me.BindingNavigatorPositionItem.Text = "0"
         Me.BindingNavigatorPositionItem.ToolTipText = "Posición actual"
         '
         'BindingNavigatorSeparator1
         '
         Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator1"
-        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 27)
+        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 22)
         '
         'BindingNavigatorMoveNextItem
         '
@@ -308,7 +302,7 @@ Partial Class Servicio
         Me.BindingNavigatorMoveNextItem.Image = CType(resources.GetObject("BindingNavigatorMoveNextItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
         Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(24, 19)
         Me.BindingNavigatorMoveNextItem.Text = "Mover siguiente"
         '
         'BindingNavigatorMoveLastItem
@@ -317,29 +311,29 @@ Partial Class Servicio
         Me.BindingNavigatorMoveLastItem.Image = CType(resources.GetObject("BindingNavigatorMoveLastItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
         Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(24, 19)
         Me.BindingNavigatorMoveLastItem.Text = "Mover último"
         '
         'BindingNavigatorSeparator2
         '
         Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
-        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 27)
+        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 22)
         '
         'ServiciosBindingNavigatorSaveItem
         '
         Me.ServiciosBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.ServiciosBindingNavigatorSaveItem.Image = CType(resources.GetObject("ServiciosBindingNavigatorSaveItem.Image"), System.Drawing.Image)
         Me.ServiciosBindingNavigatorSaveItem.Name = "ServiciosBindingNavigatorSaveItem"
-        Me.ServiciosBindingNavigatorSaveItem.Size = New System.Drawing.Size(29, 24)
+        Me.ServiciosBindingNavigatorSaveItem.Size = New System.Drawing.Size(24, 19)
         Me.ServiciosBindingNavigatorSaveItem.Text = "Guardar datos"
         '
         'Servicio
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Sistema_CEIJ.My.Resources.Resources.FondoSign
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(435, 493)
+        Me.ClientSize = New System.Drawing.Size(1488, 839)
         Me.Controls.Add(Me.ServiciosBindingNavigator)
         Me.Controls.Add(Me.DisponibilidadCheclbox)
         Me.Controls.Add(Me.ClienteLabel)
@@ -352,8 +346,10 @@ Partial Class Servicio
         Me.Controls.Add(Me.CategoriaTextBox)
         Me.Controls.Add(NombreLabel)
         Me.Controls.Add(Me.NombreTextBox)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Servicio"
         Me.Text = "Servicio"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.BD_Sistema_CEIJDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ServiciosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ServiciosBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
