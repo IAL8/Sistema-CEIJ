@@ -61,7 +61,7 @@
     End Sub
 
     Private Sub MenuAgenda_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
-        MainMenu.Close()
+        MainMenu.Show()
     End Sub
 
     Private Sub MenuAgenda_VisibleChanged(sender As Object, e As EventArgs) Handles MyBase.VisibleChanged

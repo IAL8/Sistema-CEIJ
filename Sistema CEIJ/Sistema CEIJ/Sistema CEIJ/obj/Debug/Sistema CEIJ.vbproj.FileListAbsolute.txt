@@ -74,3 +74,33 @@ C:\Users\Deba1\source\repos\IAL8\Sistema-CEIJ\Sistema CEIJ\Sistema CEIJ\Sistema 
 C:\Users\Deba1\source\repos\IAL8\Sistema-CEIJ\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\obj\Debug\Sistema CEIJ.exe
 C:\Users\Deba1\source\repos\IAL8\Sistema-CEIJ\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\obj\Debug\Sistema CEIJ.xml
 C:\Users\Deba1\source\repos\IAL8\Sistema-CEIJ\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\obj\Debug\Sistema CEIJ.pdb
+C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\Sistema CEIJ\Sistema-CEIJ\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\bin\Debug\BD Sistema CEIJ.accdb
+C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\Sistema CEIJ\Sistema-CEIJ\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\bin\Debug\Sistema CEIJ.exe.config
+C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\Sistema CEIJ\Sistema-CEIJ\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\bin\Debug\Sistema CEIJ.exe
+C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\Sistema CEIJ\Sistema-CEIJ\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\bin\Debug\Sistema CEIJ.pdb
+C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\Sistema CEIJ\Sistema-CEIJ\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\bin\Debug\Sistema CEIJ.xml
+C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\Sistema CEIJ\Sistema-CEIJ\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\obj\Debug\Sistema CEIJ.vbproj.AssemblyReference.cache
+C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\Sistema CEIJ\Sistema-CEIJ\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\obj\Debug\Sistema CEIJ.vbproj.SuggestedBindingRedirects.cache
+C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\Sistema CEIJ\Sistema-CEIJ\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\obj\Debug\Sistema_CEIJ.Alumnos.resources
+C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\Sistema CEIJ\Sistema-CEIJ\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\obj\Debug\Sistema_CEIJ.Citas.resources
+C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\Sistema CEIJ\Sistema-CEIJ\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\obj\Debug\Sistema_CEIJ.Cliente.resources
+C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\Sistema CEIJ\Sistema-CEIJ\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\obj\Debug\Sistema_CEIJ.Cursos.resources
+C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\Sistema CEIJ\Sistema-CEIJ\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\obj\Debug\Sistema_CEIJ.Historial.resources
+C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\Sistema CEIJ\Sistema-CEIJ\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\obj\Debug\Sistema_CEIJ.LogIn.resources
+C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\Sistema CEIJ\Sistema-CEIJ\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\obj\Debug\Sistema_CEIJ.MainMenu.resources
+C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\Sistema CEIJ\Sistema-CEIJ\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\obj\Debug\Sistema_CEIJ.MenuAgenda.resources
+C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\Sistema CEIJ\Sistema-CEIJ\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\obj\Debug\Sistema_CEIJ.MenuClientes.resources
+C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\Sistema CEIJ\Sistema-CEIJ\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\obj\Debug\Sistema_CEIJ.MenuCursos.resources
+C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\Sistema CEIJ\Sistema-CEIJ\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\obj\Debug\Sistema_CEIJ.MenuInventario.resources
+C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\Sistema CEIJ\Sistema-CEIJ\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\obj\Debug\Sistema_CEIJ.MenuServicios.resources
+C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\Sistema CEIJ\Sistema-CEIJ\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\obj\Debug\Sistema_CEIJ.Resources.resources
+C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\Sistema CEIJ\Sistema-CEIJ\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\obj\Debug\Sistema_CEIJ.NuevaVenta.resources
+C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\Sistema CEIJ\Sistema-CEIJ\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\obj\Debug\Sistema_CEIJ.Productos.resources
+C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\Sistema CEIJ\Sistema-CEIJ\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\obj\Debug\Sistema_CEIJ.PuntoDeVenta.resources
+C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\Sistema CEIJ\Sistema-CEIJ\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\obj\Debug\Sistema_CEIJ.Servicio.resources
+C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\Sistema CEIJ\Sistema-CEIJ\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\obj\Debug\Sistema_CEIJ.SignUp.resources
+C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\Sistema CEIJ\Sistema-CEIJ\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\obj\Debug\Sistema CEIJ.vbproj.GenerateResource.cache
+C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\Sistema CEIJ\Sistema-CEIJ\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\obj\Debug\Sistema CEIJ.vbproj.CoreCompileInputs.cache
+C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\Sistema CEIJ\Sistema-CEIJ\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\obj\Debug\Sistema CEIJ.exe
+C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\Sistema CEIJ\Sistema-CEIJ\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\obj\Debug\Sistema CEIJ.xml
+C:\Users\Irvin\Documents\Sexto Semestre\Diseño y espisificación de software\Sistema CEIJ\Sistema-CEIJ\Sistema CEIJ\Sistema CEIJ\Sistema CEIJ\obj\Debug\Sistema CEIJ.pdb

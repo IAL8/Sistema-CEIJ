@@ -2,10 +2,10 @@
     Private Sub RegistrarBTN_Click(sender As Object, e As EventArgs) Handles RegistrarBTN.Click
         If (Id_Cliente = 0) Then
             Me.ClientesTableAdapter.RCliente(NombreTextBox.Text, ApellidoTextBox.Text, TelefonoTextBox.Text, CorreoTextBox.Text)
-            MsgBox("El cliente  se ha registrado")
+            MsgBox("El cliente se ha registrado")
         Else
             Me.ClientesTableAdapter.UCliente(NombreTextBox.Text, ApellidoTextBox.Text, TelefonoTextBox.Text, CorreoTextBox.Text, Id_Cliente)
-            MsgBox("El cliente  se ha registrado")
+            MsgBox("El cliente se ha actualizado")
         End If
         Me.ClientesTableAdapter.Fill(Me.BD_Sistema_CEIJDataSet.Clientes)
     End Sub

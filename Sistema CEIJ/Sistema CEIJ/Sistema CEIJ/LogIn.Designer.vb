@@ -138,7 +138,7 @@ Partial Class LogIn
         Me.LogInBtn.Name = "LogInBtn"
         Me.LogInBtn.Size = New System.Drawing.Size(154, 34)
         Me.LogInBtn.TabIndex = 12
-        Me.LogInBtn.Text = "Iniciar Sesión"
+        Me.LogInBtn.Text = "Ingresar"
         Me.LogInBtn.UseVisualStyleBackColor = True
         '
         'BD_Sistema_CEIJDataSet
@@ -158,12 +158,16 @@ Partial Class LogIn
         'TableAdapterManager
         '
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.CitasTableAdapter = Nothing
         Me.TableAdapterManager.ClientesTableAdapter = Nothing
         Me.TableAdapterManager.CompraTableAdapter = Nothing
         Me.TableAdapterManager.CuentasTableAdapter = Me.CuentasTableAdapter
         Me.TableAdapterManager.CursosTableAdapter = Nothing
+        Me.TableAdapterManager.InscripcionesTableAdapter = Nothing
         Me.TableAdapterManager.InventarioTableAdapter = Nothing
+        Me.TableAdapterManager.OrdenTableAdapter = Nothing
         Me.TableAdapterManager.ServiciosTableAdapter = Nothing
+        Me.TableAdapterManager.SolicitudesTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         '
         'CuentasBindingNavigator
@@ -289,7 +293,7 @@ Partial Class LogIn
         Me.Menu.Location = New System.Drawing.Point(142, 120)
         Me.Menu.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Menu.Name = "Menu"
-        Me.Menu.Size = New System.Drawing.Size(303, 50)
+        Me.Menu.Size = New System.Drawing.Size(300, 49)
         Me.Menu.TabIndex = 19
         Me.Menu.Text = "Iniciar Sesión"
         '

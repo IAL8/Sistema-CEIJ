@@ -111,10 +111,10 @@ Partial Class NuevaVenta
         Me.SalirPictureBox.BackColor = System.Drawing.Color.Transparent
         Me.SalirPictureBox.Cursor = System.Windows.Forms.Cursors.Hand
         Me.SalirPictureBox.Image = CType(resources.GetObject("SalirPictureBox.Image"), System.Drawing.Image)
-        Me.SalirPictureBox.Location = New System.Drawing.Point(1340, 695)
-        Me.SalirPictureBox.Margin = New System.Windows.Forms.Padding(2)
+        Me.SalirPictureBox.Location = New System.Drawing.Point(1787, 855)
+        Me.SalirPictureBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.SalirPictureBox.Name = "SalirPictureBox"
-        Me.SalirPictureBox.Size = New System.Drawing.Size(74, 80)
+        Me.SalirPictureBox.Size = New System.Drawing.Size(99, 98)
         Me.SalirPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.SalirPictureBox.TabIndex = 41
         Me.SalirPictureBox.TabStop = False
@@ -125,9 +125,10 @@ Partial Class NuevaVenta
         Me.VLabel.BackColor = System.Drawing.Color.Transparent
         Me.VLabel.Font = New System.Drawing.Font("Arial", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.VLabel.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.VLabel.Location = New System.Drawing.Point(648, 99)
+        Me.VLabel.Location = New System.Drawing.Point(864, 122)
+        Me.VLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.VLabel.Name = "VLabel"
-        Me.VLabel.Size = New System.Drawing.Size(311, 55)
+        Me.VLabel.Size = New System.Drawing.Size(386, 68)
         Me.VLabel.TabIndex = 40
         Me.VLabel.Text = "Nueva Venta"
         '
@@ -137,9 +138,10 @@ Partial Class NuevaVenta
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Arial", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.Label1.Location = New System.Drawing.Point(467, 240)
+        Me.Label1.Location = New System.Drawing.Point(623, 295)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(92, 24)
+        Me.Label1.Size = New System.Drawing.Size(115, 30)
         Me.Label1.TabIndex = 42
         Me.Label1.Text = "Agregar:"
         '
@@ -147,10 +149,10 @@ Partial Class NuevaVenta
         '
         Me.AgregarComboBox.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AgregarComboBox.FormattingEnabled = True
-        Me.AgregarComboBox.Location = New System.Drawing.Point(564, 238)
-        Me.AgregarComboBox.Margin = New System.Windows.Forms.Padding(2)
+        Me.AgregarComboBox.Location = New System.Drawing.Point(752, 293)
+        Me.AgregarComboBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.AgregarComboBox.Name = "AgregarComboBox"
-        Me.AgregarComboBox.Size = New System.Drawing.Size(112, 26)
+        Me.AgregarComboBox.Size = New System.Drawing.Size(148, 31)
         Me.AgregarComboBox.TabIndex = 43
         '
         'AgendaDataTableBindingNavigator
@@ -168,7 +170,7 @@ Partial Class NuevaVenta
         Me.AgendaDataTableBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
         Me.AgendaDataTableBindingNavigator.Name = "AgendaDataTableBindingNavigator"
         Me.AgendaDataTableBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.AgendaDataTableBindingNavigator.Size = New System.Drawing.Size(778, 22)
+        Me.AgendaDataTableBindingNavigator.Size = New System.Drawing.Size(1037, 27)
         Me.AgendaDataTableBindingNavigator.TabIndex = 45
         Me.AgendaDataTableBindingNavigator.Text = "BindingNavigator1"
         Me.AgendaDataTableBindingNavigator.Visible = False
@@ -179,7 +181,7 @@ Partial Class NuevaVenta
         Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
         Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(24, 19)
+        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(29, 24)
         Me.BindingNavigatorAddNewItem.Text = "Agregar nuevo"
         '
         'AgendaDataTableBindingSource
@@ -195,7 +197,7 @@ Partial Class NuevaVenta
         'BindingNavigatorCountItem
         '
         Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(37, 19)
+        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(48, 24)
         Me.BindingNavigatorCountItem.Text = "de {0}"
         Me.BindingNavigatorCountItem.ToolTipText = "Número total de elementos"
         '
@@ -205,7 +207,7 @@ Partial Class NuevaVenta
         Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
         Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(24, 19)
+        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(29, 24)
         Me.BindingNavigatorDeleteItem.Text = "Eliminar"
         '
         'BindingNavigatorMoveFirstItem
@@ -214,7 +216,7 @@ Partial Class NuevaVenta
         Me.BindingNavigatorMoveFirstItem.Image = CType(resources.GetObject("BindingNavigatorMoveFirstItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
         Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(24, 19)
+        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(29, 24)
         Me.BindingNavigatorMoveFirstItem.Text = "Mover primero"
         '
         'BindingNavigatorMovePreviousItem
@@ -223,13 +225,13 @@ Partial Class NuevaVenta
         Me.BindingNavigatorMovePreviousItem.Image = CType(resources.GetObject("BindingNavigatorMovePreviousItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMovePreviousItem.Name = "BindingNavigatorMovePreviousItem"
         Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(24, 19)
+        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(29, 24)
         Me.BindingNavigatorMovePreviousItem.Text = "Mover anterior"
         '
         'BindingNavigatorSeparator
         '
         Me.BindingNavigatorSeparator.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 22)
+        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 27)
         '
         'BindingNavigatorPositionItem
         '
@@ -237,14 +239,14 @@ Partial Class NuevaVenta
         Me.BindingNavigatorPositionItem.AutoSize = False
         Me.BindingNavigatorPositionItem.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BindingNavigatorPositionItem.Name = "BindingNavigatorPositionItem"
-        Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(38, 23)
+        Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(49, 27)
         Me.BindingNavigatorPositionItem.Text = "0"
         Me.BindingNavigatorPositionItem.ToolTipText = "Posición actual"
         '
         'BindingNavigatorSeparator1
         '
         Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator1"
-        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 22)
+        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 27)
         '
         'BindingNavigatorMoveNextItem
         '
@@ -252,7 +254,7 @@ Partial Class NuevaVenta
         Me.BindingNavigatorMoveNextItem.Image = CType(resources.GetObject("BindingNavigatorMoveNextItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
         Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(24, 19)
+        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(29, 24)
         Me.BindingNavigatorMoveNextItem.Text = "Mover siguiente"
         '
         'BindingNavigatorMoveLastItem
@@ -261,13 +263,13 @@ Partial Class NuevaVenta
         Me.BindingNavigatorMoveLastItem.Image = CType(resources.GetObject("BindingNavigatorMoveLastItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
         Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(24, 19)
+        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(29, 24)
         Me.BindingNavigatorMoveLastItem.Text = "Mover último"
         '
         'BindingNavigatorSeparator2
         '
         Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
-        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 22)
+        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 27)
         '
         'AgendaDataTableBindingNavigatorSaveItem
         '
@@ -275,7 +277,7 @@ Partial Class NuevaVenta
         Me.AgendaDataTableBindingNavigatorSaveItem.Enabled = False
         Me.AgendaDataTableBindingNavigatorSaveItem.Image = CType(resources.GetObject("AgendaDataTableBindingNavigatorSaveItem.Image"), System.Drawing.Image)
         Me.AgendaDataTableBindingNavigatorSaveItem.Name = "AgendaDataTableBindingNavigatorSaveItem"
-        Me.AgendaDataTableBindingNavigatorSaveItem.Size = New System.Drawing.Size(24, 19)
+        Me.AgendaDataTableBindingNavigatorSaveItem.Size = New System.Drawing.Size(29, 24)
         Me.AgendaDataTableBindingNavigatorSaveItem.Text = "Guardar datos"
         '
         'ServiciosDataGridView
@@ -288,13 +290,13 @@ Partial Class NuevaVenta
         Me.ServiciosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ServiciosDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn10, Me.Precio_Ser})
         Me.ServiciosDataGridView.DataSource = Me.ServiciosBindingSource
-        Me.ServiciosDataGridView.Location = New System.Drawing.Point(451, 289)
-        Me.ServiciosDataGridView.Margin = New System.Windows.Forms.Padding(2)
+        Me.ServiciosDataGridView.Location = New System.Drawing.Point(601, 356)
+        Me.ServiciosDataGridView.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ServiciosDataGridView.Name = "ServiciosDataGridView"
         Me.ServiciosDataGridView.ReadOnly = True
         Me.ServiciosDataGridView.RowHeadersWidth = 51
         Me.ServiciosDataGridView.RowTemplate.Height = 24
-        Me.ServiciosDataGridView.Size = New System.Drawing.Size(734, 54)
+        Me.ServiciosDataGridView.Size = New System.Drawing.Size(979, 66)
         Me.ServiciosDataGridView.TabIndex = 45
         '
         'DataGridViewTextBoxColumn9
@@ -336,13 +338,13 @@ Partial Class NuevaVenta
         Me.CursosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.CursosDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn11, Me.DataGridViewTextBoxColumn12, Me.DataGridViewTextBoxColumn13, Me.DataGridViewTextBoxColumn14, Me.DataGridViewTextBoxColumn15, Me.DataGridViewTextBoxColumn16})
         Me.CursosDataGridView.DataSource = Me.CursosBindingSource
-        Me.CursosDataGridView.Location = New System.Drawing.Point(451, 289)
-        Me.CursosDataGridView.Margin = New System.Windows.Forms.Padding(2)
+        Me.CursosDataGridView.Location = New System.Drawing.Point(601, 356)
+        Me.CursosDataGridView.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.CursosDataGridView.Name = "CursosDataGridView"
         Me.CursosDataGridView.ReadOnly = True
         Me.CursosDataGridView.RowHeadersWidth = 51
         Me.CursosDataGridView.RowTemplate.Height = 24
-        Me.CursosDataGridView.Size = New System.Drawing.Size(734, 54)
+        Me.CursosDataGridView.Size = New System.Drawing.Size(979, 66)
         Me.CursosDataGridView.TabIndex = 45
         '
         'DataGridViewTextBoxColumn11
@@ -404,9 +406,10 @@ Partial Class NuevaVenta
         Me.ClienteLabel.BackColor = System.Drawing.Color.Transparent
         Me.ClienteLabel.Font = New System.Drawing.Font("Arial", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ClienteLabel.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.ClienteLabel.Location = New System.Drawing.Point(866, 240)
+        Me.ClienteLabel.Location = New System.Drawing.Point(1155, 295)
+        Me.ClienteLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.ClienteLabel.Name = "ClienteLabel"
-        Me.ClienteLabel.Size = New System.Drawing.Size(82, 24)
+        Me.ClienteLabel.Size = New System.Drawing.Size(103, 30)
         Me.ClienteLabel.TabIndex = 95
         Me.ClienteLabel.Text = "Cliente:"
         '
@@ -416,9 +419,10 @@ Partial Class NuevaVenta
         Me.SClienteBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.SClienteBTN.Font = New System.Drawing.Font("Arial Narrow", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SClienteBTN.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.SClienteBTN.Location = New System.Drawing.Point(1078, 236)
+        Me.SClienteBTN.Location = New System.Drawing.Point(1437, 290)
+        Me.SClienteBTN.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.SClienteBTN.Name = "SClienteBTN"
-        Me.SClienteBTN.Size = New System.Drawing.Size(110, 34)
+        Me.SClienteBTN.Size = New System.Drawing.Size(147, 42)
         Me.SClienteBTN.TabIndex = 94
         Me.SClienteBTN.Text = "Seleccionar"
         Me.SClienteBTN.UseVisualStyleBackColor = False
@@ -427,9 +431,10 @@ Partial Class NuevaVenta
         '
         Me.ClienteTextBox.Enabled = False
         Me.ClienteTextBox.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.ClienteTextBox.Location = New System.Drawing.Point(954, 238)
+        Me.ClienteTextBox.Location = New System.Drawing.Point(1272, 293)
+        Me.ClienteTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ClienteTextBox.Name = "ClienteTextBox"
-        Me.ClienteTextBox.Size = New System.Drawing.Size(118, 26)
+        Me.ClienteTextBox.Size = New System.Drawing.Size(156, 30)
         Me.ClienteTextBox.TabIndex = 93
         '
         'ClientesDataGridView
@@ -442,13 +447,13 @@ Partial Class NuevaVenta
         Me.ClientesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ClientesDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn17, Me.DataGridViewTextBoxColumn18, Me.DataGridViewTextBoxColumn19, Me.DataGridViewTextBoxColumn20, Me.DataGridViewTextBoxColumn21})
         Me.ClientesDataGridView.DataSource = Me.ClientesBindingSource
-        Me.ClientesDataGridView.Location = New System.Drawing.Point(451, 289)
-        Me.ClientesDataGridView.Margin = New System.Windows.Forms.Padding(2)
+        Me.ClientesDataGridView.Location = New System.Drawing.Point(601, 356)
+        Me.ClientesDataGridView.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ClientesDataGridView.Name = "ClientesDataGridView"
         Me.ClientesDataGridView.ReadOnly = True
         Me.ClientesDataGridView.RowHeadersWidth = 51
         Me.ClientesDataGridView.RowTemplate.Height = 24
-        Me.ClientesDataGridView.Size = New System.Drawing.Size(734, 54)
+        Me.ClientesDataGridView.Size = New System.Drawing.Size(979, 66)
         Me.ClientesDataGridView.TabIndex = 95
         '
         'DataGridViewTextBoxColumn17
@@ -500,10 +505,10 @@ Partial Class NuevaVenta
         '
         Me.Panel1.Controls.Add(Me.CarritoLabel)
         Me.Panel1.Controls.Add(Me.VentaDataGridView)
-        Me.Panel1.Location = New System.Drawing.Point(451, 366)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
+        Me.Panel1.Location = New System.Drawing.Point(601, 450)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(734, 121)
+        Me.Panel1.Size = New System.Drawing.Size(979, 149)
         Me.Panel1.TabIndex = 96
         '
         'CarritoLabel
@@ -512,9 +517,10 @@ Partial Class NuevaVenta
         Me.CarritoLabel.BackColor = System.Drawing.Color.Transparent
         Me.CarritoLabel.Font = New System.Drawing.Font("Arial", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CarritoLabel.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.CarritoLabel.Location = New System.Drawing.Point(5, 3)
+        Me.CarritoLabel.Location = New System.Drawing.Point(7, 4)
+        Me.CarritoLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.CarritoLabel.Name = "CarritoLabel"
-        Me.CarritoLabel.Size = New System.Drawing.Size(82, 24)
+        Me.CarritoLabel.Size = New System.Drawing.Size(102, 30)
         Me.CarritoLabel.TabIndex = 103
         Me.CarritoLabel.Text = "Carrito:"
         '
@@ -526,13 +532,13 @@ Partial Class NuevaVenta
         Me.VentaDataGridView.BackgroundColor = System.Drawing.SystemColors.ControlLightLight
         Me.VentaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.VentaDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID, Me.Nombre, Me.Tipo, Me.Precio})
-        Me.VentaDataGridView.Location = New System.Drawing.Point(8, 30)
-        Me.VentaDataGridView.Margin = New System.Windows.Forms.Padding(2)
+        Me.VentaDataGridView.Location = New System.Drawing.Point(11, 37)
+        Me.VentaDataGridView.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.VentaDataGridView.Name = "VentaDataGridView"
         Me.VentaDataGridView.ReadOnly = True
         Me.VentaDataGridView.RowHeadersWidth = 51
         Me.VentaDataGridView.RowTemplate.Height = 24
-        Me.VentaDataGridView.Size = New System.Drawing.Size(726, 89)
+        Me.VentaDataGridView.Size = New System.Drawing.Size(968, 110)
         Me.VentaDataGridView.TabIndex = 0
         '
         'ID
@@ -569,9 +575,10 @@ Partial Class NuevaVenta
         Me.CancelarBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.CancelarBTN.Font = New System.Drawing.Font("Arial Narrow", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CancelarBTN.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.CancelarBTN.Location = New System.Drawing.Point(977, 557)
+        Me.CancelarBTN.Location = New System.Drawing.Point(1303, 686)
+        Me.CancelarBTN.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.CancelarBTN.Name = "CancelarBTN"
-        Me.CancelarBTN.Size = New System.Drawing.Size(153, 56)
+        Me.CancelarBTN.Size = New System.Drawing.Size(204, 69)
         Me.CancelarBTN.TabIndex = 98
         Me.CancelarBTN.Text = "Cancelar"
         Me.CancelarBTN.UseVisualStyleBackColor = False
@@ -583,9 +590,10 @@ Partial Class NuevaVenta
         Me.EliminarBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.EliminarBTN.Font = New System.Drawing.Font("Arial Narrow", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.EliminarBTN.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.EliminarBTN.Location = New System.Drawing.Point(552, 557)
+        Me.EliminarBTN.Location = New System.Drawing.Point(736, 686)
+        Me.EliminarBTN.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.EliminarBTN.Name = "EliminarBTN"
-        Me.EliminarBTN.Size = New System.Drawing.Size(153, 56)
+        Me.EliminarBTN.Size = New System.Drawing.Size(204, 69)
         Me.EliminarBTN.TabIndex = 100
         Me.EliminarBTN.Text = "Eliminar"
         Me.EliminarBTN.UseVisualStyleBackColor = False
@@ -597,9 +605,10 @@ Partial Class NuevaVenta
         Me.RegistrarBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.RegistrarBTN.Font = New System.Drawing.Font("Arial Narrow", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RegistrarBTN.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.RegistrarBTN.Location = New System.Drawing.Point(763, 557)
+        Me.RegistrarBTN.Location = New System.Drawing.Point(1017, 686)
+        Me.RegistrarBTN.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.RegistrarBTN.Name = "RegistrarBTN"
-        Me.RegistrarBTN.Size = New System.Drawing.Size(153, 56)
+        Me.RegistrarBTN.Size = New System.Drawing.Size(204, 69)
         Me.RegistrarBTN.TabIndex = 101
         Me.RegistrarBTN.Text = "Registar"
         Me.RegistrarBTN.UseVisualStyleBackColor = False
@@ -610,9 +619,10 @@ Partial Class NuevaVenta
         Me.ConfirmarBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ConfirmarBTN.Font = New System.Drawing.Font("Arial Narrow", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ConfirmarBTN.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.ConfirmarBTN.Location = New System.Drawing.Point(681, 235)
+        Me.ConfirmarBTN.Location = New System.Drawing.Point(908, 289)
+        Me.ConfirmarBTN.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ConfirmarBTN.Name = "ConfirmarBTN"
-        Me.ConfirmarBTN.Size = New System.Drawing.Size(106, 35)
+        Me.ConfirmarBTN.Size = New System.Drawing.Size(141, 43)
         Me.ConfirmarBTN.TabIndex = 102
         Me.ConfirmarBTN.Text = "Confirmar"
         Me.ConfirmarBTN.UseVisualStyleBackColor = False
@@ -678,11 +688,11 @@ Partial Class NuevaVenta
         '
         'NuevaVenta
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Sistema_CEIJ.My.Resources.Resources.v748_toon_111
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1488, 839)
+        Me.ClientSize = New System.Drawing.Size(1924, 1033)
         Me.Controls.Add(Me.ConfirmarBTN)
         Me.Controls.Add(Me.RegistrarBTN)
         Me.Controls.Add(Me.EliminarBTN)
@@ -699,7 +709,7 @@ Partial Class NuevaVenta
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.SalirPictureBox)
         Me.Controls.Add(Me.VLabel)
-        Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "NuevaVenta"
         Me.Text = "NuevaVenta"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized

@@ -65,9 +65,10 @@ Partial Class Productos
         PrecioLabel.BackColor = System.Drawing.Color.Transparent
         PrecioLabel.Font = New System.Drawing.Font("Arial", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         PrecioLabel.ForeColor = System.Drawing.Color.DarkKhaki
-        PrecioLabel.Location = New System.Drawing.Point(566, 329)
+        PrecioLabel.Location = New System.Drawing.Point(755, 482)
+        PrecioLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         PrecioLabel.Name = "PrecioLabel"
-        PrecioLabel.Size = New System.Drawing.Size(108, 32)
+        PrecioLabel.Size = New System.Drawing.Size(133, 40)
         PrecioLabel.TabIndex = 79
         PrecioLabel.Text = "Precio:"
         '
@@ -77,9 +78,10 @@ Partial Class Productos
         FechaLabel.BackColor = System.Drawing.Color.Transparent
         FechaLabel.Font = New System.Drawing.Font("Arial", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         FechaLabel.ForeColor = System.Drawing.Color.DarkKhaki
-        FechaLabel.Location = New System.Drawing.Point(566, 281)
+        FechaLabel.Location = New System.Drawing.Point(755, 385)
+        FechaLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         FechaLabel.Name = "FechaLabel"
-        FechaLabel.Size = New System.Drawing.Size(142, 32)
+        FechaLabel.Size = New System.Drawing.Size(173, 40)
         FechaLabel.TabIndex = 76
         FechaLabel.Text = "Cantidad:"
         '
@@ -89,18 +91,20 @@ Partial Class Productos
         NombreLabel.BackColor = System.Drawing.Color.Transparent
         NombreLabel.Font = New System.Drawing.Font("Arial", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         NombreLabel.ForeColor = System.Drawing.Color.DarkKhaki
-        NombreLabel.Location = New System.Drawing.Point(566, 233)
+        NombreLabel.Location = New System.Drawing.Point(755, 287)
+        NombreLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         NombreLabel.Name = "NombreLabel"
-        NombreLabel.Size = New System.Drawing.Size(130, 32)
+        NombreLabel.Size = New System.Drawing.Size(159, 40)
         NombreLabel.TabIndex = 75
         NombreLabel.Text = "Nombre:"
         '
         'PrecioTextBox
         '
         Me.PrecioTextBox.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PrecioTextBox.Location = New System.Drawing.Point(727, 329)
+        Me.PrecioTextBox.Location = New System.Drawing.Point(969, 482)
+        Me.PrecioTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PrecioTextBox.Name = "PrecioTextBox"
-        Me.PrecioTextBox.Size = New System.Drawing.Size(232, 29)
+        Me.PrecioTextBox.Size = New System.Drawing.Size(308, 34)
         Me.PrecioTextBox.TabIndex = 82
         '
         'CursoLabel
@@ -109,9 +113,10 @@ Partial Class Productos
         Me.CursoLabel.BackColor = System.Drawing.Color.Transparent
         Me.CursoLabel.Font = New System.Drawing.Font("Arial", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CursoLabel.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.CursoLabel.Location = New System.Drawing.Point(648, 99)
+        Me.CursoLabel.Location = New System.Drawing.Point(864, 122)
+        Me.CursoLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.CursoLabel.Name = "CursoLabel"
-        Me.CursoLabel.Size = New System.Drawing.Size(234, 55)
+        Me.CursoLabel.Size = New System.Drawing.Size(293, 68)
         Me.CursoLabel.TabIndex = 81
         Me.CursoLabel.Text = "Producto"
         '
@@ -121,9 +126,10 @@ Partial Class Productos
         Me.CancelarBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.CancelarBTN.Font = New System.Drawing.Font("Arial Narrow", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CancelarBTN.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.CancelarBTN.Location = New System.Drawing.Point(875, 470)
+        Me.CancelarBTN.Location = New System.Drawing.Point(1166, 626)
+        Me.CancelarBTN.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.CancelarBTN.Name = "CancelarBTN"
-        Me.CancelarBTN.Size = New System.Drawing.Size(148, 62)
+        Me.CancelarBTN.Size = New System.Drawing.Size(197, 76)
         Me.CancelarBTN.TabIndex = 78
         Me.CancelarBTN.Text = "Cancelar"
         Me.CancelarBTN.UseVisualStyleBackColor = False
@@ -135,9 +141,10 @@ Partial Class Productos
         Me.RegistrarBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.RegistrarBTN.Font = New System.Drawing.Font("Arial Narrow", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RegistrarBTN.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.RegistrarBTN.Location = New System.Drawing.Point(649, 470)
+        Me.RegistrarBTN.Location = New System.Drawing.Point(864, 626)
+        Me.RegistrarBTN.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.RegistrarBTN.Name = "RegistrarBTN"
-        Me.RegistrarBTN.Size = New System.Drawing.Size(148, 62)
+        Me.RegistrarBTN.Size = New System.Drawing.Size(197, 76)
         Me.RegistrarBTN.TabIndex = 77
         Me.RegistrarBTN.Text = "Guardar"
         Me.RegistrarBTN.UseVisualStyleBackColor = False
@@ -145,17 +152,19 @@ Partial Class Productos
         'NombreTextBox
         '
         Me.NombreTextBox.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NombreTextBox.Location = New System.Drawing.Point(727, 233)
+        Me.NombreTextBox.Location = New System.Drawing.Point(969, 287)
+        Me.NombreTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.NombreTextBox.Name = "NombreTextBox"
-        Me.NombreTextBox.Size = New System.Drawing.Size(232, 29)
+        Me.NombreTextBox.Size = New System.Drawing.Size(308, 34)
         Me.NombreTextBox.TabIndex = 74
         '
         'CantidadTextBox
         '
         Me.CantidadTextBox.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CantidadTextBox.Location = New System.Drawing.Point(727, 281)
+        Me.CantidadTextBox.Location = New System.Drawing.Point(969, 385)
+        Me.CantidadTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.CantidadTextBox.Name = "CantidadTextBox"
-        Me.CantidadTextBox.Size = New System.Drawing.Size(232, 29)
+        Me.CantidadTextBox.Size = New System.Drawing.Size(308, 34)
         Me.CantidadTextBox.TabIndex = 83
         '
         'BD_Sistema_CEIJDataSet
@@ -202,7 +211,7 @@ Partial Class Productos
         Me.InventarioBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
         Me.InventarioBindingNavigator.Name = "InventarioBindingNavigator"
         Me.InventarioBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.InventarioBindingNavigator.Size = New System.Drawing.Size(528, 22)
+        Me.InventarioBindingNavigator.Size = New System.Drawing.Size(704, 27)
         Me.InventarioBindingNavigator.TabIndex = 84
         Me.InventarioBindingNavigator.Text = "BindingNavigator1"
         Me.InventarioBindingNavigator.Visible = False
@@ -213,13 +222,13 @@ Partial Class Productos
         Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
         Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(24, 19)
+        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(29, 24)
         Me.BindingNavigatorAddNewItem.Text = "Agregar nuevo"
         '
         'BindingNavigatorCountItem
         '
         Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(37, 19)
+        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(48, 24)
         Me.BindingNavigatorCountItem.Text = "de {0}"
         Me.BindingNavigatorCountItem.ToolTipText = "Número total de elementos"
         '
@@ -229,7 +238,7 @@ Partial Class Productos
         Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
         Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(24, 19)
+        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(29, 24)
         Me.BindingNavigatorDeleteItem.Text = "Eliminar"
         '
         'BindingNavigatorMoveFirstItem
@@ -238,7 +247,7 @@ Partial Class Productos
         Me.BindingNavigatorMoveFirstItem.Image = CType(resources.GetObject("BindingNavigatorMoveFirstItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
         Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(24, 19)
+        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(29, 24)
         Me.BindingNavigatorMoveFirstItem.Text = "Mover primero"
         '
         'BindingNavigatorMovePreviousItem
@@ -247,13 +256,13 @@ Partial Class Productos
         Me.BindingNavigatorMovePreviousItem.Image = CType(resources.GetObject("BindingNavigatorMovePreviousItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMovePreviousItem.Name = "BindingNavigatorMovePreviousItem"
         Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(24, 19)
+        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(29, 24)
         Me.BindingNavigatorMovePreviousItem.Text = "Mover anterior"
         '
         'BindingNavigatorSeparator
         '
         Me.BindingNavigatorSeparator.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 22)
+        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 27)
         '
         'BindingNavigatorPositionItem
         '
@@ -261,14 +270,14 @@ Partial Class Productos
         Me.BindingNavigatorPositionItem.AutoSize = False
         Me.BindingNavigatorPositionItem.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BindingNavigatorPositionItem.Name = "BindingNavigatorPositionItem"
-        Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(38, 23)
+        Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(49, 27)
         Me.BindingNavigatorPositionItem.Text = "0"
         Me.BindingNavigatorPositionItem.ToolTipText = "Posición actual"
         '
         'BindingNavigatorSeparator1
         '
         Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator1"
-        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 22)
+        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 27)
         '
         'BindingNavigatorMoveNextItem
         '
@@ -276,7 +285,7 @@ Partial Class Productos
         Me.BindingNavigatorMoveNextItem.Image = CType(resources.GetObject("BindingNavigatorMoveNextItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
         Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(24, 19)
+        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(29, 24)
         Me.BindingNavigatorMoveNextItem.Text = "Mover siguiente"
         '
         'BindingNavigatorMoveLastItem
@@ -285,29 +294,29 @@ Partial Class Productos
         Me.BindingNavigatorMoveLastItem.Image = CType(resources.GetObject("BindingNavigatorMoveLastItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
         Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(24, 19)
+        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(29, 24)
         Me.BindingNavigatorMoveLastItem.Text = "Mover último"
         '
         'BindingNavigatorSeparator2
         '
         Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
-        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 22)
+        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 27)
         '
         'InventarioBindingNavigatorSaveItem
         '
         Me.InventarioBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.InventarioBindingNavigatorSaveItem.Image = CType(resources.GetObject("InventarioBindingNavigatorSaveItem.Image"), System.Drawing.Image)
         Me.InventarioBindingNavigatorSaveItem.Name = "InventarioBindingNavigatorSaveItem"
-        Me.InventarioBindingNavigatorSaveItem.Size = New System.Drawing.Size(24, 19)
+        Me.InventarioBindingNavigatorSaveItem.Size = New System.Drawing.Size(29, 24)
         Me.InventarioBindingNavigatorSaveItem.Text = "Guardar datos"
         '
         'Productos
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Sistema_CEIJ.My.Resources.Resources.FondoSign
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1488, 839)
+        Me.ClientSize = New System.Drawing.Size(1924, 1033)
         Me.Controls.Add(Me.InventarioBindingNavigator)
         Me.Controls.Add(Me.CantidadTextBox)
         Me.Controls.Add(Me.PrecioTextBox)
@@ -318,7 +327,7 @@ Partial Class Productos
         Me.Controls.Add(FechaLabel)
         Me.Controls.Add(NombreLabel)
         Me.Controls.Add(Me.NombreTextBox)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "Productos"
         Me.Text = "Productos"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized

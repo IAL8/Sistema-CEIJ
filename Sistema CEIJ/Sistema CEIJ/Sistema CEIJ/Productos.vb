@@ -10,7 +10,7 @@
             MsgBox("El producto se ha registrado")
         Else
             Me.InventarioTableAdapter.UInventario(NombreTextBox.Text, CantidadTextBox.Text, PrecioTextBox.Text, Id_Prodcuto)
-            MsgBox("El producto se ha registrado")
+            MsgBox("El producto se ha actualizado")
         End If
         Me.InventarioTableAdapter.Fill(Me.BD_Sistema_CEIJDataSet.Inventario)
     End Sub

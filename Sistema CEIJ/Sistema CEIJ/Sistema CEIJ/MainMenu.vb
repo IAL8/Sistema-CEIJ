@@ -40,4 +40,5 @@
         PuntoDeVenta.Show()
         Me.Hide()
     End Sub
+
 End Class

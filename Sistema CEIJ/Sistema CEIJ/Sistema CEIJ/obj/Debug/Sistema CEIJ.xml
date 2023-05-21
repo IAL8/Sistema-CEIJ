@@ -57,6 +57,11 @@ Sistema CEIJ
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Sistema_CEIJ.My.Resources.Resources.Historial">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Sistema_CEIJ.My.Resources.Resources.img_usuario">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
@@ -73,6 +78,11 @@ Sistema CEIJ
 </summary>
 </member>
 <member name="P:Sistema_CEIJ.My.Resources.Resources.Logo">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Sistema_CEIJ.My.Resources.Resources.Nueva_Venta">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>

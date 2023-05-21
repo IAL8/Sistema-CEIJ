@@ -22,7 +22,7 @@
             MsgBox("El servicio se ha registrado")
         Else
             Me.ServiciosTableAdapter.UServicio(NombreTextBox.Text, CategoriaTextBox.Text, PrecioTextBox.Text, DisponibilidadCheclbox.Checked, Id_Servicio)
-            MsgBox("El cliente  se ha registrado")
+            MsgBox("El servicio se ha actualizado")
         End If
         Me.ServiciosTableAdapter.Fill(Me.BD_Sistema_CEIJDataSet.Servicios)
     End Sub

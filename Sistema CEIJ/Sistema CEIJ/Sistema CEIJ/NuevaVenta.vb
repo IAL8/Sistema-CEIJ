@@ -1,5 +1,5 @@
 ﻿Public Class NuevaVenta
-    Public FilaVenta As Integer = 0
+    Public FilaVenta As Integer = -1
     Public Tamaño As Integer = 0
     Public VentaTotal As Decimal = 0
     Private Sub SalirPictureBox_Click(sender As Object, e As EventArgs) Handles SalirPictureBox.Click
@@ -7,7 +7,7 @@
     End Sub
 
     Private Sub NuevaVenta_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
-        MainMenu.Show()
+        PuntoDeVenta.Show()
     End Sub
 
     Private Sub NuevaVenta_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -67,9 +67,9 @@
 
     Private Sub CursosDataGridView_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles CursosDataGridView.CellDoubleClick
         If (e.RowIndex >= 0) Then
-            Id_Curso = ServiciosDataGridView.Item(0, e.RowIndex).Value
-            Cu_Nombre = ServiciosDataGridView.Item(1, e.RowIndex).Value
-            Cu_Precio = ServiciosDataGridView.Item(2, e.RowIndex).Value
+            Id_Curso = CursosDataGridView.Item(0, e.RowIndex).Value
+            Cu_Nombre = CursosDataGridView.Item(1, e.RowIndex).Value
+            Cu_Precio = CursosDataGridView.Item(5, e.RowIndex).Value
         End If
     End Sub
 
@@ -83,6 +83,7 @@
         If (e.RowIndex >= 0) Then
             Id_Cliente = ClientesDataGridView.Item(0, e.RowIndex).Value
             ClienteTextBox.Text = Id_Cliente
+            ClientesDataGridView.Visible = False
         End If
     End Sub
 
@@ -108,9 +109,9 @@
     End Sub
 
     Private Sub EliminarBTN_Click(sender As Object, e As EventArgs) Handles EliminarBTN.Click
-        If (Id_Servicio <> 0) Then
+        If (FilaVenta >= 0) Then
             VentaDataGridView.Rows.RemoveAt(FilaVenta)
-            FilaVenta = 0
+            FilaVenta = -1
             Tamaño -= 1
         Else
             MsgBox("Debe seleccionar un elemento del carrito para eleiminarlo")
@@ -131,6 +132,9 @@
                 Me.SolicitudesTableAdapter.USolicitudTotal(VentaTotal, Id_Solicitud)
                 Me.SolicitudesTableAdapter.Fill(Me.BD_Sistema_CEIJDataSet.Solicitudes)
                 MsgBox("Se completo con exito la compra")
+                Me.Close()
+            Else
+                MsgBox("No puede realizar ventas vacias")
             End If
         Else
             MsgBox("Debes elegir un cliente")
@@ -146,6 +150,17 @@
             Me.InscripcionesTableAdapter.IInscripcion(Id_Solicitud, ID, Convert.ToDecimal(Precio))
             Me.InscripcionesTableAdapter.Fill(Me.BD_Sistema_CEIJDataSet.Inscripciones)
             VentaTotal += Precio
+        End If
+    End Sub
+
+    Private Sub CancelarBTN_Click(sender As Object, e As EventArgs) Handles CancelarBTN.Click
+        If (Tamaño <> 0) Then
+            For Each r As DataGridViewRow In VentaDataGridView.SelectedRows
+                VentaDataGridView.Rows.Remove(r)
+            Next
+            Tamaño = 0
+        Else
+            MsgBox("No hay nada que eliminar")
         End If
     End Sub
 End Class
