@@ -45,10 +45,6 @@ Partial Class MenuAgenda
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.AgendaDataTableBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
         Me.AgendaDataTableDataGridView = New System.Windows.Forms.DataGridView()
-        Me.AgendaDataTableTableAdapter = New Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.AgendaDataTableTableAdapter()
-        Me.TableAdapterManager = New Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.TableAdapterManager()
-        Me.CitasTableAdapter = New Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.CitasTableAdapter()
-        Me.CitasBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.C_ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -57,6 +53,10 @@ Partial Class MenuAgenda
         Me.Ci_Fecha = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Ci_Hora = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Ci_Precio = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.AgendaDataTableTableAdapter = New Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.AgendaDataTableTableAdapter()
+        Me.TableAdapterManager = New Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.TableAdapterManager()
+        Me.CitasTableAdapter = New Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.CitasTableAdapter()
+        Me.CitasBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         CType(Me.SalirPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AgendaDataTableBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.AgendaDataTableBindingNavigator.SuspendLayout()
@@ -71,12 +71,11 @@ Partial Class MenuAgenda
         Me.EditarBTN.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.EditarBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.EditarBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.EditarBTN.Font = New System.Drawing.Font("Arial Narrow", 13.0!, System.Drawing.FontStyle.Bold)
+        Me.EditarBTN.Font = New System.Drawing.Font("Arial Narrow", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.EditarBTN.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.EditarBTN.Location = New System.Drawing.Point(627, 431)
-        Me.EditarBTN.Margin = New System.Windows.Forms.Padding(4)
+        Me.EditarBTN.Location = New System.Drawing.Point(688, 563)
         Me.EditarBTN.Name = "EditarBTN"
-        Me.EditarBTN.Size = New System.Drawing.Size(137, 44)
+        Me.EditarBTN.Size = New System.Drawing.Size(136, 55)
         Me.EditarBTN.TabIndex = 35
         Me.EditarBTN.Text = "Editar"
         Me.EditarBTN.UseVisualStyleBackColor = False
@@ -86,12 +85,11 @@ Partial Class MenuAgenda
         Me.EliminarBTN.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.EliminarBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.EliminarBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.EliminarBTN.Font = New System.Drawing.Font("Arial Narrow", 13.0!, System.Drawing.FontStyle.Bold)
+        Me.EliminarBTN.Font = New System.Drawing.Font("Arial Narrow", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.EliminarBTN.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.EliminarBTN.Location = New System.Drawing.Point(298, 431)
-        Me.EliminarBTN.Margin = New System.Windows.Forms.Padding(4)
+        Me.EliminarBTN.Location = New System.Drawing.Point(407, 563)
         Me.EliminarBTN.Name = "EliminarBTN"
-        Me.EliminarBTN.Size = New System.Drawing.Size(137, 44)
+        Me.EliminarBTN.Size = New System.Drawing.Size(136, 55)
         Me.EliminarBTN.TabIndex = 34
         Me.EliminarBTN.Text = "Eliminar"
         Me.EliminarBTN.UseVisualStyleBackColor = False
@@ -101,12 +99,11 @@ Partial Class MenuAgenda
         Me.NuevoBTN.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.NuevoBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.NuevoBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.NuevoBTN.Font = New System.Drawing.Font("Arial Narrow", 13.0!, System.Drawing.FontStyle.Bold)
+        Me.NuevoBTN.Font = New System.Drawing.Font("Arial Narrow", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.NuevoBTN.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.NuevoBTN.Location = New System.Drawing.Point(780, 92)
-        Me.NuevoBTN.Margin = New System.Windows.Forms.Padding(4)
+        Me.NuevoBTN.Location = New System.Drawing.Point(966, 563)
         Me.NuevoBTN.Name = "NuevoBTN"
-        Me.NuevoBTN.Size = New System.Drawing.Size(137, 44)
+        Me.NuevoBTN.Size = New System.Drawing.Size(136, 55)
         Me.NuevoBTN.TabIndex = 33
         Me.NuevoBTN.Text = "Nuevo"
         Me.NuevoBTN.UseVisualStyleBackColor = False
@@ -115,12 +112,11 @@ Partial Class MenuAgenda
         '
         Me.ServiciosLabel.AutoSize = True
         Me.ServiciosLabel.BackColor = System.Drawing.Color.Transparent
-        Me.ServiciosLabel.Font = New System.Drawing.Font("Arial", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ServiciosLabel.Font = New System.Drawing.Font("Arial", 54.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ServiciosLabel.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.ServiciosLabel.Location = New System.Drawing.Point(355, 9)
-        Me.ServiciosLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.ServiciosLabel.Location = New System.Drawing.Point(648, 99)
         Me.ServiciosLabel.Name = "ServiciosLabel"
-        Me.ServiciosLabel.Size = New System.Drawing.Size(175, 68)
+        Me.ServiciosLabel.Size = New System.Drawing.Size(214, 83)
         Me.ServiciosLabel.TabIndex = 32
         Me.ServiciosLabel.Text = "Citas"
         '
@@ -129,9 +125,10 @@ Partial Class MenuAgenda
         Me.SalirPictureBox.BackColor = System.Drawing.Color.Transparent
         Me.SalirPictureBox.Cursor = System.Windows.Forms.Cursors.Hand
         Me.SalirPictureBox.Image = CType(resources.GetObject("SalirPictureBox.Image"), System.Drawing.Image)
-        Me.SalirPictureBox.Location = New System.Drawing.Point(16, 447)
+        Me.SalirPictureBox.Location = New System.Drawing.Point(1340, 695)
+        Me.SalirPictureBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.SalirPictureBox.Name = "SalirPictureBox"
-        Me.SalirPictureBox.Size = New System.Drawing.Size(64, 68)
+        Me.SalirPictureBox.Size = New System.Drawing.Size(74, 80)
         Me.SalirPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.SalirPictureBox.TabIndex = 36
         Me.SalirPictureBox.TabStop = False
@@ -151,7 +148,7 @@ Partial Class MenuAgenda
         Me.AgendaDataTableBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
         Me.AgendaDataTableBindingNavigator.Name = "AgendaDataTableBindingNavigator"
         Me.AgendaDataTableBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.AgendaDataTableBindingNavigator.Size = New System.Drawing.Size(961, 27)
+        Me.AgendaDataTableBindingNavigator.Size = New System.Drawing.Size(721, 22)
         Me.AgendaDataTableBindingNavigator.TabIndex = 37
         Me.AgendaDataTableBindingNavigator.Text = "BindingNavigator1"
         Me.AgendaDataTableBindingNavigator.Visible = False
@@ -162,7 +159,7 @@ Partial Class MenuAgenda
         Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
         Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(24, 19)
         Me.BindingNavigatorAddNewItem.Text = "Agregar nuevo"
         '
         'AgendaDataTableBindingSource
@@ -178,7 +175,7 @@ Partial Class MenuAgenda
         'BindingNavigatorCountItem
         '
         Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(48, 24)
+        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(37, 19)
         Me.BindingNavigatorCountItem.Text = "de {0}"
         Me.BindingNavigatorCountItem.ToolTipText = "Número total de elementos"
         '
@@ -188,7 +185,7 @@ Partial Class MenuAgenda
         Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
         Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(24, 19)
         Me.BindingNavigatorDeleteItem.Text = "Eliminar"
         '
         'BindingNavigatorMoveFirstItem
@@ -197,7 +194,7 @@ Partial Class MenuAgenda
         Me.BindingNavigatorMoveFirstItem.Image = CType(resources.GetObject("BindingNavigatorMoveFirstItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
         Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(24, 19)
         Me.BindingNavigatorMoveFirstItem.Text = "Mover primero"
         '
         'BindingNavigatorMovePreviousItem
@@ -206,13 +203,13 @@ Partial Class MenuAgenda
         Me.BindingNavigatorMovePreviousItem.Image = CType(resources.GetObject("BindingNavigatorMovePreviousItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMovePreviousItem.Name = "BindingNavigatorMovePreviousItem"
         Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(24, 19)
         Me.BindingNavigatorMovePreviousItem.Text = "Mover anterior"
         '
         'BindingNavigatorSeparator
         '
         Me.BindingNavigatorSeparator.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 27)
+        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 22)
         '
         'BindingNavigatorPositionItem
         '
@@ -220,14 +217,14 @@ Partial Class MenuAgenda
         Me.BindingNavigatorPositionItem.AutoSize = False
         Me.BindingNavigatorPositionItem.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BindingNavigatorPositionItem.Name = "BindingNavigatorPositionItem"
-        Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(50, 27)
+        Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(38, 23)
         Me.BindingNavigatorPositionItem.Text = "0"
         Me.BindingNavigatorPositionItem.ToolTipText = "Posición actual"
         '
         'BindingNavigatorSeparator1
         '
         Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator1"
-        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 27)
+        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 22)
         '
         'BindingNavigatorMoveNextItem
         '
@@ -235,7 +232,7 @@ Partial Class MenuAgenda
         Me.BindingNavigatorMoveNextItem.Image = CType(resources.GetObject("BindingNavigatorMoveNextItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
         Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(24, 19)
         Me.BindingNavigatorMoveNextItem.Text = "Mover siguiente"
         '
         'BindingNavigatorMoveLastItem
@@ -244,13 +241,13 @@ Partial Class MenuAgenda
         Me.BindingNavigatorMoveLastItem.Image = CType(resources.GetObject("BindingNavigatorMoveLastItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
         Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(24, 19)
         Me.BindingNavigatorMoveLastItem.Text = "Mover último"
         '
         'BindingNavigatorSeparator2
         '
         Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
-        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 27)
+        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 22)
         '
         'AgendaDataTableBindingNavigatorSaveItem
         '
@@ -258,7 +255,7 @@ Partial Class MenuAgenda
         Me.AgendaDataTableBindingNavigatorSaveItem.Enabled = False
         Me.AgendaDataTableBindingNavigatorSaveItem.Image = CType(resources.GetObject("AgendaDataTableBindingNavigatorSaveItem.Image"), System.Drawing.Image)
         Me.AgendaDataTableBindingNavigatorSaveItem.Name = "AgendaDataTableBindingNavigatorSaveItem"
-        Me.AgendaDataTableBindingNavigatorSaveItem.Size = New System.Drawing.Size(29, 24)
+        Me.AgendaDataTableBindingNavigatorSaveItem.Size = New System.Drawing.Size(24, 19)
         Me.AgendaDataTableBindingNavigatorSaveItem.Text = "Guardar datos"
         '
         'AgendaDataTableDataGridView
@@ -271,41 +268,14 @@ Partial Class MenuAgenda
         Me.AgendaDataTableDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.AgendaDataTableDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.C_ID, Me.Nombre, Me.Se_ID, Me.Nom_Ser, Me.Ci_Fecha, Me.Ci_Hora, Me.Ci_Precio})
         Me.AgendaDataTableDataGridView.DataSource = Me.AgendaDataTableBindingSource
-        Me.AgendaDataTableDataGridView.Location = New System.Drawing.Point(47, 158)
+        Me.AgendaDataTableDataGridView.Location = New System.Drawing.Point(272, 252)
+        Me.AgendaDataTableDataGridView.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.AgendaDataTableDataGridView.Name = "AgendaDataTableDataGridView"
         Me.AgendaDataTableDataGridView.ReadOnly = True
         Me.AgendaDataTableDataGridView.RowHeadersWidth = 51
         Me.AgendaDataTableDataGridView.RowTemplate.Height = 24
-        Me.AgendaDataTableDataGridView.Size = New System.Drawing.Size(843, 220)
+        Me.AgendaDataTableDataGridView.Size = New System.Drawing.Size(959, 283)
         Me.AgendaDataTableDataGridView.TabIndex = 37
-        '
-        'AgendaDataTableTableAdapter
-        '
-        Me.AgendaDataTableTableAdapter.ClearBeforeFill = True
-        '
-        'TableAdapterManager
-        '
-        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager.CitasTableAdapter = Me.CitasTableAdapter
-        Me.TableAdapterManager.ClientesTableAdapter = Nothing
-        Me.TableAdapterManager.CompraTableAdapter = Nothing
-        Me.TableAdapterManager.CuentasTableAdapter = Nothing
-        Me.TableAdapterManager.CursosTableAdapter = Nothing
-        Me.TableAdapterManager.InscripcionesTableAdapter = Nothing
-        Me.TableAdapterManager.InventarioTableAdapter = Nothing
-        Me.TableAdapterManager.OrdenTableAdapter = Nothing
-        Me.TableAdapterManager.ServiciosTableAdapter = Nothing
-        Me.TableAdapterManager.SolicitudesTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
-        '
-        'CitasTableAdapter
-        '
-        Me.CitasTableAdapter.ClearBeforeFill = True
-        '
-        'CitasBindingSource
-        '
-        Me.CitasBindingSource.DataMember = "Citas"
-        Me.CitasBindingSource.DataSource = Me.BD_Sistema_CEIJDataSet
         '
         'DataGridViewTextBoxColumn1
         '
@@ -373,13 +343,41 @@ Partial Class MenuAgenda
         Me.Ci_Precio.Name = "Ci_Precio"
         Me.Ci_Precio.ReadOnly = True
         '
+        'AgendaDataTableTableAdapter
+        '
+        Me.AgendaDataTableTableAdapter.ClearBeforeFill = True
+        '
+        'TableAdapterManager
+        '
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.CitasTableAdapter = Me.CitasTableAdapter
+        Me.TableAdapterManager.ClientesTableAdapter = Nothing
+        Me.TableAdapterManager.CompraTableAdapter = Nothing
+        Me.TableAdapterManager.CuentasTableAdapter = Nothing
+        Me.TableAdapterManager.CursosTableAdapter = Nothing
+        Me.TableAdapterManager.InscripcionesTableAdapter = Nothing
+        Me.TableAdapterManager.InventarioTableAdapter = Nothing
+        Me.TableAdapterManager.OrdenTableAdapter = Nothing
+        Me.TableAdapterManager.ServiciosTableAdapter = Nothing
+        Me.TableAdapterManager.SolicitudesTableAdapter = Nothing
+        Me.TableAdapterManager.UpdateOrder = Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        '
+        'CitasTableAdapter
+        '
+        Me.CitasTableAdapter.ClearBeforeFill = True
+        '
+        'CitasBindingSource
+        '
+        Me.CitasBindingSource.DataMember = "Citas"
+        Me.CitasBindingSource.DataSource = Me.BD_Sistema_CEIJDataSet
+        '
         'MenuAgenda
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Sistema_CEIJ.My.Resources.Resources.v748_toon_111
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(961, 535)
+        Me.ClientSize = New System.Drawing.Size(1488, 839)
         Me.Controls.Add(Me.AgendaDataTableDataGridView)
         Me.Controls.Add(Me.AgendaDataTableBindingNavigator)
         Me.Controls.Add(Me.SalirPictureBox)
@@ -387,9 +385,11 @@ Partial Class MenuAgenda
         Me.Controls.Add(Me.EliminarBTN)
         Me.Controls.Add(Me.NuevoBTN)
         Me.Controls.Add(Me.ServiciosLabel)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "MenuAgenda"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "MenuAgenda"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.SalirPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AgendaDataTableBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
         Me.AgendaDataTableBindingNavigator.ResumeLayout(False)

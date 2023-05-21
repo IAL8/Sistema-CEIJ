@@ -66,12 +66,11 @@ Partial Class Cliente
         '
         CorreoLabel.AutoSize = True
         CorreoLabel.BackColor = System.Drawing.Color.Transparent
-        CorreoLabel.Font = New System.Drawing.Font("Arial", 11.0!, System.Drawing.FontStyle.Bold)
+        CorreoLabel.Font = New System.Drawing.Font("Arial", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         CorreoLabel.ForeColor = System.Drawing.Color.DarkKhaki
-        CorreoLabel.Location = New System.Drawing.Point(100, 341)
-        CorreoLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        CorreoLabel.Location = New System.Drawing.Point(511, 459)
         CorreoLabel.Name = "CorreoLabel"
-        CorreoLabel.Size = New System.Drawing.Size(82, 22)
+        CorreoLabel.Size = New System.Drawing.Size(115, 32)
         CorreoLabel.TabIndex = 39
         CorreoLabel.Text = "Correo:"
         '
@@ -79,12 +78,11 @@ Partial Class Cliente
         '
         TelefonoLabel.AutoSize = True
         TelefonoLabel.BackColor = System.Drawing.Color.Transparent
-        TelefonoLabel.Font = New System.Drawing.Font("Arial", 11.0!, System.Drawing.FontStyle.Bold)
+        TelefonoLabel.Font = New System.Drawing.Font("Arial", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         TelefonoLabel.ForeColor = System.Drawing.Color.DarkKhaki
-        TelefonoLabel.Location = New System.Drawing.Point(94, 270)
-        TelefonoLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        TelefonoLabel.Location = New System.Drawing.Point(503, 373)
         TelefonoLabel.Name = "TelefonoLabel"
-        TelefonoLabel.Size = New System.Drawing.Size(98, 22)
+        TelefonoLabel.Size = New System.Drawing.Size(138, 32)
         TelefonoLabel.TabIndex = 38
         TelefonoLabel.Text = "Teléfono:"
         '
@@ -92,12 +90,11 @@ Partial Class Cliente
         '
         ApellidoLabel.AutoSize = True
         ApellidoLabel.BackColor = System.Drawing.Color.Transparent
-        ApellidoLabel.Font = New System.Drawing.Font("Arial", 11.0!, System.Drawing.FontStyle.Bold)
+        ApellidoLabel.Font = New System.Drawing.Font("Arial", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         ApellidoLabel.ForeColor = System.Drawing.Color.DarkKhaki
-        ApellidoLabel.Location = New System.Drawing.Point(90, 219)
-        ApellidoLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        ApellidoLabel.Location = New System.Drawing.Point(508, 303)
         ApellidoLabel.Name = "ApellidoLabel"
-        ApellidoLabel.Size = New System.Drawing.Size(92, 22)
+        ApellidoLabel.Size = New System.Drawing.Size(133, 32)
         ApellidoLabel.TabIndex = 35
         ApellidoLabel.Text = "Apellido:"
         '
@@ -105,12 +102,11 @@ Partial Class Cliente
         '
         NombreLabel.AutoSize = True
         NombreLabel.BackColor = System.Drawing.Color.Transparent
-        NombreLabel.Font = New System.Drawing.Font("Arial", 11.0!, System.Drawing.FontStyle.Bold)
+        NombreLabel.Font = New System.Drawing.Font("Arial", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         NombreLabel.ForeColor = System.Drawing.Color.DarkKhaki
-        NombreLabel.Location = New System.Drawing.Point(102, 162)
-        NombreLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        NombreLabel.Location = New System.Drawing.Point(511, 234)
         NombreLabel.Name = "NombreLabel"
-        NombreLabel.Size = New System.Drawing.Size(90, 22)
+        NombreLabel.Size = New System.Drawing.Size(130, 32)
         NombreLabel.TabIndex = 34
         NombreLabel.Text = "Nombre:"
         '
@@ -120,10 +116,9 @@ Partial Class Cliente
         Me.ClienteLabel.BackColor = System.Drawing.Color.Transparent
         Me.ClienteLabel.Font = New System.Drawing.Font("Arial", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ClienteLabel.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.ClienteLabel.Location = New System.Drawing.Point(143, 42)
-        Me.ClienteLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.ClienteLabel.Location = New System.Drawing.Point(648, 99)
         Me.ClienteLabel.Name = "ClienteLabel"
-        Me.ClienteLabel.Size = New System.Drawing.Size(229, 68)
+        Me.ClienteLabel.Size = New System.Drawing.Size(184, 55)
         Me.ClienteLabel.TabIndex = 42
         Me.ClienteLabel.Text = "Cliente"
         '
@@ -131,12 +126,11 @@ Partial Class Cliente
         '
         Me.CancelarBTN.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.CancelarBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CancelarBTN.Font = New System.Drawing.Font("Arial Narrow", 13.0!, System.Drawing.FontStyle.Bold)
+        Me.CancelarBTN.Font = New System.Drawing.Font("Arial Narrow", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CancelarBTN.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.CancelarBTN.Location = New System.Drawing.Point(322, 426)
-        Me.CancelarBTN.Margin = New System.Windows.Forms.Padding(4)
+        Me.CancelarBTN.Location = New System.Drawing.Point(792, 621)
         Me.CancelarBTN.Name = "CancelarBTN"
-        Me.CancelarBTN.Size = New System.Drawing.Size(137, 44)
+        Me.CancelarBTN.Size = New System.Drawing.Size(136, 56)
         Me.CancelarBTN.TabIndex = 37
         Me.CancelarBTN.Text = "Cancelar"
         Me.CancelarBTN.UseVisualStyleBackColor = False
@@ -146,12 +140,11 @@ Partial Class Cliente
         Me.RegistrarBTN.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.RegistrarBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.RegistrarBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.RegistrarBTN.Font = New System.Drawing.Font("Arial Narrow", 13.0!, System.Drawing.FontStyle.Bold)
+        Me.RegistrarBTN.Font = New System.Drawing.Font("Arial Narrow", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RegistrarBTN.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.RegistrarBTN.Location = New System.Drawing.Point(85, 426)
-        Me.RegistrarBTN.Margin = New System.Windows.Forms.Padding(4)
+        Me.RegistrarBTN.Location = New System.Drawing.Point(565, 621)
         Me.RegistrarBTN.Name = "RegistrarBTN"
-        Me.RegistrarBTN.Size = New System.Drawing.Size(137, 44)
+        Me.RegistrarBTN.Size = New System.Drawing.Size(136, 56)
         Me.RegistrarBTN.TabIndex = 36
         Me.RegistrarBTN.Text = "Guardar"
         Me.RegistrarBTN.UseVisualStyleBackColor = False
@@ -159,37 +152,33 @@ Partial Class Cliente
         'CorreoTextBox
         '
         Me.CorreoTextBox.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CorreoTextBox.Location = New System.Drawing.Point(209, 329)
-        Me.CorreoTextBox.Margin = New System.Windows.Forms.Padding(4)
+        Me.CorreoTextBox.Location = New System.Drawing.Point(643, 464)
         Me.CorreoTextBox.Name = "CorreoTextBox"
-        Me.CorreoTextBox.Size = New System.Drawing.Size(191, 34)
+        Me.CorreoTextBox.Size = New System.Drawing.Size(319, 29)
         Me.CorreoTextBox.TabIndex = 31
         '
         'TelefonoTextBox
         '
         Me.TelefonoTextBox.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TelefonoTextBox.Location = New System.Drawing.Point(209, 263)
-        Me.TelefonoTextBox.Margin = New System.Windows.Forms.Padding(4)
+        Me.TelefonoTextBox.Location = New System.Drawing.Point(645, 374)
         Me.TelefonoTextBox.Name = "TelefonoTextBox"
-        Me.TelefonoTextBox.Size = New System.Drawing.Size(191, 34)
+        Me.TelefonoTextBox.Size = New System.Drawing.Size(319, 29)
         Me.TelefonoTextBox.TabIndex = 30
         '
         'ApellidoTextBox
         '
         Me.ApellidoTextBox.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ApellidoTextBox.Location = New System.Drawing.Point(209, 207)
-        Me.ApellidoTextBox.Margin = New System.Windows.Forms.Padding(4)
+        Me.ApellidoTextBox.Location = New System.Drawing.Point(652, 299)
         Me.ApellidoTextBox.Name = "ApellidoTextBox"
-        Me.ApellidoTextBox.Size = New System.Drawing.Size(191, 34)
+        Me.ApellidoTextBox.Size = New System.Drawing.Size(319, 29)
         Me.ApellidoTextBox.TabIndex = 29
         '
         'NombreTextBox
         '
         Me.NombreTextBox.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NombreTextBox.Location = New System.Drawing.Point(209, 155)
-        Me.NombreTextBox.Margin = New System.Windows.Forms.Padding(4)
+        Me.NombreTextBox.Location = New System.Drawing.Point(647, 234)
         Me.NombreTextBox.Name = "NombreTextBox"
-        Me.NombreTextBox.Size = New System.Drawing.Size(191, 34)
+        Me.NombreTextBox.Size = New System.Drawing.Size(319, 29)
         Me.NombreTextBox.TabIndex = 28
         '
         'BD_Sistema_CEIJDataSet
@@ -209,11 +198,14 @@ Partial Class Cliente
         'TableAdapterManager
         '
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.CitasTableAdapter = Nothing
         Me.TableAdapterManager.ClientesTableAdapter = Me.ClientesTableAdapter
         Me.TableAdapterManager.CompraTableAdapter = Nothing
         Me.TableAdapterManager.CuentasTableAdapter = Nothing
         Me.TableAdapterManager.CursosTableAdapter = Nothing
+        Me.TableAdapterManager.InscripcionesTableAdapter = Nothing
         Me.TableAdapterManager.InventarioTableAdapter = Nothing
+        Me.TableAdapterManager.OrdenTableAdapter = Nothing
         Me.TableAdapterManager.ServiciosTableAdapter = Nothing
         Me.TableAdapterManager.SolicitudesTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
@@ -233,7 +225,7 @@ Partial Class Cliente
         Me.ClientesBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
         Me.ClientesBindingNavigator.Name = "ClientesBindingNavigator"
         Me.ClientesBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.ClientesBindingNavigator.Size = New System.Drawing.Size(525, 27)
+        Me.ClientesBindingNavigator.Size = New System.Drawing.Size(394, 22)
         Me.ClientesBindingNavigator.TabIndex = 43
         Me.ClientesBindingNavigator.Text = "BindingNavigator1"
         Me.ClientesBindingNavigator.Visible = False
@@ -244,13 +236,13 @@ Partial Class Cliente
         Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
         Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(24, 19)
         Me.BindingNavigatorAddNewItem.Text = "Agregar nuevo"
         '
         'BindingNavigatorCountItem
         '
         Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(48, 24)
+        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(37, 19)
         Me.BindingNavigatorCountItem.Text = "de {0}"
         Me.BindingNavigatorCountItem.ToolTipText = "Número total de elementos"
         '
@@ -260,7 +252,7 @@ Partial Class Cliente
         Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
         Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(24, 19)
         Me.BindingNavigatorDeleteItem.Text = "Eliminar"
         '
         'BindingNavigatorMoveFirstItem
@@ -269,7 +261,7 @@ Partial Class Cliente
         Me.BindingNavigatorMoveFirstItem.Image = CType(resources.GetObject("BindingNavigatorMoveFirstItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
         Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(24, 19)
         Me.BindingNavigatorMoveFirstItem.Text = "Mover primero"
         '
         'BindingNavigatorMovePreviousItem
@@ -278,13 +270,13 @@ Partial Class Cliente
         Me.BindingNavigatorMovePreviousItem.Image = CType(resources.GetObject("BindingNavigatorMovePreviousItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMovePreviousItem.Name = "BindingNavigatorMovePreviousItem"
         Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(24, 19)
         Me.BindingNavigatorMovePreviousItem.Text = "Mover anterior"
         '
         'BindingNavigatorSeparator
         '
         Me.BindingNavigatorSeparator.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 27)
+        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 22)
         '
         'BindingNavigatorPositionItem
         '
@@ -292,14 +284,14 @@ Partial Class Cliente
         Me.BindingNavigatorPositionItem.AutoSize = False
         Me.BindingNavigatorPositionItem.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BindingNavigatorPositionItem.Name = "BindingNavigatorPositionItem"
-        Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(50, 27)
+        Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(38, 23)
         Me.BindingNavigatorPositionItem.Text = "0"
         Me.BindingNavigatorPositionItem.ToolTipText = "Posición actual"
         '
         'BindingNavigatorSeparator1
         '
         Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator1"
-        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 27)
+        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 22)
         '
         'BindingNavigatorMoveNextItem
         '
@@ -307,7 +299,7 @@ Partial Class Cliente
         Me.BindingNavigatorMoveNextItem.Image = CType(resources.GetObject("BindingNavigatorMoveNextItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
         Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(24, 19)
         Me.BindingNavigatorMoveNextItem.Text = "Mover siguiente"
         '
         'BindingNavigatorMoveLastItem
@@ -316,29 +308,29 @@ Partial Class Cliente
         Me.BindingNavigatorMoveLastItem.Image = CType(resources.GetObject("BindingNavigatorMoveLastItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
         Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(24, 19)
         Me.BindingNavigatorMoveLastItem.Text = "Mover último"
         '
         'BindingNavigatorSeparator2
         '
         Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
-        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 27)
+        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 22)
         '
         'ClientesBindingNavigatorSaveItem
         '
         Me.ClientesBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.ClientesBindingNavigatorSaveItem.Image = CType(resources.GetObject("ClientesBindingNavigatorSaveItem.Image"), System.Drawing.Image)
         Me.ClientesBindingNavigatorSaveItem.Name = "ClientesBindingNavigatorSaveItem"
-        Me.ClientesBindingNavigatorSaveItem.Size = New System.Drawing.Size(29, 24)
+        Me.ClientesBindingNavigatorSaveItem.Size = New System.Drawing.Size(24, 19)
         Me.ClientesBindingNavigatorSaveItem.Text = "Guardar datos"
         '
         'Cliente
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Sistema_CEIJ.My.Resources.Resources.FondoSign
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(525, 549)
+        Me.ClientSize = New System.Drawing.Size(1488, 839)
         Me.Controls.Add(Me.ClientesBindingNavigator)
         Me.Controls.Add(Me.ClienteLabel)
         Me.Controls.Add(Me.CancelarBTN)
@@ -351,9 +343,11 @@ Partial Class Cliente
         Me.Controls.Add(Me.ApellidoTextBox)
         Me.Controls.Add(NombreLabel)
         Me.Controls.Add(Me.NombreTextBox)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Cliente"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Cliente"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.BD_Sistema_CEIJDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ClientesBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ClientesBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
