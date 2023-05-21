@@ -68,7 +68,7 @@ Partial Class Cliente
         CorreoLabel.BackColor = System.Drawing.Color.Transparent
         CorreoLabel.Font = New System.Drawing.Font("Arial", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         CorreoLabel.ForeColor = System.Drawing.Color.DarkKhaki
-        CorreoLabel.Location = New System.Drawing.Point(511, 459)
+        CorreoLabel.Location = New System.Drawing.Point(334, 469)
         CorreoLabel.Name = "CorreoLabel"
         CorreoLabel.Size = New System.Drawing.Size(115, 32)
         CorreoLabel.TabIndex = 39
@@ -80,7 +80,7 @@ Partial Class Cliente
         TelefonoLabel.BackColor = System.Drawing.Color.Transparent
         TelefonoLabel.Font = New System.Drawing.Font("Arial", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         TelefonoLabel.ForeColor = System.Drawing.Color.DarkKhaki
-        TelefonoLabel.Location = New System.Drawing.Point(503, 373)
+        TelefonoLabel.Location = New System.Drawing.Point(326, 383)
         TelefonoLabel.Name = "TelefonoLabel"
         TelefonoLabel.Size = New System.Drawing.Size(138, 32)
         TelefonoLabel.TabIndex = 38
@@ -92,7 +92,7 @@ Partial Class Cliente
         ApellidoLabel.BackColor = System.Drawing.Color.Transparent
         ApellidoLabel.Font = New System.Drawing.Font("Arial", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         ApellidoLabel.ForeColor = System.Drawing.Color.DarkKhaki
-        ApellidoLabel.Location = New System.Drawing.Point(508, 303)
+        ApellidoLabel.Location = New System.Drawing.Point(331, 313)
         ApellidoLabel.Name = "ApellidoLabel"
         ApellidoLabel.Size = New System.Drawing.Size(133, 32)
         ApellidoLabel.TabIndex = 35
@@ -104,7 +104,7 @@ Partial Class Cliente
         NombreLabel.BackColor = System.Drawing.Color.Transparent
         NombreLabel.Font = New System.Drawing.Font("Arial", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         NombreLabel.ForeColor = System.Drawing.Color.DarkKhaki
-        NombreLabel.Location = New System.Drawing.Point(511, 234)
+        NombreLabel.Location = New System.Drawing.Point(334, 244)
         NombreLabel.Name = "NombreLabel"
         NombreLabel.Size = New System.Drawing.Size(130, 32)
         NombreLabel.TabIndex = 34
@@ -116,7 +116,7 @@ Partial Class Cliente
         Me.ClienteLabel.BackColor = System.Drawing.Color.Transparent
         Me.ClienteLabel.Font = New System.Drawing.Font("Arial", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ClienteLabel.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.ClienteLabel.Location = New System.Drawing.Point(648, 99)
+        Me.ClienteLabel.Location = New System.Drawing.Point(471, 109)
         Me.ClienteLabel.Name = "ClienteLabel"
         Me.ClienteLabel.Size = New System.Drawing.Size(184, 55)
         Me.ClienteLabel.TabIndex = 42
@@ -128,7 +128,7 @@ Partial Class Cliente
         Me.CancelarBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.CancelarBTN.Font = New System.Drawing.Font("Arial Narrow", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CancelarBTN.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.CancelarBTN.Location = New System.Drawing.Point(792, 621)
+        Me.CancelarBTN.Location = New System.Drawing.Point(625, 566)
         Me.CancelarBTN.Name = "CancelarBTN"
         Me.CancelarBTN.Size = New System.Drawing.Size(136, 56)
         Me.CancelarBTN.TabIndex = 37
@@ -142,7 +142,7 @@ Partial Class Cliente
         Me.RegistrarBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.RegistrarBTN.Font = New System.Drawing.Font("Arial Narrow", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RegistrarBTN.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.RegistrarBTN.Location = New System.Drawing.Point(565, 621)
+        Me.RegistrarBTN.Location = New System.Drawing.Point(398, 566)
         Me.RegistrarBTN.Name = "RegistrarBTN"
         Me.RegistrarBTN.Size = New System.Drawing.Size(136, 56)
         Me.RegistrarBTN.TabIndex = 36
@@ -152,7 +152,7 @@ Partial Class Cliente
         'CorreoTextBox
         '
         Me.CorreoTextBox.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CorreoTextBox.Location = New System.Drawing.Point(643, 464)
+        Me.CorreoTextBox.Location = New System.Drawing.Point(466, 474)
         Me.CorreoTextBox.Name = "CorreoTextBox"
         Me.CorreoTextBox.Size = New System.Drawing.Size(319, 29)
         Me.CorreoTextBox.TabIndex = 31
@@ -160,7 +160,7 @@ Partial Class Cliente
         'TelefonoTextBox
         '
         Me.TelefonoTextBox.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TelefonoTextBox.Location = New System.Drawing.Point(645, 374)
+        Me.TelefonoTextBox.Location = New System.Drawing.Point(468, 384)
         Me.TelefonoTextBox.Name = "TelefonoTextBox"
         Me.TelefonoTextBox.Size = New System.Drawing.Size(319, 29)
         Me.TelefonoTextBox.TabIndex = 30
@@ -168,7 +168,7 @@ Partial Class Cliente
         'ApellidoTextBox
         '
         Me.ApellidoTextBox.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ApellidoTextBox.Location = New System.Drawing.Point(652, 299)
+        Me.ApellidoTextBox.Location = New System.Drawing.Point(475, 309)
         Me.ApellidoTextBox.Name = "ApellidoTextBox"
         Me.ApellidoTextBox.Size = New System.Drawing.Size(319, 29)
         Me.ApellidoTextBox.TabIndex = 29
@@ -176,7 +176,7 @@ Partial Class Cliente
         'NombreTextBox
         '
         Me.NombreTextBox.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NombreTextBox.Location = New System.Drawing.Point(647, 234)
+        Me.NombreTextBox.Location = New System.Drawing.Point(470, 244)
         Me.NombreTextBox.Name = "NombreTextBox"
         Me.NombreTextBox.Size = New System.Drawing.Size(319, 29)
         Me.NombreTextBox.TabIndex = 28
@@ -330,7 +330,7 @@ Partial Class Cliente
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Sistema_CEIJ.My.Resources.Resources.FondoSign
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1488, 839)
+        Me.ClientSize = New System.Drawing.Size(1370, 749)
         Me.Controls.Add(Me.ClientesBindingNavigator)
         Me.Controls.Add(Me.ClienteLabel)
         Me.Controls.Add(Me.CancelarBTN)
@@ -343,7 +343,7 @@ Partial Class Cliente
         Me.Controls.Add(Me.ApellidoTextBox)
         Me.Controls.Add(NombreLabel)
         Me.Controls.Add(Me.NombreTextBox)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Cliente"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Cliente"

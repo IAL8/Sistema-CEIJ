@@ -122,7 +122,7 @@ Partial Class MenuServicios
         Me.SalirPictureBox.BackColor = System.Drawing.Color.Transparent
         Me.SalirPictureBox.Cursor = System.Windows.Forms.Cursors.Hand
         Me.SalirPictureBox.Image = CType(resources.GetObject("SalirPictureBox.Image"), System.Drawing.Image)
-        Me.SalirPictureBox.Location = New System.Drawing.Point(1340, 695)
+        Me.SalirPictureBox.Location = New System.Drawing.Point(1239, 592)
         Me.SalirPictureBox.Margin = New System.Windows.Forms.Padding(2)
         Me.SalirPictureBox.Name = "SalirPictureBox"
         Me.SalirPictureBox.Size = New System.Drawing.Size(74, 80)
@@ -356,7 +356,7 @@ Partial Class MenuServicios
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Sistema_CEIJ.My.Resources.Resources.v748_toon_111
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1488, 839)
+        Me.ClientSize = New System.Drawing.Size(1370, 749)
         Me.Controls.Add(Me.ServiciosDataGridView)
         Me.Controls.Add(Me.FillToolStrip)
         Me.Controls.Add(Me.ServiciosBindingNavigator)

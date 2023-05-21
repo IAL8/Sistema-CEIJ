@@ -251,7 +251,7 @@ Partial Class MenuInventario
         Me.InventarioDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4})
         Me.InventarioDataGridView.DataSource = Me.InventarioBindingSource
         Me.InventarioDataGridView.Location = New System.Drawing.Point(343, 211)
-        Me.InventarioDataGridView.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.InventarioDataGridView.Margin = New System.Windows.Forms.Padding(2)
         Me.InventarioDataGridView.Name = "InventarioDataGridView"
         Me.InventarioDataGridView.ReadOnly = True
         Me.InventarioDataGridView.RowHeadersWidth = 51
@@ -333,8 +333,8 @@ Partial Class MenuInventario
         Me.SalirPictureBox.BackColor = System.Drawing.Color.Transparent
         Me.SalirPictureBox.Cursor = System.Windows.Forms.Cursors.Hand
         Me.SalirPictureBox.Image = CType(resources.GetObject("SalirPictureBox.Image"), System.Drawing.Image)
-        Me.SalirPictureBox.Location = New System.Drawing.Point(1340, 695)
-        Me.SalirPictureBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.SalirPictureBox.Location = New System.Drawing.Point(1192, 570)
+        Me.SalirPictureBox.Margin = New System.Windows.Forms.Padding(2)
         Me.SalirPictureBox.Name = "SalirPictureBox"
         Me.SalirPictureBox.Size = New System.Drawing.Size(74, 80)
         Me.SalirPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -347,7 +347,7 @@ Partial Class MenuInventario
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Sistema_CEIJ.My.Resources.Resources.v748_toon_111
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1488, 839)
+        Me.ClientSize = New System.Drawing.Size(1370, 749)
         Me.Controls.Add(Me.FillToolStrip)
         Me.Controls.Add(Me.InventarioDataGridView)
         Me.Controls.Add(Me.InventarioBindingNavigator)
@@ -356,7 +356,7 @@ Partial Class MenuInventario
         Me.Controls.Add(Me.EliminarBTN)
         Me.Controls.Add(Me.NuevoBTN)
         Me.Controls.Add(Me.CursosLabel)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "MenuInventario"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "MenuInventario"

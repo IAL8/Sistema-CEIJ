@@ -71,7 +71,7 @@ Partial Class Cursos
         HoraLabel.BackColor = System.Drawing.Color.Transparent
         HoraLabel.Font = New System.Drawing.Font("Arial", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         HoraLabel.ForeColor = System.Drawing.Color.DarkKhaki
-        HoraLabel.Location = New System.Drawing.Point(564, 307)
+        HoraLabel.Location = New System.Drawing.Point(430, 316)
         HoraLabel.Name = "HoraLabel"
         HoraLabel.Size = New System.Drawing.Size(87, 32)
         HoraLabel.TabIndex = 63
@@ -83,7 +83,7 @@ Partial Class Cursos
         PrecioLabel.BackColor = System.Drawing.Color.Transparent
         PrecioLabel.Font = New System.Drawing.Font("Arial", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         PrecioLabel.ForeColor = System.Drawing.Color.DarkKhaki
-        PrecioLabel.Location = New System.Drawing.Point(564, 355)
+        PrecioLabel.Location = New System.Drawing.Point(430, 364)
         PrecioLabel.Name = "PrecioLabel"
         PrecioLabel.Size = New System.Drawing.Size(108, 32)
         PrecioLabel.TabIndex = 62
@@ -95,7 +95,7 @@ Partial Class Cursos
         FechaLabel.BackColor = System.Drawing.Color.Transparent
         FechaLabel.Font = New System.Drawing.Font("Arial", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         FechaLabel.ForeColor = System.Drawing.Color.DarkKhaki
-        FechaLabel.Location = New System.Drawing.Point(564, 257)
+        FechaLabel.Location = New System.Drawing.Point(430, 266)
         FechaLabel.Name = "FechaLabel"
         FechaLabel.Size = New System.Drawing.Size(103, 32)
         FechaLabel.TabIndex = 59
@@ -107,7 +107,7 @@ Partial Class Cursos
         NombreLabel.BackColor = System.Drawing.Color.Transparent
         NombreLabel.Font = New System.Drawing.Font("Arial", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         NombreLabel.ForeColor = System.Drawing.Color.DarkKhaki
-        NombreLabel.Location = New System.Drawing.Point(564, 209)
+        NombreLabel.Location = New System.Drawing.Point(430, 218)
         NombreLabel.Name = "NombreLabel"
         NombreLabel.Size = New System.Drawing.Size(130, 32)
         NombreLabel.TabIndex = 58
@@ -119,7 +119,7 @@ Partial Class Cursos
         Label1.BackColor = System.Drawing.Color.Transparent
         Label1.Font = New System.Drawing.Font("Arial", 11.0!, System.Drawing.FontStyle.Bold)
         Label1.ForeColor = System.Drawing.Color.DarkKhaki
-        Label1.Location = New System.Drawing.Point(778, 305)
+        Label1.Location = New System.Drawing.Point(635, 330)
         Label1.Name = "Label1"
         Label1.Size = New System.Drawing.Size(13, 18)
         Label1.TabIndex = 71
@@ -131,7 +131,7 @@ Partial Class Cursos
         Me.CursoLabel.BackColor = System.Drawing.Color.Transparent
         Me.CursoLabel.Font = New System.Drawing.Font("Arial", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CursoLabel.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.CursoLabel.Location = New System.Drawing.Point(658, 125)
+        Me.CursoLabel.Location = New System.Drawing.Point(524, 134)
         Me.CursoLabel.Name = "CursoLabel"
         Me.CursoLabel.Size = New System.Drawing.Size(163, 55)
         Me.CursoLabel.TabIndex = 64
@@ -143,7 +143,7 @@ Partial Class Cursos
         Me.CancelarBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.CancelarBTN.Font = New System.Drawing.Font("Arial Narrow", 13.0!, System.Drawing.FontStyle.Bold)
         Me.CancelarBTN.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.CancelarBTN.Location = New System.Drawing.Point(787, 425)
+        Me.CancelarBTN.Location = New System.Drawing.Point(653, 434)
         Me.CancelarBTN.Name = "CancelarBTN"
         Me.CancelarBTN.Size = New System.Drawing.Size(103, 36)
         Me.CancelarBTN.TabIndex = 61
@@ -157,7 +157,7 @@ Partial Class Cursos
         Me.RegistrarBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.RegistrarBTN.Font = New System.Drawing.Font("Arial Narrow", 13.0!, System.Drawing.FontStyle.Bold)
         Me.RegistrarBTN.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.RegistrarBTN.Location = New System.Drawing.Point(609, 425)
+        Me.RegistrarBTN.Location = New System.Drawing.Point(475, 434)
         Me.RegistrarBTN.Name = "RegistrarBTN"
         Me.RegistrarBTN.Size = New System.Drawing.Size(103, 36)
         Me.RegistrarBTN.TabIndex = 60
@@ -167,7 +167,7 @@ Partial Class Cursos
         'NombreTextBox
         '
         Me.NombreTextBox.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NombreTextBox.Location = New System.Drawing.Point(703, 210)
+        Me.NombreTextBox.Location = New System.Drawing.Point(569, 219)
         Me.NombreTextBox.Name = "NombreTextBox"
         Me.NombreTextBox.Size = New System.Drawing.Size(162, 29)
         Me.NombreTextBox.TabIndex = 55
@@ -175,7 +175,7 @@ Partial Class Cursos
         'PrecioTextBox
         '
         Me.PrecioTextBox.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PrecioTextBox.Location = New System.Drawing.Point(703, 360)
+        Me.PrecioTextBox.Location = New System.Drawing.Point(569, 369)
         Me.PrecioTextBox.Name = "PrecioTextBox"
         Me.PrecioTextBox.Size = New System.Drawing.Size(162, 29)
         Me.PrecioTextBox.TabIndex = 66
@@ -184,8 +184,8 @@ Partial Class Cursos
         '
         Me.FechaDateTimePicker.CalendarFont = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FechaDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.FechaDateTimePicker.Location = New System.Drawing.Point(703, 269)
-        Me.FechaDateTimePicker.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.FechaDateTimePicker.Location = New System.Drawing.Point(569, 278)
+        Me.FechaDateTimePicker.Margin = New System.Windows.Forms.Padding(2)
         Me.FechaDateTimePicker.MaxDate = New Date(2024, 6, 18, 0, 0, 0, 0)
         Me.FechaDateTimePicker.MinDate = New Date(2020, 5, 18, 0, 0, 0, 0)
         Me.FechaDateTimePicker.Name = "FechaDateTimePicker"
@@ -339,8 +339,8 @@ Partial Class Cursos
         'HoraIDateTimePicker
         '
         Me.HoraIDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Time
-        Me.HoraIDateTimePicker.Location = New System.Drawing.Point(692, 319)
-        Me.HoraIDateTimePicker.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.HoraIDateTimePicker.Location = New System.Drawing.Point(558, 328)
+        Me.HoraIDateTimePicker.Margin = New System.Windows.Forms.Padding(2)
         Me.HoraIDateTimePicker.Name = "HoraIDateTimePicker"
         Me.HoraIDateTimePicker.Size = New System.Drawing.Size(72, 20)
         Me.HoraIDateTimePicker.TabIndex = 72
@@ -348,8 +348,8 @@ Partial Class Cursos
         'HoraFDateTimePicker
         '
         Me.HoraFDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Time
-        Me.HoraFDateTimePicker.Location = New System.Drawing.Point(787, 319)
-        Me.HoraFDateTimePicker.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.HoraFDateTimePicker.Location = New System.Drawing.Point(653, 328)
+        Me.HoraFDateTimePicker.Margin = New System.Windows.Forms.Padding(2)
         Me.HoraFDateTimePicker.Name = "HoraFDateTimePicker"
         Me.HoraFDateTimePicker.Size = New System.Drawing.Size(72, 20)
         Me.HoraFDateTimePicker.TabIndex = 73
@@ -375,7 +375,7 @@ Partial Class Cursos
         Me.Controls.Add(FechaLabel)
         Me.Controls.Add(NombreLabel)
         Me.Controls.Add(Me.NombreTextBox)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Cursos"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Cursos"

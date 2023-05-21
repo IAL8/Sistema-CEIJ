@@ -130,8 +130,8 @@ Partial Class MenuCursos
         Me.SalirPictureBox.BackColor = System.Drawing.Color.Transparent
         Me.SalirPictureBox.Cursor = System.Windows.Forms.Cursors.Hand
         Me.SalirPictureBox.Image = CType(resources.GetObject("SalirPictureBox.Image"), System.Drawing.Image)
-        Me.SalirPictureBox.Location = New System.Drawing.Point(1340, 695)
-        Me.SalirPictureBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.SalirPictureBox.Location = New System.Drawing.Point(1285, 436)
+        Me.SalirPictureBox.Margin = New System.Windows.Forms.Padding(2)
         Me.SalirPictureBox.Name = "SalirPictureBox"
         Me.SalirPictureBox.Size = New System.Drawing.Size(74, 80)
         Me.SalirPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -274,7 +274,7 @@ Partial Class MenuCursos
         Me.CursosDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn6, Me.Nombre_Cur, Me.DataGridViewTextBoxColumn2, Me.HoraI_Cur, Me.HoraF_Cur, Me.DataGridViewTextBoxColumn4})
         Me.CursosDataGridView.DataSource = Me.CursosBindingSource
         Me.CursosDataGridView.Location = New System.Drawing.Point(325, 201)
-        Me.CursosDataGridView.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.CursosDataGridView.Margin = New System.Windows.Forms.Padding(2)
         Me.CursosDataGridView.Name = "CursosDataGridView"
         Me.CursosDataGridView.ReadOnly = True
         Me.CursosDataGridView.RowHeadersWidth = 51
@@ -423,7 +423,7 @@ Partial Class MenuCursos
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Sistema_CEIJ.My.Resources.Resources.v748_toon_111
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1231, 609)
+        Me.ClientSize = New System.Drawing.Size(1370, 719)
         Me.Controls.Add(Me.AlumnosBTN)
         Me.Controls.Add(Me.FillToolStrip)
         Me.Controls.Add(Me.FillToolStrip1)
@@ -435,7 +435,7 @@ Partial Class MenuCursos
         Me.Controls.Add(Me.EliminarBTN)
         Me.Controls.Add(Me.NuevoBTN)
         Me.Controls.Add(Me.CursosLabel)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "MenuCursos"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "MenuCursos"

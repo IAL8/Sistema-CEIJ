@@ -71,8 +71,8 @@ Partial Class MainMenu
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel1.Controls.Add(Me.UserLabel)
         Me.Panel1.Controls.Add(Me.PictureBox1)
-        Me.Panel1.Location = New System.Drawing.Point(842, 134)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel1.Location = New System.Drawing.Point(848, 68)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(219, 60)
         Me.Panel1.TabIndex = 10
@@ -96,7 +96,7 @@ Partial Class MainMenu
         Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox1.Image = Global.Sistema_CEIJ.My.Resources.Resources.img_usuario
         Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(59, 60)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -109,8 +109,8 @@ Partial Class MainMenu
         Me.VentasPanel.Controls.Add(Me.Salir)
         Me.VentasPanel.Controls.Add(Me.VentaLabel)
         Me.VentasPanel.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.VentasPanel.Location = New System.Drawing.Point(565, 529)
-        Me.VentasPanel.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.VentasPanel.Location = New System.Drawing.Point(573, 470)
+        Me.VentasPanel.Margin = New System.Windows.Forms.Padding(2)
         Me.VentasPanel.Name = "VentasPanel"
         Me.VentasPanel.Size = New System.Drawing.Size(183, 220)
         Me.VentasPanel.TabIndex = 17
@@ -119,7 +119,7 @@ Partial Class MainMenu
         '
         Me.Salir.Image = Global.Sistema_CEIJ.My.Resources.Resources.Balance
         Me.Salir.Location = New System.Drawing.Point(26, 24)
-        Me.Salir.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Salir.Margin = New System.Windows.Forms.Padding(2)
         Me.Salir.Name = "Salir"
         Me.Salir.Size = New System.Drawing.Size(131, 110)
         Me.Salir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -146,8 +146,8 @@ Partial Class MainMenu
         Me.ServiciosPanel.Controls.Add(Me.PictureBox3)
         Me.ServiciosPanel.Controls.Add(Me.Label8)
         Me.ServiciosPanel.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ServiciosPanel.Location = New System.Drawing.Point(303, 533)
-        Me.ServiciosPanel.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ServiciosPanel.Location = New System.Drawing.Point(311, 474)
+        Me.ServiciosPanel.Margin = New System.Windows.Forms.Padding(2)
         Me.ServiciosPanel.Name = "ServiciosPanel"
         Me.ServiciosPanel.Size = New System.Drawing.Size(183, 216)
         Me.ServiciosPanel.TabIndex = 16
@@ -156,7 +156,7 @@ Partial Class MainMenu
         '
         Me.PictureBox3.Image = Global.Sistema_CEIJ.My.Resources.Resources.Servicios
         Me.PictureBox3.Location = New System.Drawing.Point(28, 20)
-        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(123, 110)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -183,8 +183,8 @@ Partial Class MainMenu
         Me.ClientesPanel.Controls.Add(Me.PictureBox4)
         Me.ClientesPanel.Controls.Add(Me.ClientesLabel)
         Me.ClientesPanel.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ClientesPanel.Location = New System.Drawing.Point(830, 255)
-        Me.ClientesPanel.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ClientesPanel.Location = New System.Drawing.Point(838, 196)
+        Me.ClientesPanel.Margin = New System.Windows.Forms.Padding(2)
         Me.ClientesPanel.Name = "ClientesPanel"
         Me.ClientesPanel.Size = New System.Drawing.Size(185, 215)
         Me.ClientesPanel.TabIndex = 15
@@ -193,7 +193,7 @@ Partial Class MainMenu
         '
         Me.PictureBox4.Image = Global.Sistema_CEIJ.My.Resources.Resources.Cliente
         Me.PictureBox4.Location = New System.Drawing.Point(31, 11)
-        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(130, 125)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -220,8 +220,8 @@ Partial Class MainMenu
         Me.CursosPanel.Controls.Add(Me.ActividadesPictureBox)
         Me.CursosPanel.Controls.Add(Me.CursosLabel)
         Me.CursosPanel.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.CursosPanel.Location = New System.Drawing.Point(565, 255)
-        Me.CursosPanel.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.CursosPanel.Location = New System.Drawing.Point(573, 196)
+        Me.CursosPanel.Margin = New System.Windows.Forms.Padding(2)
         Me.CursosPanel.Name = "CursosPanel"
         Me.CursosPanel.Size = New System.Drawing.Size(183, 216)
         Me.CursosPanel.TabIndex = 14
@@ -230,7 +230,7 @@ Partial Class MainMenu
         '
         Me.ActividadesPictureBox.Image = Global.Sistema_CEIJ.My.Resources.Resources.Curso
         Me.ActividadesPictureBox.Location = New System.Drawing.Point(26, 11)
-        Me.ActividadesPictureBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ActividadesPictureBox.Margin = New System.Windows.Forms.Padding(2)
         Me.ActividadesPictureBox.Name = "ActividadesPictureBox"
         Me.ActividadesPictureBox.Size = New System.Drawing.Size(131, 125)
         Me.ActividadesPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -257,8 +257,8 @@ Partial Class MainMenu
         Me.InventarioPanel.Controls.Add(Me.PictureBox5)
         Me.InventarioPanel.Controls.Add(Me.Label1)
         Me.InventarioPanel.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.InventarioPanel.Location = New System.Drawing.Point(834, 529)
-        Me.InventarioPanel.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.InventarioPanel.Location = New System.Drawing.Point(842, 470)
+        Me.InventarioPanel.Margin = New System.Windows.Forms.Padding(2)
         Me.InventarioPanel.Name = "InventarioPanel"
         Me.InventarioPanel.Size = New System.Drawing.Size(181, 220)
         Me.InventarioPanel.TabIndex = 16
@@ -267,7 +267,7 @@ Partial Class MainMenu
         '
         Me.PictureBox5.Image = Global.Sistema_CEIJ.My.Resources.Resources.Inventario
         Me.PictureBox5.Location = New System.Drawing.Point(27, 24)
-        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(130, 110)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -292,7 +292,7 @@ Partial Class MainMenu
         '
         Me.PictureBox2.Image = Global.Sistema_CEIJ.My.Resources.Resources.Calendario
         Me.PictureBox2.Location = New System.Drawing.Point(33, 11)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(118, 125)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -319,8 +319,8 @@ Partial Class MainMenu
         Me.AgendalPanel.Controls.Add(Me.AgendaLabel)
         Me.AgendalPanel.Controls.Add(Me.PictureBox2)
         Me.AgendalPanel.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.AgendalPanel.Location = New System.Drawing.Point(303, 255)
-        Me.AgendalPanel.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.AgendalPanel.Location = New System.Drawing.Point(311, 196)
+        Me.AgendalPanel.Margin = New System.Windows.Forms.Padding(2)
         Me.AgendalPanel.Name = "AgendalPanel"
         Me.AgendalPanel.Size = New System.Drawing.Size(183, 216)
         Me.AgendalPanel.TabIndex = 13
@@ -331,7 +331,7 @@ Partial Class MainMenu
         Me.MenuLabel.BackColor = System.Drawing.Color.Transparent
         Me.MenuLabel.Font = New System.Drawing.Font("Arial", 54.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MenuLabel.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.MenuLabel.Location = New System.Drawing.Point(544, 111)
+        Me.MenuLabel.Location = New System.Drawing.Point(550, 45)
         Me.MenuLabel.Name = "MenuLabel"
         Me.MenuLabel.Size = New System.Drawing.Size(227, 83)
         Me.MenuLabel.TabIndex = 18
@@ -341,7 +341,7 @@ Partial Class MainMenu
         '
         Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox6.Image = Global.Sistema_CEIJ.My.Resources.Resources.Logo
-        Me.PictureBox6.Location = New System.Drawing.Point(294, 90)
+        Me.PictureBox6.Location = New System.Drawing.Point(300, 24)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(120, 119)
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -353,8 +353,8 @@ Partial Class MainMenu
         Me.SalirPictureBox.BackColor = System.Drawing.Color.Transparent
         Me.SalirPictureBox.Cursor = System.Windows.Forms.Cursors.Hand
         Me.SalirPictureBox.Image = CType(resources.GetObject("SalirPictureBox.Image"), System.Drawing.Image)
-        Me.SalirPictureBox.Location = New System.Drawing.Point(1285, 657)
-        Me.SalirPictureBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.SalirPictureBox.Location = New System.Drawing.Point(1145, 607)
+        Me.SalirPictureBox.Margin = New System.Windows.Forms.Padding(2)
         Me.SalirPictureBox.Name = "SalirPictureBox"
         Me.SalirPictureBox.Size = New System.Drawing.Size(74, 80)
         Me.SalirPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -378,7 +378,7 @@ Partial Class MainMenu
         Me.Controls.Add(Me.ClientesPanel)
         Me.Controls.Add(Me.CursosPanel)
         Me.Controls.Add(Me.Panel1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "MainMenu"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "MainMenuvb"

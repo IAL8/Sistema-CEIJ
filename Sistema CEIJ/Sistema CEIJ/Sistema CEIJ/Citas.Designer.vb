@@ -90,7 +90,7 @@ Partial Class Citas
         HoraLabel.BackColor = System.Drawing.Color.Transparent
         HoraLabel.Font = New System.Drawing.Font("Arial", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         HoraLabel.ForeColor = System.Drawing.Color.DarkKhaki
-        HoraLabel.Location = New System.Drawing.Point(559, 433)
+        HoraLabel.Location = New System.Drawing.Point(553, 351)
         HoraLabel.Name = "HoraLabel"
         HoraLabel.Size = New System.Drawing.Size(87, 32)
         HoraLabel.TabIndex = 80
@@ -102,7 +102,7 @@ Partial Class Citas
         FechaLabel.BackColor = System.Drawing.Color.Transparent
         FechaLabel.Font = New System.Drawing.Font("Arial", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         FechaLabel.ForeColor = System.Drawing.Color.DarkKhaki
-        FechaLabel.Location = New System.Drawing.Point(543, 371)
+        FechaLabel.Location = New System.Drawing.Point(537, 289)
         FechaLabel.Name = "FechaLabel"
         FechaLabel.Size = New System.Drawing.Size(103, 32)
         FechaLabel.TabIndex = 76
@@ -114,7 +114,7 @@ Partial Class Citas
         NombreLabel.BackColor = System.Drawing.Color.Transparent
         NombreLabel.Font = New System.Drawing.Font("Arial", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         NombreLabel.ForeColor = System.Drawing.Color.DarkKhaki
-        NombreLabel.Location = New System.Drawing.Point(515, 237)
+        NombreLabel.Location = New System.Drawing.Point(509, 155)
         NombreLabel.Name = "NombreLabel"
         NombreLabel.Size = New System.Drawing.Size(131, 32)
         NombreLabel.TabIndex = 75
@@ -123,8 +123,8 @@ Partial Class Citas
         'HoraDateTimePicker
         '
         Me.HoraDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Time
-        Me.HoraDateTimePicker.Location = New System.Drawing.Point(662, 441)
-        Me.HoraDateTimePicker.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.HoraDateTimePicker.Location = New System.Drawing.Point(656, 359)
+        Me.HoraDateTimePicker.Margin = New System.Windows.Forms.Padding(2)
         Me.HoraDateTimePicker.Name = "HoraDateTimePicker"
         Me.HoraDateTimePicker.Size = New System.Drawing.Size(162, 20)
         Me.HoraDateTimePicker.TabIndex = 85
@@ -133,8 +133,8 @@ Partial Class Citas
         '
         Me.FechaDateTimePicker.CalendarFont = New System.Drawing.Font("Arial", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FechaDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.FechaDateTimePicker.Location = New System.Drawing.Point(662, 379)
-        Me.FechaDateTimePicker.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.FechaDateTimePicker.Location = New System.Drawing.Point(656, 297)
+        Me.FechaDateTimePicker.Margin = New System.Windows.Forms.Padding(2)
         Me.FechaDateTimePicker.MaxDate = New Date(2024, 6, 18, 0, 0, 0, 0)
         Me.FechaDateTimePicker.MinDate = New Date(2020, 5, 18, 0, 0, 0, 0)
         Me.FechaDateTimePicker.Name = "FechaDateTimePicker"
@@ -148,7 +148,7 @@ Partial Class Citas
         Me.CursoLabel.BackColor = System.Drawing.Color.Transparent
         Me.CursoLabel.Font = New System.Drawing.Font("Arial", 54.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CursoLabel.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.CursoLabel.Location = New System.Drawing.Point(648, 99)
+        Me.CursoLabel.Location = New System.Drawing.Point(653, 46)
         Me.CursoLabel.Name = "CursoLabel"
         Me.CursoLabel.Size = New System.Drawing.Size(173, 83)
         Me.CursoLabel.TabIndex = 81
@@ -160,7 +160,7 @@ Partial Class Citas
         Me.CancelarBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.CancelarBTN.Font = New System.Drawing.Font("Arial Narrow", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CancelarBTN.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.CancelarBTN.Location = New System.Drawing.Point(789, 709)
+        Me.CancelarBTN.Location = New System.Drawing.Point(792, 585)
         Me.CancelarBTN.Name = "CancelarBTN"
         Me.CancelarBTN.Size = New System.Drawing.Size(136, 56)
         Me.CancelarBTN.TabIndex = 78
@@ -174,7 +174,7 @@ Partial Class Citas
         Me.RegistrarBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.RegistrarBTN.Font = New System.Drawing.Font("Arial Narrow", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RegistrarBTN.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.RegistrarBTN.Location = New System.Drawing.Point(565, 709)
+        Me.RegistrarBTN.Location = New System.Drawing.Point(568, 585)
         Me.RegistrarBTN.Name = "RegistrarBTN"
         Me.RegistrarBTN.Size = New System.Drawing.Size(136, 56)
         Me.RegistrarBTN.TabIndex = 77
@@ -185,7 +185,7 @@ Partial Class Citas
         '
         Me.ServicioTextBox.Enabled = False
         Me.ServicioTextBox.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ServicioTextBox.Location = New System.Drawing.Point(652, 242)
+        Me.ServicioTextBox.Location = New System.Drawing.Point(646, 160)
         Me.ServicioTextBox.Name = "ServicioTextBox"
         Me.ServicioTextBox.Size = New System.Drawing.Size(174, 29)
         Me.ServicioTextBox.TabIndex = 74
@@ -320,7 +320,7 @@ Partial Class Citas
         Me.SeleccionBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.SeleccionBTN.Font = New System.Drawing.Font("Arial Narrow", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SeleccionBTN.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.SeleccionBTN.Location = New System.Drawing.Point(843, 237)
+        Me.SeleccionBTN.Location = New System.Drawing.Point(837, 155)
         Me.SeleccionBTN.Name = "SeleccionBTN"
         Me.SeleccionBTN.Size = New System.Drawing.Size(136, 41)
         Me.SeleccionBTN.TabIndex = 87
@@ -337,8 +337,8 @@ Partial Class Citas
         Me.ServiciosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ServiciosDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.Categoria_Ser, Me.DataGridViewTextBoxColumn4})
         Me.ServiciosDataGridView.DataSource = Me.ServiciosBindingSource
-        Me.ServiciosDataGridView.Location = New System.Drawing.Point(415, 298)
-        Me.ServiciosDataGridView.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ServiciosDataGridView.Location = New System.Drawing.Point(409, 216)
+        Me.ServiciosDataGridView.Margin = New System.Windows.Forms.Padding(2)
         Me.ServiciosDataGridView.Name = "ServiciosDataGridView"
         Me.ServiciosDataGridView.ReadOnly = True
         Me.ServiciosDataGridView.RowHeadersWidth = 51
@@ -389,7 +389,7 @@ Partial Class Citas
         Me.SClienteBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.SClienteBTN.Font = New System.Drawing.Font("Arial Narrow", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SClienteBTN.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.SClienteBTN.Location = New System.Drawing.Point(854, 489)
+        Me.SClienteBTN.Location = New System.Drawing.Point(848, 407)
         Me.SClienteBTN.Name = "SClienteBTN"
         Me.SClienteBTN.Size = New System.Drawing.Size(136, 41)
         Me.SClienteBTN.TabIndex = 90
@@ -400,7 +400,7 @@ Partial Class Citas
         '
         Me.ClienteTextBox.Enabled = False
         Me.ClienteTextBox.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ClienteTextBox.Location = New System.Drawing.Point(652, 501)
+        Me.ClienteTextBox.Location = New System.Drawing.Point(646, 419)
         Me.ClienteTextBox.Name = "ClienteTextBox"
         Me.ClienteTextBox.Size = New System.Drawing.Size(169, 29)
         Me.ClienteTextBox.TabIndex = 89
@@ -416,8 +416,8 @@ Partial Class Citas
         Me.ClientesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ClientesDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7})
         Me.ClientesDataGridView.DataSource = Me.ClientesBindingSource
-        Me.ClientesDataGridView.Location = New System.Drawing.Point(232, 554)
-        Me.ClientesDataGridView.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ClientesDataGridView.Location = New System.Drawing.Point(296, 473)
+        Me.ClientesDataGridView.Margin = New System.Windows.Forms.Padding(2)
         Me.ClientesDataGridView.Name = "ClientesDataGridView"
         Me.ClientesDataGridView.ReadOnly = True
         Me.ClientesDataGridView.RowHeadersWidth = 51
@@ -468,7 +468,7 @@ Partial Class Citas
         Me.ClienteLabel.BackColor = System.Drawing.Color.Transparent
         Me.ClienteLabel.Font = New System.Drawing.Font("Arial", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ClienteLabel.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.ClienteLabel.Location = New System.Drawing.Point(530, 494)
+        Me.ClienteLabel.Location = New System.Drawing.Point(524, 412)
         Me.ClienteLabel.Name = "ClienteLabel"
         Me.ClienteLabel.Size = New System.Drawing.Size(116, 32)
         Me.ClienteLabel.TabIndex = 92
@@ -516,7 +516,7 @@ Partial Class Citas
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Sistema_CEIJ.My.Resources.Resources.FondoSign
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1488, 839)
+        Me.ClientSize = New System.Drawing.Size(1370, 749)
         Me.Controls.Add(Me.ClienteLabel)
         Me.Controls.Add(Me.ClientesDataGridView)
         Me.Controls.Add(Me.SClienteBTN)
@@ -533,7 +533,7 @@ Partial Class Citas
         Me.Controls.Add(NombreLabel)
         Me.Controls.Add(Me.ServicioTextBox)
         Me.Controls.Add(Me.CitasBindingNavigator)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Citas"
         Me.Text = "Citas"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized

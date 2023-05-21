@@ -68,4 +68,8 @@
     Private Sub MenuClientes_VisibleChanged(sender As Object, e As EventArgs) Handles MyBase.VisibleChanged
         Me.ClientesTableAdapter.Fill(Me.BD_Sistema_CEIJDataSet.Clientes)
     End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+        Me.Close()
+    End Sub
 End Class

@@ -73,7 +73,7 @@ Partial Class MenuAgenda
         Me.EditarBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.EditarBTN.Font = New System.Drawing.Font("Arial Narrow", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.EditarBTN.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.EditarBTN.Location = New System.Drawing.Point(688, 563)
+        Me.EditarBTN.Location = New System.Drawing.Point(600, 574)
         Me.EditarBTN.Name = "EditarBTN"
         Me.EditarBTN.Size = New System.Drawing.Size(136, 55)
         Me.EditarBTN.TabIndex = 35
@@ -87,7 +87,7 @@ Partial Class MenuAgenda
         Me.EliminarBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.EliminarBTN.Font = New System.Drawing.Font("Arial Narrow", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.EliminarBTN.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.EliminarBTN.Location = New System.Drawing.Point(407, 563)
+        Me.EliminarBTN.Location = New System.Drawing.Point(319, 574)
         Me.EliminarBTN.Name = "EliminarBTN"
         Me.EliminarBTN.Size = New System.Drawing.Size(136, 55)
         Me.EliminarBTN.TabIndex = 34
@@ -101,7 +101,7 @@ Partial Class MenuAgenda
         Me.NuevoBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.NuevoBTN.Font = New System.Drawing.Font("Arial Narrow", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.NuevoBTN.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.NuevoBTN.Location = New System.Drawing.Point(966, 563)
+        Me.NuevoBTN.Location = New System.Drawing.Point(878, 574)
         Me.NuevoBTN.Name = "NuevoBTN"
         Me.NuevoBTN.Size = New System.Drawing.Size(136, 55)
         Me.NuevoBTN.TabIndex = 33
@@ -114,7 +114,7 @@ Partial Class MenuAgenda
         Me.ServiciosLabel.BackColor = System.Drawing.Color.Transparent
         Me.ServiciosLabel.Font = New System.Drawing.Font("Arial", 54.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ServiciosLabel.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.ServiciosLabel.Location = New System.Drawing.Point(648, 99)
+        Me.ServiciosLabel.Location = New System.Drawing.Point(560, 110)
         Me.ServiciosLabel.Name = "ServiciosLabel"
         Me.ServiciosLabel.Size = New System.Drawing.Size(214, 83)
         Me.ServiciosLabel.TabIndex = 32
@@ -125,8 +125,8 @@ Partial Class MenuAgenda
         Me.SalirPictureBox.BackColor = System.Drawing.Color.Transparent
         Me.SalirPictureBox.Cursor = System.Windows.Forms.Cursors.Hand
         Me.SalirPictureBox.Image = CType(resources.GetObject("SalirPictureBox.Image"), System.Drawing.Image)
-        Me.SalirPictureBox.Location = New System.Drawing.Point(1340, 695)
-        Me.SalirPictureBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.SalirPictureBox.Location = New System.Drawing.Point(1220, 561)
+        Me.SalirPictureBox.Margin = New System.Windows.Forms.Padding(2)
         Me.SalirPictureBox.Name = "SalirPictureBox"
         Me.SalirPictureBox.Size = New System.Drawing.Size(74, 80)
         Me.SalirPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -268,8 +268,8 @@ Partial Class MenuAgenda
         Me.AgendaDataTableDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.AgendaDataTableDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.C_ID, Me.Nombre, Me.Se_ID, Me.Nom_Ser, Me.Ci_Fecha, Me.Ci_Hora, Me.Ci_Precio})
         Me.AgendaDataTableDataGridView.DataSource = Me.AgendaDataTableBindingSource
-        Me.AgendaDataTableDataGridView.Location = New System.Drawing.Point(272, 252)
-        Me.AgendaDataTableDataGridView.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.AgendaDataTableDataGridView.Location = New System.Drawing.Point(184, 263)
+        Me.AgendaDataTableDataGridView.Margin = New System.Windows.Forms.Padding(2)
         Me.AgendaDataTableDataGridView.Name = "AgendaDataTableDataGridView"
         Me.AgendaDataTableDataGridView.ReadOnly = True
         Me.AgendaDataTableDataGridView.RowHeadersWidth = 51
@@ -377,7 +377,7 @@ Partial Class MenuAgenda
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Sistema_CEIJ.My.Resources.Resources.v748_toon_111
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1488, 839)
+        Me.ClientSize = New System.Drawing.Size(1370, 749)
         Me.Controls.Add(Me.AgendaDataTableDataGridView)
         Me.Controls.Add(Me.AgendaDataTableBindingNavigator)
         Me.Controls.Add(Me.SalirPictureBox)
@@ -385,7 +385,7 @@ Partial Class MenuAgenda
         Me.Controls.Add(Me.EliminarBTN)
         Me.Controls.Add(Me.NuevoBTN)
         Me.Controls.Add(Me.ServiciosLabel)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "MenuAgenda"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "MenuAgenda"

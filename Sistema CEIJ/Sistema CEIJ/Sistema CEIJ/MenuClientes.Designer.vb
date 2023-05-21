@@ -54,6 +54,7 @@ Partial Class MenuClientes
         Me.EliminarBTN = New System.Windows.Forms.Button()
         Me.EditarBTN = New System.Windows.Forms.Button()
         Me.SalirPictureBox = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.BD_Sistema_CEIJDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ClientesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ClientesBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -61,6 +62,7 @@ Partial Class MenuClientes
         CType(Me.ClientesDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.FillToolStrip.SuspendLayout()
         CType(Me.SalirPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ClientesLabel
@@ -69,7 +71,7 @@ Partial Class MenuClientes
         Me.ClientesLabel.BackColor = System.Drawing.Color.Transparent
         Me.ClientesLabel.Font = New System.Drawing.Font("Arial", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ClientesLabel.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.ClientesLabel.Location = New System.Drawing.Point(648, 99)
+        Me.ClientesLabel.Location = New System.Drawing.Point(454, 98)
         Me.ClientesLabel.Name = "ClientesLabel"
         Me.ClientesLabel.Size = New System.Drawing.Size(211, 55)
         Me.ClientesLabel.TabIndex = 19
@@ -231,13 +233,13 @@ Partial Class MenuClientes
         Me.ClientesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ClientesDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5})
         Me.ClientesDataGridView.DataSource = Me.ClientesBindingSource
-        Me.ClientesDataGridView.Location = New System.Drawing.Point(205, 177)
-        Me.ClientesDataGridView.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ClientesDataGridView.Location = New System.Drawing.Point(123, 175)
+        Me.ClientesDataGridView.Margin = New System.Windows.Forms.Padding(2)
         Me.ClientesDataGridView.Name = "ClientesDataGridView"
         Me.ClientesDataGridView.ReadOnly = True
         Me.ClientesDataGridView.RowHeadersWidth = 51
         Me.ClientesDataGridView.RowTemplate.Height = 24
-        Me.ClientesDataGridView.Size = New System.Drawing.Size(1032, 540)
+        Me.ClientesDataGridView.Size = New System.Drawing.Size(1032, 440)
         Me.ClientesDataGridView.TabIndex = 20
         '
         'DataGridViewTextBoxColumn1
@@ -305,7 +307,7 @@ Partial Class MenuClientes
         Me.NuevoBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.NuevoBTN.Font = New System.Drawing.Font("Arial Narrow", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.NuevoBTN.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.NuevoBTN.Location = New System.Drawing.Point(972, 695)
+        Me.NuevoBTN.Location = New System.Drawing.Point(811, 645)
         Me.NuevoBTN.Name = "NuevoBTN"
         Me.NuevoBTN.Size = New System.Drawing.Size(136, 56)
         Me.NuevoBTN.TabIndex = 22
@@ -319,7 +321,7 @@ Partial Class MenuClientes
         Me.EliminarBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.EliminarBTN.Font = New System.Drawing.Font("Arial Narrow", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.EliminarBTN.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.EliminarBTN.Location = New System.Drawing.Point(562, 695)
+        Me.EliminarBTN.Location = New System.Drawing.Point(401, 645)
         Me.EliminarBTN.Name = "EliminarBTN"
         Me.EliminarBTN.Size = New System.Drawing.Size(136, 56)
         Me.EliminarBTN.TabIndex = 23
@@ -333,7 +335,7 @@ Partial Class MenuClientes
         Me.EditarBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.EditarBTN.Font = New System.Drawing.Font("Arial Narrow", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.EditarBTN.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.EditarBTN.Location = New System.Drawing.Point(761, 695)
+        Me.EditarBTN.Location = New System.Drawing.Point(600, 645)
         Me.EditarBTN.Name = "EditarBTN"
         Me.EditarBTN.Size = New System.Drawing.Size(136, 56)
         Me.EditarBTN.TabIndex = 24
@@ -346,12 +348,25 @@ Partial Class MenuClientes
         Me.SalirPictureBox.Cursor = System.Windows.Forms.Cursors.Hand
         Me.SalirPictureBox.Image = CType(resources.GetObject("SalirPictureBox.Image"), System.Drawing.Image)
         Me.SalirPictureBox.Location = New System.Drawing.Point(1390, 695)
-        Me.SalirPictureBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.SalirPictureBox.Margin = New System.Windows.Forms.Padding(2)
         Me.SalirPictureBox.Name = "SalirPictureBox"
         Me.SalirPictureBox.Size = New System.Drawing.Size(74, 80)
         Me.SalirPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.SalirPictureBox.TabIndex = 25
         Me.SalirPictureBox.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(1215, 635)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(74, 80)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 26
+        Me.PictureBox1.TabStop = False
         '
         'MenuClientes
         '
@@ -359,7 +374,8 @@ Partial Class MenuClientes
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Sistema_CEIJ.My.Resources.Resources.v748_toon_111
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1484, 881)
+        Me.ClientSize = New System.Drawing.Size(1370, 749)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.SalirPictureBox)
         Me.Controls.Add(Me.EditarBTN)
         Me.Controls.Add(Me.EliminarBTN)
@@ -368,8 +384,9 @@ Partial Class MenuClientes
         Me.Controls.Add(Me.ClientesLabel)
         Me.Controls.Add(Me.FillToolStrip)
         Me.Controls.Add(Me.ClientesBindingNavigator)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "MenuClientes"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "MenuClientes"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.BD_Sistema_CEIJDataSet, System.ComponentModel.ISupportInitialize).EndInit()
@@ -381,6 +398,7 @@ Partial Class MenuClientes
         Me.FillToolStrip.ResumeLayout(False)
         Me.FillToolStrip.PerformLayout()
         CType(Me.SalirPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -416,4 +434,5 @@ Partial Class MenuClientes
     Friend WithEvents DataGridViewTextBoxColumn4 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn5 As DataGridViewTextBoxColumn
     Friend WithEvents ClientesDataGridView As DataGridView
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
