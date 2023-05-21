@@ -69,12 +69,11 @@ Partial Class Cursos
         '
         HoraLabel.AutoSize = True
         HoraLabel.BackColor = System.Drawing.Color.Transparent
-        HoraLabel.Font = New System.Drawing.Font("Arial", 11.0!, System.Drawing.FontStyle.Bold)
+        HoraLabel.Font = New System.Drawing.Font("Arial", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         HoraLabel.ForeColor = System.Drawing.Color.DarkKhaki
-        HoraLabel.Location = New System.Drawing.Point(40, 251)
-        HoraLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        HoraLabel.Location = New System.Drawing.Point(564, 307)
         HoraLabel.Name = "HoraLabel"
-        HoraLabel.Size = New System.Drawing.Size(61, 22)
+        HoraLabel.Size = New System.Drawing.Size(87, 32)
         HoraLabel.TabIndex = 63
         HoraLabel.Text = "Hora:"
         '
@@ -82,12 +81,11 @@ Partial Class Cursos
         '
         PrecioLabel.AutoSize = True
         PrecioLabel.BackColor = System.Drawing.Color.Transparent
-        PrecioLabel.Font = New System.Drawing.Font("Arial", 11.0!, System.Drawing.FontStyle.Bold)
+        PrecioLabel.Font = New System.Drawing.Font("Arial", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         PrecioLabel.ForeColor = System.Drawing.Color.DarkKhaki
-        PrecioLabel.Location = New System.Drawing.Point(40, 310)
-        PrecioLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        PrecioLabel.Location = New System.Drawing.Point(564, 355)
         PrecioLabel.Name = "PrecioLabel"
-        PrecioLabel.Size = New System.Drawing.Size(77, 22)
+        PrecioLabel.Size = New System.Drawing.Size(108, 32)
         PrecioLabel.TabIndex = 62
         PrecioLabel.Text = "Precio:"
         '
@@ -95,12 +93,11 @@ Partial Class Cursos
         '
         FechaLabel.AutoSize = True
         FechaLabel.BackColor = System.Drawing.Color.Transparent
-        FechaLabel.Font = New System.Drawing.Font("Arial", 11.0!, System.Drawing.FontStyle.Bold)
+        FechaLabel.Font = New System.Drawing.Font("Arial", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         FechaLabel.ForeColor = System.Drawing.Color.DarkKhaki
-        FechaLabel.Location = New System.Drawing.Point(40, 190)
-        FechaLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        FechaLabel.Location = New System.Drawing.Point(564, 257)
         FechaLabel.Name = "FechaLabel"
-        FechaLabel.Size = New System.Drawing.Size(74, 22)
+        FechaLabel.Size = New System.Drawing.Size(103, 32)
         FechaLabel.TabIndex = 59
         FechaLabel.Text = "Fecha:"
         '
@@ -108,12 +105,11 @@ Partial Class Cursos
         '
         NombreLabel.AutoSize = True
         NombreLabel.BackColor = System.Drawing.Color.Transparent
-        NombreLabel.Font = New System.Drawing.Font("Arial", 11.0!, System.Drawing.FontStyle.Bold)
+        NombreLabel.Font = New System.Drawing.Font("Arial", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         NombreLabel.ForeColor = System.Drawing.Color.DarkKhaki
-        NombreLabel.Location = New System.Drawing.Point(40, 131)
-        NombreLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        NombreLabel.Location = New System.Drawing.Point(564, 209)
         NombreLabel.Name = "NombreLabel"
-        NombreLabel.Size = New System.Drawing.Size(90, 22)
+        NombreLabel.Size = New System.Drawing.Size(130, 32)
         NombreLabel.TabIndex = 58
         NombreLabel.Text = "Nombre:"
         '
@@ -123,10 +119,9 @@ Partial Class Cursos
         Label1.BackColor = System.Drawing.Color.Transparent
         Label1.Font = New System.Drawing.Font("Arial", 11.0!, System.Drawing.FontStyle.Bold)
         Label1.ForeColor = System.Drawing.Color.DarkKhaki
-        Label1.Location = New System.Drawing.Point(279, 247)
-        Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Label1.Location = New System.Drawing.Point(778, 305)
         Label1.Name = "Label1"
-        Label1.Size = New System.Drawing.Size(16, 22)
+        Label1.Size = New System.Drawing.Size(13, 18)
         Label1.TabIndex = 71
         Label1.Text = "-"
         '
@@ -136,10 +131,9 @@ Partial Class Cursos
         Me.CursoLabel.BackColor = System.Drawing.Color.Transparent
         Me.CursoLabel.Font = New System.Drawing.Font("Arial", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CursoLabel.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.CursoLabel.Location = New System.Drawing.Point(119, 26)
-        Me.CursoLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.CursoLabel.Location = New System.Drawing.Point(658, 125)
         Me.CursoLabel.Name = "CursoLabel"
-        Me.CursoLabel.Size = New System.Drawing.Size(202, 68)
+        Me.CursoLabel.Size = New System.Drawing.Size(163, 55)
         Me.CursoLabel.TabIndex = 64
         Me.CursoLabel.Text = "Curso"
         '
@@ -149,10 +143,9 @@ Partial Class Cursos
         Me.CancelarBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.CancelarBTN.Font = New System.Drawing.Font("Arial Narrow", 13.0!, System.Drawing.FontStyle.Bold)
         Me.CancelarBTN.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.CancelarBTN.Location = New System.Drawing.Point(290, 395)
-        Me.CancelarBTN.Margin = New System.Windows.Forms.Padding(4)
+        Me.CancelarBTN.Location = New System.Drawing.Point(787, 425)
         Me.CancelarBTN.Name = "CancelarBTN"
-        Me.CancelarBTN.Size = New System.Drawing.Size(137, 44)
+        Me.CancelarBTN.Size = New System.Drawing.Size(103, 36)
         Me.CancelarBTN.TabIndex = 61
         Me.CancelarBTN.Text = "Cancelar"
         Me.CancelarBTN.UseVisualStyleBackColor = False
@@ -164,10 +157,9 @@ Partial Class Cursos
         Me.RegistrarBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.RegistrarBTN.Font = New System.Drawing.Font("Arial Narrow", 13.0!, System.Drawing.FontStyle.Bold)
         Me.RegistrarBTN.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.RegistrarBTN.Location = New System.Drawing.Point(53, 395)
-        Me.RegistrarBTN.Margin = New System.Windows.Forms.Padding(4)
+        Me.RegistrarBTN.Location = New System.Drawing.Point(609, 425)
         Me.RegistrarBTN.Name = "RegistrarBTN"
-        Me.RegistrarBTN.Size = New System.Drawing.Size(137, 44)
+        Me.RegistrarBTN.Size = New System.Drawing.Size(103, 36)
         Me.RegistrarBTN.TabIndex = 60
         Me.RegistrarBTN.Text = "Guardar"
         Me.RegistrarBTN.UseVisualStyleBackColor = False
@@ -175,30 +167,29 @@ Partial Class Cursos
         'NombreTextBox
         '
         Me.NombreTextBox.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NombreTextBox.Location = New System.Drawing.Point(178, 131)
-        Me.NombreTextBox.Margin = New System.Windows.Forms.Padding(4)
+        Me.NombreTextBox.Location = New System.Drawing.Point(703, 210)
         Me.NombreTextBox.Name = "NombreTextBox"
-        Me.NombreTextBox.Size = New System.Drawing.Size(215, 34)
+        Me.NombreTextBox.Size = New System.Drawing.Size(162, 29)
         Me.NombreTextBox.TabIndex = 55
         '
         'PrecioTextBox
         '
         Me.PrecioTextBox.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PrecioTextBox.Location = New System.Drawing.Point(178, 298)
-        Me.PrecioTextBox.Margin = New System.Windows.Forms.Padding(4)
+        Me.PrecioTextBox.Location = New System.Drawing.Point(703, 360)
         Me.PrecioTextBox.Name = "PrecioTextBox"
-        Me.PrecioTextBox.Size = New System.Drawing.Size(215, 34)
+        Me.PrecioTextBox.Size = New System.Drawing.Size(162, 29)
         Me.PrecioTextBox.TabIndex = 66
         '
         'FechaDateTimePicker
         '
         Me.FechaDateTimePicker.CalendarFont = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FechaDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.FechaDateTimePicker.Location = New System.Drawing.Point(178, 189)
+        Me.FechaDateTimePicker.Location = New System.Drawing.Point(703, 269)
+        Me.FechaDateTimePicker.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.FechaDateTimePicker.MaxDate = New Date(2024, 6, 18, 0, 0, 0, 0)
         Me.FechaDateTimePicker.MinDate = New Date(2020, 5, 18, 0, 0, 0, 0)
         Me.FechaDateTimePicker.Name = "FechaDateTimePicker"
-        Me.FechaDateTimePicker.Size = New System.Drawing.Size(215, 22)
+        Me.FechaDateTimePicker.Size = New System.Drawing.Size(162, 20)
         Me.FechaDateTimePicker.TabIndex = 69
         Me.FechaDateTimePicker.Value = New Date(2024, 5, 18, 0, 0, 0, 0)
         '
@@ -217,7 +208,7 @@ Partial Class Cursos
         Me.CursosBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
         Me.CursosBindingNavigator.Name = "CursosBindingNavigator"
         Me.CursosBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.CursosBindingNavigator.Size = New System.Drawing.Size(489, 27)
+        Me.CursosBindingNavigator.Size = New System.Drawing.Size(367, 22)
         Me.CursosBindingNavigator.TabIndex = 70
         Me.CursosBindingNavigator.Text = "BindingNavigator1"
         Me.CursosBindingNavigator.Visible = False
@@ -228,7 +219,7 @@ Partial Class Cursos
         Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
         Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(24, 19)
         Me.BindingNavigatorAddNewItem.Text = "Agregar nuevo"
         '
         'CursosBindingSource
@@ -244,7 +235,7 @@ Partial Class Cursos
         'BindingNavigatorCountItem
         '
         Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(48, 24)
+        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(37, 19)
         Me.BindingNavigatorCountItem.Text = "de {0}"
         Me.BindingNavigatorCountItem.ToolTipText = "Número total de elementos"
         '
@@ -254,7 +245,7 @@ Partial Class Cursos
         Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
         Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(24, 19)
         Me.BindingNavigatorDeleteItem.Text = "Eliminar"
         '
         'BindingNavigatorMoveFirstItem
@@ -263,7 +254,7 @@ Partial Class Cursos
         Me.BindingNavigatorMoveFirstItem.Image = CType(resources.GetObject("BindingNavigatorMoveFirstItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
         Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(24, 19)
         Me.BindingNavigatorMoveFirstItem.Text = "Mover primero"
         '
         'BindingNavigatorMovePreviousItem
@@ -272,13 +263,13 @@ Partial Class Cursos
         Me.BindingNavigatorMovePreviousItem.Image = CType(resources.GetObject("BindingNavigatorMovePreviousItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMovePreviousItem.Name = "BindingNavigatorMovePreviousItem"
         Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(24, 19)
         Me.BindingNavigatorMovePreviousItem.Text = "Mover anterior"
         '
         'BindingNavigatorSeparator
         '
         Me.BindingNavigatorSeparator.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 27)
+        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 22)
         '
         'BindingNavigatorPositionItem
         '
@@ -286,14 +277,14 @@ Partial Class Cursos
         Me.BindingNavigatorPositionItem.AutoSize = False
         Me.BindingNavigatorPositionItem.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BindingNavigatorPositionItem.Name = "BindingNavigatorPositionItem"
-        Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(50, 27)
+        Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(38, 23)
         Me.BindingNavigatorPositionItem.Text = "0"
         Me.BindingNavigatorPositionItem.ToolTipText = "Posición actual"
         '
         'BindingNavigatorSeparator1
         '
         Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator1"
-        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 27)
+        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 22)
         '
         'BindingNavigatorMoveNextItem
         '
@@ -301,7 +292,7 @@ Partial Class Cursos
         Me.BindingNavigatorMoveNextItem.Image = CType(resources.GetObject("BindingNavigatorMoveNextItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
         Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(24, 19)
         Me.BindingNavigatorMoveNextItem.Text = "Mover siguiente"
         '
         'BindingNavigatorMoveLastItem
@@ -310,20 +301,20 @@ Partial Class Cursos
         Me.BindingNavigatorMoveLastItem.Image = CType(resources.GetObject("BindingNavigatorMoveLastItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
         Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(24, 19)
         Me.BindingNavigatorMoveLastItem.Text = "Mover último"
         '
         'BindingNavigatorSeparator2
         '
         Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
-        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 27)
+        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 22)
         '
         'CursosBindingNavigatorSaveItem
         '
         Me.CursosBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.CursosBindingNavigatorSaveItem.Image = CType(resources.GetObject("CursosBindingNavigatorSaveItem.Image"), System.Drawing.Image)
         Me.CursosBindingNavigatorSaveItem.Name = "CursosBindingNavigatorSaveItem"
-        Me.CursosBindingNavigatorSaveItem.Size = New System.Drawing.Size(29, 24)
+        Me.CursosBindingNavigatorSaveItem.Size = New System.Drawing.Size(24, 19)
         Me.CursosBindingNavigatorSaveItem.Text = "Guardar datos"
         '
         'CursosTableAdapter
@@ -348,26 +339,28 @@ Partial Class Cursos
         'HoraIDateTimePicker
         '
         Me.HoraIDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Time
-        Me.HoraIDateTimePicker.Location = New System.Drawing.Point(178, 251)
+        Me.HoraIDateTimePicker.Location = New System.Drawing.Point(692, 319)
+        Me.HoraIDateTimePicker.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.HoraIDateTimePicker.Name = "HoraIDateTimePicker"
-        Me.HoraIDateTimePicker.Size = New System.Drawing.Size(95, 22)
+        Me.HoraIDateTimePicker.Size = New System.Drawing.Size(72, 20)
         Me.HoraIDateTimePicker.TabIndex = 72
         '
         'HoraFDateTimePicker
         '
         Me.HoraFDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Time
-        Me.HoraFDateTimePicker.Location = New System.Drawing.Point(298, 251)
+        Me.HoraFDateTimePicker.Location = New System.Drawing.Point(787, 319)
+        Me.HoraFDateTimePicker.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.HoraFDateTimePicker.Name = "HoraFDateTimePicker"
-        Me.HoraFDateTimePicker.Size = New System.Drawing.Size(95, 22)
+        Me.HoraFDateTimePicker.Size = New System.Drawing.Size(72, 20)
         Me.HoraFDateTimePicker.TabIndex = 73
         '
         'Cursos
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Sistema_CEIJ.My.Resources.Resources.FondoSign
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(489, 478)
+        Me.ClientSize = New System.Drawing.Size(1370, 749)
         Me.Controls.Add(Me.HoraFDateTimePicker)
         Me.Controls.Add(Me.HoraIDateTimePicker)
         Me.Controls.Add(Label1)
@@ -382,9 +375,11 @@ Partial Class Cursos
         Me.Controls.Add(FechaLabel)
         Me.Controls.Add(NombreLabel)
         Me.Controls.Add(Me.NombreTextBox)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Cursos"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Cursos"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.CursosBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
         Me.CursosBindingNavigator.ResumeLayout(False)
         Me.CursosBindingNavigator.PerformLayout()

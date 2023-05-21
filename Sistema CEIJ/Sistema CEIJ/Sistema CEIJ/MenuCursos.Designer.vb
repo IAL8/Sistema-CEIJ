@@ -31,6 +31,8 @@ Partial Class MenuCursos
         Me.SalirPictureBox = New System.Windows.Forms.PictureBox()
         Me.CursosBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
         Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
+        Me.CursosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.BD_Sistema_CEIJDataSet = New Sistema_CEIJ.BD_Sistema_CEIJDataSet()
         Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
         Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
@@ -43,9 +45,12 @@ Partial Class MenuCursos
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.CursosBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
         Me.CursosDataGridView = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Nombre_Cur = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.HoraI_Cur = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.HoraF_Cur = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.FillToolStrip = New System.Windows.Forms.ToolStrip()
         Me.FillToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.FillToolStrip1 = New System.Windows.Forms.ToolStrip()
@@ -53,22 +58,17 @@ Partial Class MenuCursos
         Me.FillByToolStrip = New System.Windows.Forms.ToolStrip()
         Me.FillByToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.AlumnosBTN = New System.Windows.Forms.Button()
-        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.CursosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.BD_Sistema_CEIJDataSet = New Sistema_CEIJ.BD_Sistema_CEIJDataSet()
         Me.CursosTableAdapter = New Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.CursosTableAdapter()
         Me.TableAdapterManager = New Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.TableAdapterManager()
         CType(Me.SalirPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CursosBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.CursosBindingNavigator.SuspendLayout()
+        CType(Me.CursosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BD_Sistema_CEIJDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CursosDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.FillToolStrip.SuspendLayout()
         Me.FillToolStrip1.SuspendLayout()
         Me.FillByToolStrip.SuspendLayout()
-        CType(Me.CursosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.BD_Sistema_CEIJDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'NuevoBTN
@@ -78,10 +78,9 @@ Partial Class MenuCursos
         Me.NuevoBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.NuevoBTN.Font = New System.Drawing.Font("Arial Narrow", 13.0!, System.Drawing.FontStyle.Bold)
         Me.NuevoBTN.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.NuevoBTN.Location = New System.Drawing.Point(807, 110)
-        Me.NuevoBTN.Margin = New System.Windows.Forms.Padding(4)
+        Me.NuevoBTN.Location = New System.Drawing.Point(926, 480)
         Me.NuevoBTN.Name = "NuevoBTN"
-        Me.NuevoBTN.Size = New System.Drawing.Size(137, 44)
+        Me.NuevoBTN.Size = New System.Drawing.Size(103, 36)
         Me.NuevoBTN.TabIndex = 30
         Me.NuevoBTN.Text = "Nuevo"
         Me.NuevoBTN.UseVisualStyleBackColor = False
@@ -92,10 +91,9 @@ Partial Class MenuCursos
         Me.CursosLabel.BackColor = System.Drawing.Color.Transparent
         Me.CursosLabel.Font = New System.Drawing.Font("Arial", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CursosLabel.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.CursosLabel.Location = New System.Drawing.Point(386, 27)
-        Me.CursosLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.CursosLabel.Location = New System.Drawing.Point(648, 99)
         Me.CursosLabel.Name = "CursosLabel"
-        Me.CursosLabel.Size = New System.Drawing.Size(235, 68)
+        Me.CursosLabel.Size = New System.Drawing.Size(190, 55)
         Me.CursosLabel.TabIndex = 29
         Me.CursosLabel.Text = "Cursos"
         '
@@ -106,10 +104,9 @@ Partial Class MenuCursos
         Me.EditarBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.EditarBTN.Font = New System.Drawing.Font("Arial Narrow", 13.0!, System.Drawing.FontStyle.Bold)
         Me.EditarBTN.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.EditarBTN.Location = New System.Drawing.Point(667, 423)
-        Me.EditarBTN.Margin = New System.Windows.Forms.Padding(4)
+        Me.EditarBTN.Location = New System.Drawing.Point(783, 480)
         Me.EditarBTN.Name = "EditarBTN"
-        Me.EditarBTN.Size = New System.Drawing.Size(137, 44)
+        Me.EditarBTN.Size = New System.Drawing.Size(103, 36)
         Me.EditarBTN.TabIndex = 33
         Me.EditarBTN.Text = "Editar"
         Me.EditarBTN.UseVisualStyleBackColor = False
@@ -121,10 +118,9 @@ Partial Class MenuCursos
         Me.EliminarBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.EliminarBTN.Font = New System.Drawing.Font("Arial Narrow", 13.0!, System.Drawing.FontStyle.Bold)
         Me.EliminarBTN.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.EliminarBTN.Location = New System.Drawing.Point(471, 423)
-        Me.EliminarBTN.Margin = New System.Windows.Forms.Padding(4)
+        Me.EliminarBTN.Location = New System.Drawing.Point(636, 480)
         Me.EliminarBTN.Name = "EliminarBTN"
-        Me.EliminarBTN.Size = New System.Drawing.Size(137, 44)
+        Me.EliminarBTN.Size = New System.Drawing.Size(103, 36)
         Me.EliminarBTN.TabIndex = 32
         Me.EliminarBTN.Text = "Eliminar"
         Me.EliminarBTN.UseVisualStyleBackColor = False
@@ -134,9 +130,10 @@ Partial Class MenuCursos
         Me.SalirPictureBox.BackColor = System.Drawing.Color.Transparent
         Me.SalirPictureBox.Cursor = System.Windows.Forms.Cursors.Hand
         Me.SalirPictureBox.Image = CType(resources.GetObject("SalirPictureBox.Image"), System.Drawing.Image)
-        Me.SalirPictureBox.Location = New System.Drawing.Point(12, 439)
+        Me.SalirPictureBox.Location = New System.Drawing.Point(1340, 695)
+        Me.SalirPictureBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.SalirPictureBox.Name = "SalirPictureBox"
-        Me.SalirPictureBox.Size = New System.Drawing.Size(64, 68)
+        Me.SalirPictureBox.Size = New System.Drawing.Size(74, 80)
         Me.SalirPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.SalirPictureBox.TabIndex = 34
         Me.SalirPictureBox.TabStop = False
@@ -156,7 +153,7 @@ Partial Class MenuCursos
         Me.CursosBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
         Me.CursosBindingNavigator.Name = "CursosBindingNavigator"
         Me.CursosBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.CursosBindingNavigator.Size = New System.Drawing.Size(1009, 27)
+        Me.CursosBindingNavigator.Size = New System.Drawing.Size(757, 22)
         Me.CursosBindingNavigator.TabIndex = 35
         Me.CursosBindingNavigator.Text = "BindingNavigator1"
         Me.CursosBindingNavigator.Visible = False
@@ -167,13 +164,23 @@ Partial Class MenuCursos
         Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
         Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(24, 19)
         Me.BindingNavigatorAddNewItem.Text = "Agregar nuevo"
+        '
+        'CursosBindingSource
+        '
+        Me.CursosBindingSource.DataMember = "Cursos"
+        Me.CursosBindingSource.DataSource = Me.BD_Sistema_CEIJDataSet
+        '
+        'BD_Sistema_CEIJDataSet
+        '
+        Me.BD_Sistema_CEIJDataSet.DataSetName = "BD_Sistema_CEIJDataSet"
+        Me.BD_Sistema_CEIJDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'BindingNavigatorCountItem
         '
         Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(48, 24)
+        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(37, 19)
         Me.BindingNavigatorCountItem.Text = "de {0}"
         Me.BindingNavigatorCountItem.ToolTipText = "Número total de elementos"
         '
@@ -183,7 +190,7 @@ Partial Class MenuCursos
         Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
         Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(24, 19)
         Me.BindingNavigatorDeleteItem.Text = "Eliminar"
         '
         'BindingNavigatorMoveFirstItem
@@ -192,7 +199,7 @@ Partial Class MenuCursos
         Me.BindingNavigatorMoveFirstItem.Image = CType(resources.GetObject("BindingNavigatorMoveFirstItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
         Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(24, 19)
         Me.BindingNavigatorMoveFirstItem.Text = "Mover primero"
         '
         'BindingNavigatorMovePreviousItem
@@ -201,13 +208,13 @@ Partial Class MenuCursos
         Me.BindingNavigatorMovePreviousItem.Image = CType(resources.GetObject("BindingNavigatorMovePreviousItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMovePreviousItem.Name = "BindingNavigatorMovePreviousItem"
         Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(24, 19)
         Me.BindingNavigatorMovePreviousItem.Text = "Mover anterior"
         '
         'BindingNavigatorSeparator
         '
         Me.BindingNavigatorSeparator.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 27)
+        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 22)
         '
         'BindingNavigatorPositionItem
         '
@@ -215,14 +222,14 @@ Partial Class MenuCursos
         Me.BindingNavigatorPositionItem.AutoSize = False
         Me.BindingNavigatorPositionItem.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BindingNavigatorPositionItem.Name = "BindingNavigatorPositionItem"
-        Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(50, 27)
+        Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(38, 23)
         Me.BindingNavigatorPositionItem.Text = "0"
         Me.BindingNavigatorPositionItem.ToolTipText = "Posición actual"
         '
         'BindingNavigatorSeparator1
         '
         Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator1"
-        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 27)
+        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 22)
         '
         'BindingNavigatorMoveNextItem
         '
@@ -230,7 +237,7 @@ Partial Class MenuCursos
         Me.BindingNavigatorMoveNextItem.Image = CType(resources.GetObject("BindingNavigatorMoveNextItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
         Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(24, 19)
         Me.BindingNavigatorMoveNextItem.Text = "Mover siguiente"
         '
         'BindingNavigatorMoveLastItem
@@ -239,20 +246,20 @@ Partial Class MenuCursos
         Me.BindingNavigatorMoveLastItem.Image = CType(resources.GetObject("BindingNavigatorMoveLastItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
         Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(24, 19)
         Me.BindingNavigatorMoveLastItem.Text = "Mover último"
         '
         'BindingNavigatorSeparator2
         '
         Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
-        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 27)
+        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 22)
         '
         'CursosBindingNavigatorSaveItem
         '
         Me.CursosBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.CursosBindingNavigatorSaveItem.Image = CType(resources.GetObject("CursosBindingNavigatorSaveItem.Image"), System.Drawing.Image)
         Me.CursosBindingNavigatorSaveItem.Name = "CursosBindingNavigatorSaveItem"
-        Me.CursosBindingNavigatorSaveItem.Size = New System.Drawing.Size(29, 24)
+        Me.CursosBindingNavigatorSaveItem.Size = New System.Drawing.Size(24, 19)
         Me.CursosBindingNavigatorSaveItem.Text = "Guardar datos"
         '
         'CursosDataGridView
@@ -266,13 +273,22 @@ Partial Class MenuCursos
         Me.CursosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.CursosDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn6, Me.Nombre_Cur, Me.DataGridViewTextBoxColumn2, Me.HoraI_Cur, Me.HoraF_Cur, Me.DataGridViewTextBoxColumn4})
         Me.CursosDataGridView.DataSource = Me.CursosBindingSource
-        Me.CursosDataGridView.Location = New System.Drawing.Point(54, 179)
+        Me.CursosDataGridView.Location = New System.Drawing.Point(325, 201)
+        Me.CursosDataGridView.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.CursosDataGridView.Name = "CursosDataGridView"
         Me.CursosDataGridView.ReadOnly = True
         Me.CursosDataGridView.RowHeadersWidth = 51
         Me.CursosDataGridView.RowTemplate.Height = 24
-        Me.CursosDataGridView.Size = New System.Drawing.Size(844, 220)
+        Me.CursosDataGridView.Size = New System.Drawing.Size(895, 257)
         Me.CursosDataGridView.TabIndex = 35
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        Me.DataGridViewTextBoxColumn6.DataPropertyName = "Id_Curso"
+        Me.DataGridViewTextBoxColumn6.HeaderText = "Id_Curso"
+        Me.DataGridViewTextBoxColumn6.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        Me.DataGridViewTextBoxColumn6.ReadOnly = True
         '
         'Nombre_Cur
         '
@@ -281,6 +297,14 @@ Partial Class MenuCursos
         Me.Nombre_Cur.MinimumWidth = 6
         Me.Nombre_Cur.Name = "Nombre_Cur"
         Me.Nombre_Cur.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "Fecha_Cur"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "Fecha_Cur"
+        Me.DataGridViewTextBoxColumn2.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        Me.DataGridViewTextBoxColumn2.ReadOnly = True
         '
         'HoraI_Cur
         '
@@ -298,13 +322,21 @@ Partial Class MenuCursos
         Me.HoraF_Cur.Name = "HoraF_Cur"
         Me.HoraF_Cur.ReadOnly = True
         '
+        'DataGridViewTextBoxColumn4
+        '
+        Me.DataGridViewTextBoxColumn4.DataPropertyName = "Costo_Cur"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "Costo_Cur"
+        Me.DataGridViewTextBoxColumn4.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        Me.DataGridViewTextBoxColumn4.ReadOnly = True
+        '
         'FillToolStrip
         '
         Me.FillToolStrip.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.FillToolStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FillToolStripButton})
         Me.FillToolStrip.Location = New System.Drawing.Point(0, 0)
         Me.FillToolStrip.Name = "FillToolStrip"
-        Me.FillToolStrip.Size = New System.Drawing.Size(1009, 27)
+        Me.FillToolStrip.Size = New System.Drawing.Size(757, 22)
         Me.FillToolStrip.TabIndex = 36
         Me.FillToolStrip.Text = "FillToolStrip"
         Me.FillToolStrip.Visible = False
@@ -313,7 +345,7 @@ Partial Class MenuCursos
         '
         Me.FillToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
         Me.FillToolStripButton.Name = "FillToolStripButton"
-        Me.FillToolStripButton.Size = New System.Drawing.Size(32, 24)
+        Me.FillToolStripButton.Size = New System.Drawing.Size(26, 19)
         Me.FillToolStripButton.Text = "Fill"
         '
         'FillToolStrip1
@@ -322,7 +354,7 @@ Partial Class MenuCursos
         Me.FillToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FillToolStripButton1})
         Me.FillToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.FillToolStrip1.Name = "FillToolStrip1"
-        Me.FillToolStrip1.Size = New System.Drawing.Size(1009, 27)
+        Me.FillToolStrip1.Size = New System.Drawing.Size(757, 22)
         Me.FillToolStrip1.TabIndex = 37
         Me.FillToolStrip1.Text = "FillToolStrip1"
         Me.FillToolStrip1.Visible = False
@@ -331,7 +363,7 @@ Partial Class MenuCursos
         '
         Me.FillToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
         Me.FillToolStripButton1.Name = "FillToolStripButton1"
-        Me.FillToolStripButton1.Size = New System.Drawing.Size(32, 24)
+        Me.FillToolStripButton1.Size = New System.Drawing.Size(26, 19)
         Me.FillToolStripButton1.Text = "Fill"
         '
         'FillByToolStrip
@@ -340,7 +372,7 @@ Partial Class MenuCursos
         Me.FillByToolStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FillByToolStripButton})
         Me.FillByToolStrip.Location = New System.Drawing.Point(0, 0)
         Me.FillByToolStrip.Name = "FillByToolStrip"
-        Me.FillByToolStrip.Size = New System.Drawing.Size(1009, 27)
+        Me.FillByToolStrip.Size = New System.Drawing.Size(757, 22)
         Me.FillByToolStrip.TabIndex = 38
         Me.FillByToolStrip.Text = "FillByToolStrip"
         Me.FillByToolStrip.Visible = False
@@ -349,7 +381,7 @@ Partial Class MenuCursos
         '
         Me.FillByToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
         Me.FillByToolStripButton.Name = "FillByToolStripButton"
-        Me.FillByToolStripButton.Size = New System.Drawing.Size(48, 24)
+        Me.FillByToolStripButton.Size = New System.Drawing.Size(39, 19)
         Me.FillByToolStripButton.Text = "FillBy"
         '
         'AlumnosBTN
@@ -359,47 +391,12 @@ Partial Class MenuCursos
         Me.AlumnosBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.AlumnosBTN.Font = New System.Drawing.Font("Arial Narrow", 13.0!, System.Drawing.FontStyle.Bold)
         Me.AlumnosBTN.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.AlumnosBTN.Location = New System.Drawing.Point(242, 423)
-        Me.AlumnosBTN.Margin = New System.Windows.Forms.Padding(4)
+        Me.AlumnosBTN.Location = New System.Drawing.Point(465, 480)
         Me.AlumnosBTN.Name = "AlumnosBTN"
-        Me.AlumnosBTN.Size = New System.Drawing.Size(178, 44)
+        Me.AlumnosBTN.Size = New System.Drawing.Size(134, 36)
         Me.AlumnosBTN.TabIndex = 39
         Me.AlumnosBTN.Text = "Ver Alumnos"
         Me.AlumnosBTN.UseVisualStyleBackColor = False
-        '
-        'DataGridViewTextBoxColumn6
-        '
-        Me.DataGridViewTextBoxColumn6.DataPropertyName = "Id_Curso"
-        Me.DataGridViewTextBoxColumn6.HeaderText = "Id_Curso"
-        Me.DataGridViewTextBoxColumn6.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
-        Me.DataGridViewTextBoxColumn6.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn2
-        '
-        Me.DataGridViewTextBoxColumn2.DataPropertyName = "Fecha_Cur"
-        Me.DataGridViewTextBoxColumn2.HeaderText = "Fecha_Cur"
-        Me.DataGridViewTextBoxColumn2.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        Me.DataGridViewTextBoxColumn2.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn4
-        '
-        Me.DataGridViewTextBoxColumn4.DataPropertyName = "Costo_Cur"
-        Me.DataGridViewTextBoxColumn4.HeaderText = "Costo_Cur"
-        Me.DataGridViewTextBoxColumn4.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
-        Me.DataGridViewTextBoxColumn4.ReadOnly = True
-        '
-        'CursosBindingSource
-        '
-        Me.CursosBindingSource.DataMember = "Cursos"
-        Me.CursosBindingSource.DataSource = Me.BD_Sistema_CEIJDataSet
-        '
-        'BD_Sistema_CEIJDataSet
-        '
-        Me.BD_Sistema_CEIJDataSet.DataSetName = "BD_Sistema_CEIJDataSet"
-        Me.BD_Sistema_CEIJDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'CursosTableAdapter
         '
@@ -422,11 +419,11 @@ Partial Class MenuCursos
         '
         'MenuCursos
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Sistema_CEIJ.My.Resources.Resources.v748_toon_111
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1009, 534)
+        Me.ClientSize = New System.Drawing.Size(1231, 609)
         Me.Controls.Add(Me.AlumnosBTN)
         Me.Controls.Add(Me.FillToolStrip)
         Me.Controls.Add(Me.FillToolStrip1)
@@ -438,13 +435,17 @@ Partial Class MenuCursos
         Me.Controls.Add(Me.EliminarBTN)
         Me.Controls.Add(Me.NuevoBTN)
         Me.Controls.Add(Me.CursosLabel)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "MenuCursos"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "MenuCursos"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.SalirPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CursosBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
         Me.CursosBindingNavigator.ResumeLayout(False)
         Me.CursosBindingNavigator.PerformLayout()
+        CType(Me.CursosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BD_Sistema_CEIJDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CursosDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.FillToolStrip.ResumeLayout(False)
         Me.FillToolStrip.PerformLayout()
@@ -452,8 +453,6 @@ Partial Class MenuCursos
         Me.FillToolStrip1.PerformLayout()
         Me.FillByToolStrip.ResumeLayout(False)
         Me.FillByToolStrip.PerformLayout()
-        CType(Me.CursosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.BD_Sistema_CEIJDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
