@@ -200,7 +200,6 @@ Partial Class Cliente
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
         Me.TableAdapterManager.CitasTableAdapter = Nothing
         Me.TableAdapterManager.ClientesTableAdapter = Me.ClientesTableAdapter
-        Me.TableAdapterManager.CompraTableAdapter = Nothing
         Me.TableAdapterManager.CuentasTableAdapter = Nothing
         Me.TableAdapterManager.CursosTableAdapter = Nothing
         Me.TableAdapterManager.InscripcionesTableAdapter = Nothing

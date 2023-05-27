@@ -8,16 +8,7 @@
 
     Private Sub MenuServicios_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: esta línea de código carga datos en la tabla 'BD_Sistema_CEIJDataSet.Servicios' Puede moverla o quitarla según sea necesario.
-        Me.ServiciosTableAdapter.Fill(Me.BD_Sistema_CEIJDataSet.Servicios)
-
-    End Sub
-
-    Private Sub FillToolStripButton_Click(sender As Object, e As EventArgs) Handles FillToolStripButton.Click
-        Try
-            Me.ServiciosTableAdapter.Fill(Me.BD_Sistema_CEIJDataSet.Servicios)
-        Catch ex As System.Exception
-            System.Windows.Forms.MessageBox.Show(ex.Message)
-        End Try
+        Me.ServiciosTableAdapter.FillByAll(Me.BD_Sistema_CEIJDataSet.Servicios)
 
     End Sub
 
@@ -59,5 +50,23 @@
     Private Sub EditarBTN_Click(sender As Object, e As EventArgs) Handles EditarBTN.Click
         Servicio.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub FillByAllToolStripButton_Click(sender As Object, e As EventArgs) Handles FillByAllToolStripButton.Click
+        Try
+            Me.ServiciosTableAdapter.FillByAll(Me.BD_Sistema_CEIJDataSet.Servicios)
+        Catch ex As System.Exception
+            System.Windows.Forms.MessageBox.Show(ex.Message)
+        End Try
+
+    End Sub
+
+    Private Sub FillByAllToolStripButton1_Click(sender As Object, e As EventArgs)
+        Try
+            Me.ServiciosTableAdapter.FillByAll(Me.BD_Sistema_CEIJDataSet.Servicios)
+        Catch ex As System.Exception
+            System.Windows.Forms.MessageBox.Show(ex.Message)
+        End Try
+
     End Sub
 End Class

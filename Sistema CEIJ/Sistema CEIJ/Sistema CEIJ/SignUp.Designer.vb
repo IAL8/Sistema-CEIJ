@@ -248,7 +248,6 @@ Partial Class SignUp
         '
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
         Me.TableAdapterManager.ClientesTableAdapter = Nothing
-        Me.TableAdapterManager.CompraTableAdapter = Nothing
         Me.TableAdapterManager.CuentasTableAdapter = Me.CuentasTableAdapter
         Me.TableAdapterManager.CursosTableAdapter = Nothing
         Me.TableAdapterManager.InventarioTableAdapter = Nothing

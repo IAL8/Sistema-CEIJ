@@ -50,7 +50,7 @@ Public Class Citas
         If (e.RowIndex >= 0) Then
             Id_Servicio = ServiciosDataGridView.Item(0, e.RowIndex).Value
             ServicioTextBox.Text = Id_Servicio
-            S_Precio = ServiciosDataGridView.Item(0, e.RowIndex).Value
+            S_Precio = ServiciosDataGridView.Item(3, e.RowIndex).Value
             ServiciosDataGridView.Visible = False
         End If
     End Sub
@@ -62,14 +62,14 @@ Public Class Citas
                     Me.SolicitudesTableAdapter.ISolicitud(ClienteTextBox.Text, "Pendiente", "En espera", S_Precio)
                     Me.SolicitudesTableAdapter.Fill(Me.BD_Sistema_CEIJDataSet.Solicitudes)
                     Id_Solicitud = Me.SolicitudesTableAdapter.SelectLasUserSol(Id_Cliente)
-                    Me.CitasTableAdapter.ICita(Id_Solicitud, Id_Servicio, FechaDateTimePicker.Value, HoraDateTimePicker.Value.ToShortTimeString, S_Precio)
+                    Me.CitasTableAdapter.RCita(Id_Solicitud, Id_Servicio, FechaDateTimePicker.Value, HoraDateTimePicker.Value.ToShortTimeString, S_Precio, 1)
                     Me.CitasTableAdapter.Fill(Me.BD_Sistema_CEIJDataSet.Citas)
                     MsgBox("La cita se ha registrado")
                 Else
                     MsgBox("Debe seleccionar un cliente")
                 End If
             Else
-                Me.CitasTableAdapter.UCita(Id_Solicitud, Id_Servicio, FechaDateTimePicker.Value, HoraDateTimePicker.Value.ToShortTimeString, S_Precio)
+                Me.CitasTableAdapter.UPCITA(Id_Solicitud, Id_Servicio, FechaDateTimePicker.Value, HoraDateTimePicker.Value.ToShortTimeString, S_Precio, Id_Solicitud, Original_Cita)
                 Me.CitasTableAdapter.Fill(Me.BD_Sistema_CEIJDataSet.Citas)
                 MsgBox("La cita se ha actualizado")
             End If
@@ -88,5 +88,14 @@ Public Class Citas
             ClienteTextBox.Text = Id_Cliente
             ClientesDataGridView.Visible = False
         End If
+    End Sub
+
+    Private Sub FillByToolStripButton_Click(sender As Object, e As EventArgs) Handles FillByToolStripButton.Click
+        Try
+            Me.ServiciosTableAdapter.FillBy(Me.BD_Sistema_CEIJDataSet.Servicios)
+        Catch ex As System.Exception
+            System.Windows.Forms.MessageBox.Show(ex.Message)
+        End Try
+
     End Sub
 End Class

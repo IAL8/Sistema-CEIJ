@@ -1,5 +1,5 @@
 ﻿Module ModuleCursos
-    Public Id_Curso As Integer
+    Public Curso, Original_Cita As Integer
     Public Cu_Nombre, Cu_HoraI, Cu_HoraF As String
     Public Cu_Fecha As Date
     Public IHora, Fhora As Date

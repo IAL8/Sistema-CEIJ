@@ -13,7 +13,7 @@
     End Sub
 
     Private Sub EliminarBTN_Click(sender As Object, e As EventArgs) Handles EliminarBTN.Click
-        Me.CursosTableAdapter.DCurso(Id_Curso)
+        Me.CursosTableAdapter.DCurso(Curso)
         Me.CursosTableAdapter.Fill(Me.BD_Sistema_CEIJDataSet.Cursos)
         MsgBox("El curso se ha eliminado")
     End Sub
@@ -33,7 +33,7 @@
     End Sub
 
     Private Sub NuevoBTN_Click(sender As Object, e As EventArgs) Handles NuevoBTN.Click
-        Id_Curso = 0
+        Curso = 0
         Cu_Nombre = Nulo
         Cu_Fecha = Date.Today
         Cu_HoraI = Nulo
@@ -45,7 +45,7 @@
 
     Private Sub CursosDataGridView_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles CursosDataGridView.CellDoubleClick
         If (e.RowIndex >= 0) Then
-            Id_Curso = CursosDataGridView.Item(0, e.RowIndex).Value
+            Curso = CursosDataGridView.Item(0, e.RowIndex).Value
             Cu_Nombre = CursosDataGridView.Item(1, e.RowIndex).Value
             Cu_Fecha = CursosDataGridView.Item(2, e.RowIndex).Value
             Cu_HoraI = CursosDataGridView.Item(3, e.RowIndex).Value
@@ -73,7 +73,7 @@
     End Sub
 
     Private Sub AlumnosBTN_Click(sender As Object, e As EventArgs) Handles AlumnosBTN.Click
-        If (Id_Curso <> 0) Then
+        If (Curso <> 0) Then
             Alumnos.Show()
             Me.Hide()
         Else

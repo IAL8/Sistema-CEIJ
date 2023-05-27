@@ -3,7 +3,7 @@
     Private Sub Alumnos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: esta línea de código carga datos en la tabla 'BD_Sistema_CEIJDataSet.Inscripciones' Puede moverla o quitarla según sea necesario.
         Me.InscripcionesTableAdapter.Fill(Me.BD_Sistema_CEIJDataSet.Inscripciones)
-        Me.AlumnosDataTableTableAdapter.FillAlumnos(Me.BD_Sistema_CEIJDataSet.AlumnosDataTable, CType(Id_Curso, Integer))
+        Me.AlumnosDataTableTableAdapter.FillAlumnos(Me.BD_Sistema_CEIJDataSet.AlumnosDataTable, CType(Curso, Integer))
         CursosLabel.Text = Cu_Nombre
     End Sub
 
@@ -17,10 +17,10 @@
     End Sub
 
     Private Sub EliminarBTN_Click(sender As Object, e As EventArgs) Handles EliminarBTN.Click
-        Me.InscripcionesTableAdapter.DInscripcion(Id_Solicitud, Id_Curso)
+        Me.InscripcionesTableAdapter.DInscripcion(Id_Solicitud, Curso)
         Me.InscripcionesTableAdapter.Fill(Me.BD_Sistema_CEIJDataSet.Inscripciones)
         MsgBox("El alumno se ha eliminado")
-        Me.AlumnosDataTableTableAdapter.FillAlumnos(Me.BD_Sistema_CEIJDataSet.AlumnosDataTable, CType(Id_Curso, Integer))
+        Me.AlumnosDataTableTableAdapter.FillAlumnos(Me.BD_Sistema_CEIJDataSet.AlumnosDataTable, CType(Curso, Integer))
     End Sub
 
     Private Sub AlumnosDataTableDataGridView_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles AlumnosDataTableDataGridView.CellDoubleClick

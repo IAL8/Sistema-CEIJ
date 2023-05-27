@@ -47,7 +47,7 @@
         Me.Hide()
     End Sub
 
-    Private Sub SalirPictureBox_Click(sender As Object, e As EventArgs) Handles SalirPictureBox.Click
+    Private Sub SalirPictureBox_Click(sender As Object, e As EventArgs) 
         Me.Close()
     End Sub
 
@@ -60,8 +60,8 @@
             Id_Cliente = ClientesDataGridView.Item(0, e.RowIndex).Value
             C_Nombre = ClientesDataGridView.Item(1, e.RowIndex).Value
             C_Apellido = ClientesDataGridView.Item(2, e.RowIndex).Value
-            C_Correo = ClientesDataGridView.Item(3, e.RowIndex).Value
-            C_Telefono = ClientesDataGridView.Item(4, e.RowIndex).Value
+            C_Correo = ClientesDataGridView.Item(4, e.RowIndex).Value
+            C_Telefono = ClientesDataGridView.Item(3, e.RowIndex).Value
         End If
     End Sub
 

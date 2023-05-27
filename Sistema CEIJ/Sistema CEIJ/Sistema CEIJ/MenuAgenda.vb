@@ -24,6 +24,7 @@
             Id_Servicio = AgendaDataTableDataGridView.Item(3, e.RowIndex).Value
             Cit_Fecha = AgendaDataTableDataGridView.Item(5, e.RowIndex).Value
             Cit_Hora = AgendaDataTableDataGridView.Item(6, e.RowIndex).Value
+            Original_Cita = AgendaDataTableDataGridView.Item(3, e.RowIndex).Value
         End If
     End Sub
 

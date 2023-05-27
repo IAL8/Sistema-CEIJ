@@ -24,6 +24,8 @@ Partial Class MenuClientes
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MenuClientes))
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.ClientesLabel = New System.Windows.Forms.Label()
         Me.BD_Sistema_CEIJDataSet = New Sistema_CEIJ.BD_Sistema_CEIJDataSet()
         Me.ClientesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
@@ -53,7 +55,6 @@ Partial Class MenuClientes
         Me.NuevoBTN = New System.Windows.Forms.Button()
         Me.EliminarBTN = New System.Windows.Forms.Button()
         Me.EditarBTN = New System.Windows.Forms.Button()
-        Me.SalirPictureBox = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.BD_Sistema_CEIJDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ClientesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -61,7 +62,6 @@ Partial Class MenuClientes
         Me.ClientesBindingNavigator.SuspendLayout()
         CType(Me.ClientesDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.FillToolStrip.SuspendLayout()
-        CType(Me.SalirPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -71,9 +71,10 @@ Partial Class MenuClientes
         Me.ClientesLabel.BackColor = System.Drawing.Color.Transparent
         Me.ClientesLabel.Font = New System.Drawing.Font("Arial", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ClientesLabel.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.ClientesLabel.Location = New System.Drawing.Point(454, 98)
+        Me.ClientesLabel.Location = New System.Drawing.Point(657, 70)
+        Me.ClientesLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.ClientesLabel.Name = "ClientesLabel"
-        Me.ClientesLabel.Size = New System.Drawing.Size(211, 55)
+        Me.ClientesLabel.Size = New System.Drawing.Size(262, 68)
         Me.ClientesLabel.TabIndex = 19
         Me.ClientesLabel.Text = "Clientes"
         '
@@ -96,7 +97,6 @@ Partial Class MenuClientes
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
         Me.TableAdapterManager.CitasTableAdapter = Nothing
         Me.TableAdapterManager.ClientesTableAdapter = Me.ClientesTableAdapter
-        Me.TableAdapterManager.CompraTableAdapter = Nothing
         Me.TableAdapterManager.CuentasTableAdapter = Nothing
         Me.TableAdapterManager.CursosTableAdapter = Nothing
         Me.TableAdapterManager.InscripcionesTableAdapter = Nothing
@@ -121,7 +121,7 @@ Partial Class MenuClientes
         Me.ClientesBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
         Me.ClientesBindingNavigator.Name = "ClientesBindingNavigator"
         Me.ClientesBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.ClientesBindingNavigator.Size = New System.Drawing.Size(746, 22)
+        Me.ClientesBindingNavigator.Size = New System.Drawing.Size(995, 27)
         Me.ClientesBindingNavigator.TabIndex = 20
         Me.ClientesBindingNavigator.Text = "BindingNavigator1"
         Me.ClientesBindingNavigator.Visible = False
@@ -132,13 +132,13 @@ Partial Class MenuClientes
         Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
         Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(24, 19)
+        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(29, 24)
         Me.BindingNavigatorAddNewItem.Text = "Agregar nuevo"
         '
         'BindingNavigatorCountItem
         '
         Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(37, 19)
+        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(48, 24)
         Me.BindingNavigatorCountItem.Text = "de {0}"
         Me.BindingNavigatorCountItem.ToolTipText = "Número total de elementos"
         '
@@ -148,7 +148,7 @@ Partial Class MenuClientes
         Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
         Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(24, 19)
+        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(29, 24)
         Me.BindingNavigatorDeleteItem.Text = "Eliminar"
         '
         'BindingNavigatorMoveFirstItem
@@ -157,7 +157,7 @@ Partial Class MenuClientes
         Me.BindingNavigatorMoveFirstItem.Image = CType(resources.GetObject("BindingNavigatorMoveFirstItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
         Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(24, 19)
+        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(29, 24)
         Me.BindingNavigatorMoveFirstItem.Text = "Mover primero"
         '
         'BindingNavigatorMovePreviousItem
@@ -166,13 +166,13 @@ Partial Class MenuClientes
         Me.BindingNavigatorMovePreviousItem.Image = CType(resources.GetObject("BindingNavigatorMovePreviousItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMovePreviousItem.Name = "BindingNavigatorMovePreviousItem"
         Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(24, 19)
+        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(29, 24)
         Me.BindingNavigatorMovePreviousItem.Text = "Mover anterior"
         '
         'BindingNavigatorSeparator
         '
         Me.BindingNavigatorSeparator.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 22)
+        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 27)
         '
         'BindingNavigatorPositionItem
         '
@@ -180,14 +180,14 @@ Partial Class MenuClientes
         Me.BindingNavigatorPositionItem.AutoSize = False
         Me.BindingNavigatorPositionItem.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BindingNavigatorPositionItem.Name = "BindingNavigatorPositionItem"
-        Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(38, 23)
+        Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(49, 27)
         Me.BindingNavigatorPositionItem.Text = "0"
         Me.BindingNavigatorPositionItem.ToolTipText = "Posición actual"
         '
         'BindingNavigatorSeparator1
         '
         Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator1"
-        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 22)
+        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 27)
         '
         'BindingNavigatorMoveNextItem
         '
@@ -195,7 +195,7 @@ Partial Class MenuClientes
         Me.BindingNavigatorMoveNextItem.Image = CType(resources.GetObject("BindingNavigatorMoveNextItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
         Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(24, 19)
+        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(29, 24)
         Me.BindingNavigatorMoveNextItem.Text = "Mover siguiente"
         '
         'BindingNavigatorMoveLastItem
@@ -204,20 +204,20 @@ Partial Class MenuClientes
         Me.BindingNavigatorMoveLastItem.Image = CType(resources.GetObject("BindingNavigatorMoveLastItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
         Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(24, 19)
+        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(29, 24)
         Me.BindingNavigatorMoveLastItem.Text = "Mover último"
         '
         'BindingNavigatorSeparator2
         '
         Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
-        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 22)
+        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 27)
         '
         'ClientesBindingNavigatorSaveItem
         '
         Me.ClientesBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.ClientesBindingNavigatorSaveItem.Image = CType(resources.GetObject("ClientesBindingNavigatorSaveItem.Image"), System.Drawing.Image)
         Me.ClientesBindingNavigatorSaveItem.Name = "ClientesBindingNavigatorSaveItem"
-        Me.ClientesBindingNavigatorSaveItem.Size = New System.Drawing.Size(24, 19)
+        Me.ClientesBindingNavigatorSaveItem.Size = New System.Drawing.Size(29, 24)
         Me.ClientesBindingNavigatorSaveItem.Text = "Guardar datos"
         '
         'ClientesDataGridView
@@ -230,16 +230,32 @@ Partial Class MenuClientes
         Me.ClientesDataGridView.AutoGenerateColumns = False
         Me.ClientesDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.ClientesDataGridView.BackgroundColor = System.Drawing.SystemColors.ControlLightLight
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Arial", 16.2!, System.Drawing.FontStyle.Bold)
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.ClientesDataGridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.ClientesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ClientesDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5})
         Me.ClientesDataGridView.DataSource = Me.ClientesBindingSource
-        Me.ClientesDataGridView.Location = New System.Drawing.Point(123, 175)
-        Me.ClientesDataGridView.Margin = New System.Windows.Forms.Padding(2)
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Arial", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.ClientesDataGridView.DefaultCellStyle = DataGridViewCellStyle2
+        Me.ClientesDataGridView.Location = New System.Drawing.Point(164, 215)
+        Me.ClientesDataGridView.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ClientesDataGridView.Name = "ClientesDataGridView"
         Me.ClientesDataGridView.ReadOnly = True
         Me.ClientesDataGridView.RowHeadersWidth = 51
         Me.ClientesDataGridView.RowTemplate.Height = 24
-        Me.ClientesDataGridView.Size = New System.Drawing.Size(1032, 440)
+        Me.ClientesDataGridView.Size = New System.Drawing.Size(1537, 418)
         Me.ClientesDataGridView.TabIndex = 20
         '
         'DataGridViewTextBoxColumn1
@@ -288,7 +304,7 @@ Partial Class MenuClientes
         Me.FillToolStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FillToolStripButton})
         Me.FillToolStrip.Location = New System.Drawing.Point(0, 0)
         Me.FillToolStrip.Name = "FillToolStrip"
-        Me.FillToolStrip.Size = New System.Drawing.Size(746, 22)
+        Me.FillToolStrip.Size = New System.Drawing.Size(995, 27)
         Me.FillToolStrip.TabIndex = 21
         Me.FillToolStrip.Text = "FillToolStrip"
         Me.FillToolStrip.Visible = False
@@ -297,7 +313,7 @@ Partial Class MenuClientes
         '
         Me.FillToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
         Me.FillToolStripButton.Name = "FillToolStripButton"
-        Me.FillToolStripButton.Size = New System.Drawing.Size(26, 19)
+        Me.FillToolStripButton.Size = New System.Drawing.Size(32, 24)
         Me.FillToolStripButton.Text = "Fill"
         '
         'NuevoBTN
@@ -307,9 +323,10 @@ Partial Class MenuClientes
         Me.NuevoBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.NuevoBTN.Font = New System.Drawing.Font("Arial Narrow", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.NuevoBTN.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.NuevoBTN.Location = New System.Drawing.Point(811, 645)
+        Me.NuevoBTN.Location = New System.Drawing.Point(1081, 794)
+        Me.NuevoBTN.Margin = New System.Windows.Forms.Padding(4)
         Me.NuevoBTN.Name = "NuevoBTN"
-        Me.NuevoBTN.Size = New System.Drawing.Size(136, 56)
+        Me.NuevoBTN.Size = New System.Drawing.Size(181, 69)
         Me.NuevoBTN.TabIndex = 22
         Me.NuevoBTN.Text = "Nuevo"
         Me.NuevoBTN.UseVisualStyleBackColor = False
@@ -321,9 +338,10 @@ Partial Class MenuClientes
         Me.EliminarBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.EliminarBTN.Font = New System.Drawing.Font("Arial Narrow", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.EliminarBTN.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.EliminarBTN.Location = New System.Drawing.Point(401, 645)
+        Me.EliminarBTN.Location = New System.Drawing.Point(535, 794)
+        Me.EliminarBTN.Margin = New System.Windows.Forms.Padding(4)
         Me.EliminarBTN.Name = "EliminarBTN"
-        Me.EliminarBTN.Size = New System.Drawing.Size(136, 56)
+        Me.EliminarBTN.Size = New System.Drawing.Size(181, 69)
         Me.EliminarBTN.TabIndex = 23
         Me.EliminarBTN.Text = "Eliminar"
         Me.EliminarBTN.UseVisualStyleBackColor = False
@@ -335,48 +353,35 @@ Partial Class MenuClientes
         Me.EditarBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.EditarBTN.Font = New System.Drawing.Font("Arial Narrow", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.EditarBTN.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.EditarBTN.Location = New System.Drawing.Point(600, 645)
+        Me.EditarBTN.Location = New System.Drawing.Point(800, 794)
+        Me.EditarBTN.Margin = New System.Windows.Forms.Padding(4)
         Me.EditarBTN.Name = "EditarBTN"
-        Me.EditarBTN.Size = New System.Drawing.Size(136, 56)
+        Me.EditarBTN.Size = New System.Drawing.Size(181, 69)
         Me.EditarBTN.TabIndex = 24
         Me.EditarBTN.Text = "Editar"
         Me.EditarBTN.UseVisualStyleBackColor = False
-        '
-        'SalirPictureBox
-        '
-        Me.SalirPictureBox.BackColor = System.Drawing.Color.Transparent
-        Me.SalirPictureBox.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.SalirPictureBox.Image = CType(resources.GetObject("SalirPictureBox.Image"), System.Drawing.Image)
-        Me.SalirPictureBox.Location = New System.Drawing.Point(1390, 695)
-        Me.SalirPictureBox.Margin = New System.Windows.Forms.Padding(2)
-        Me.SalirPictureBox.Name = "SalirPictureBox"
-        Me.SalirPictureBox.Size = New System.Drawing.Size(74, 80)
-        Me.SalirPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.SalirPictureBox.TabIndex = 25
-        Me.SalirPictureBox.TabStop = False
         '
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(1215, 635)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox1.Location = New System.Drawing.Point(1620, 782)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(74, 80)
+        Me.PictureBox1.Size = New System.Drawing.Size(99, 98)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 26
         Me.PictureBox1.TabStop = False
         '
         'MenuClientes
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Sistema_CEIJ.My.Resources.Resources.v748_toon_111
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1370, 749)
+        Me.ClientSize = New System.Drawing.Size(1822, 1006)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.SalirPictureBox)
         Me.Controls.Add(Me.EditarBTN)
         Me.Controls.Add(Me.EliminarBTN)
         Me.Controls.Add(Me.NuevoBTN)
@@ -384,7 +389,7 @@ Partial Class MenuClientes
         Me.Controls.Add(Me.ClientesLabel)
         Me.Controls.Add(Me.FillToolStrip)
         Me.Controls.Add(Me.ClientesBindingNavigator)
-        Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "MenuClientes"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "MenuClientes"
@@ -397,7 +402,6 @@ Partial Class MenuClientes
         CType(Me.ClientesDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.FillToolStrip.ResumeLayout(False)
         Me.FillToolStrip.PerformLayout()
-        CType(Me.SalirPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -427,7 +431,6 @@ Partial Class MenuClientes
     Friend WithEvents NuevoBTN As Button
     Friend WithEvents EliminarBTN As Button
     Friend WithEvents EditarBTN As Button
-    Friend WithEvents SalirPictureBox As PictureBox
     Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn

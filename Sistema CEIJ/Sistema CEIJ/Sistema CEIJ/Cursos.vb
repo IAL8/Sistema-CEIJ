@@ -10,7 +10,7 @@
         HoraFDateTimePicker.ShowUpDown = True
         FechaDateTimePicker.Value = Cu_Fecha
         NombreTextBox.Text = Cu_Nombre
-        If Id_Curso > 0 Then
+        If Curso > 0 Then
             HoraIDateTimePicker.Value = Convert.ToDateTime(Cu_HoraI)
             HoraFDateTimePicker.Value = Convert.ToDateTime(Cu_HoraF)
         End If
@@ -25,12 +25,12 @@
     End Sub
 
     Private Sub RegistrarBTN_Click(sender As Object, e As EventArgs) Handles RegistrarBTN.Click
-        If (Id_Curso = 0) Then
-            Me.CursosTableAdapter.RCurso(NombreTextBox.Text, FechaDateTimePicker.Value, HoraIDateTimePicker.Value.ToShortTimeString, HoraFDateTimePicker.Value.ToShortTimeString, PrecioTextBox.Text)
+        If (Curso = 0) Then
+            Me.CursosTableAdapter.RNCurso(NombreTextBox.Text, FechaDateTimePicker.Value, HoraIDateTimePicker.Value.ToShortTimeString, HoraFDateTimePicker.Value.ToShortTimeString, PrecioTextBox.Text, 1)
             MsgBox("El curso se ha registrado")
             Me.CursosTableAdapter.Fill(Me.BD_Sistema_CEIJDataSet.Cursos)
         Else
-            Me.CursosTableAdapter.UCurso(NombreTextBox.Text, FechaDateTimePicker.Value, HoraIDateTimePicker.Value.ToShortTimeString, HoraFDateTimePicker.Value.ToShortTimeString, PrecioTextBox.Text, Id_Curso)
+            Me.CursosTableAdapter.UCurso(NombreTextBox.Text, FechaDateTimePicker.Value, HoraIDateTimePicker.Value.ToShortTimeString, HoraFDateTimePicker.Value.ToShortTimeString, PrecioTextBox.Text, Curso)
             MsgBox("El curso se ha actualizado")
             Me.CursosTableAdapter.Fill(Me.BD_Sistema_CEIJDataSet.Cursos)
         End If

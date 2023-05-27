@@ -27,6 +27,11 @@ Partial Class Citas
         Dim FechaLabel As System.Windows.Forms.Label
         Dim NombreLabel As System.Windows.Forms.Label
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Citas))
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.HoraDateTimePicker = New System.Windows.Forms.DateTimePicker()
         Me.FechaDateTimePicker = New System.Windows.Forms.DateTimePicker()
         Me.CursoLabel = New System.Windows.Forms.Label()
@@ -70,6 +75,8 @@ Partial Class Citas
         Me.ClientesTableAdapter = New Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.ClientesTableAdapter()
         Me.SolicitudesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.SolicitudesTableAdapter = New Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.SolicitudesTableAdapter()
+        Me.FillByToolStrip = New System.Windows.Forms.ToolStrip()
+        Me.FillByToolStripButton = New System.Windows.Forms.ToolStripButton()
         HoraLabel = New System.Windows.Forms.Label()
         FechaLabel = New System.Windows.Forms.Label()
         NombreLabel = New System.Windows.Forms.Label()
@@ -82,6 +89,7 @@ Partial Class Citas
         CType(Me.ClientesDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ClientesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SolicitudesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.FillByToolStrip.SuspendLayout()
         Me.SuspendLayout()
         '
         'HoraLabel
@@ -90,9 +98,10 @@ Partial Class Citas
         HoraLabel.BackColor = System.Drawing.Color.Transparent
         HoraLabel.Font = New System.Drawing.Font("Arial", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         HoraLabel.ForeColor = System.Drawing.Color.DarkKhaki
-        HoraLabel.Location = New System.Drawing.Point(553, 351)
+        HoraLabel.Location = New System.Drawing.Point(737, 432)
+        HoraLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         HoraLabel.Name = "HoraLabel"
-        HoraLabel.Size = New System.Drawing.Size(87, 32)
+        HoraLabel.Size = New System.Drawing.Size(107, 40)
         HoraLabel.TabIndex = 80
         HoraLabel.Text = "Hora:"
         '
@@ -102,9 +111,10 @@ Partial Class Citas
         FechaLabel.BackColor = System.Drawing.Color.Transparent
         FechaLabel.Font = New System.Drawing.Font("Arial", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         FechaLabel.ForeColor = System.Drawing.Color.DarkKhaki
-        FechaLabel.Location = New System.Drawing.Point(537, 289)
+        FechaLabel.Location = New System.Drawing.Point(716, 356)
+        FechaLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         FechaLabel.Name = "FechaLabel"
-        FechaLabel.Size = New System.Drawing.Size(103, 32)
+        FechaLabel.Size = New System.Drawing.Size(126, 40)
         FechaLabel.TabIndex = 76
         FechaLabel.Text = "Fecha:"
         '
@@ -114,31 +124,32 @@ Partial Class Citas
         NombreLabel.BackColor = System.Drawing.Color.Transparent
         NombreLabel.Font = New System.Drawing.Font("Arial", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         NombreLabel.ForeColor = System.Drawing.Color.DarkKhaki
-        NombreLabel.Location = New System.Drawing.Point(509, 155)
+        NombreLabel.Location = New System.Drawing.Point(679, 188)
+        NombreLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         NombreLabel.Name = "NombreLabel"
-        NombreLabel.Size = New System.Drawing.Size(131, 32)
+        NombreLabel.Size = New System.Drawing.Size(161, 40)
         NombreLabel.TabIndex = 75
         NombreLabel.Text = "Servicio:"
         '
         'HoraDateTimePicker
         '
         Me.HoraDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Time
-        Me.HoraDateTimePicker.Location = New System.Drawing.Point(656, 359)
-        Me.HoraDateTimePicker.Margin = New System.Windows.Forms.Padding(2)
+        Me.HoraDateTimePicker.Location = New System.Drawing.Point(875, 442)
+        Me.HoraDateTimePicker.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.HoraDateTimePicker.Name = "HoraDateTimePicker"
-        Me.HoraDateTimePicker.Size = New System.Drawing.Size(162, 20)
+        Me.HoraDateTimePicker.Size = New System.Drawing.Size(215, 22)
         Me.HoraDateTimePicker.TabIndex = 85
         '
         'FechaDateTimePicker
         '
-        Me.FechaDateTimePicker.CalendarFont = New System.Drawing.Font("Arial", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FechaDateTimePicker.CalendarFont = New System.Drawing.Font("Arial", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FechaDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.FechaDateTimePicker.Location = New System.Drawing.Point(656, 297)
-        Me.FechaDateTimePicker.Margin = New System.Windows.Forms.Padding(2)
+        Me.FechaDateTimePicker.Location = New System.Drawing.Point(875, 366)
+        Me.FechaDateTimePicker.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.FechaDateTimePicker.MaxDate = New Date(2024, 6, 18, 0, 0, 0, 0)
         Me.FechaDateTimePicker.MinDate = New Date(2020, 5, 18, 0, 0, 0, 0)
         Me.FechaDateTimePicker.Name = "FechaDateTimePicker"
-        Me.FechaDateTimePicker.Size = New System.Drawing.Size(162, 20)
+        Me.FechaDateTimePicker.Size = New System.Drawing.Size(215, 22)
         Me.FechaDateTimePicker.TabIndex = 83
         Me.FechaDateTimePicker.Value = New Date(2024, 5, 18, 0, 0, 0, 0)
         '
@@ -148,9 +159,10 @@ Partial Class Citas
         Me.CursoLabel.BackColor = System.Drawing.Color.Transparent
         Me.CursoLabel.Font = New System.Drawing.Font("Arial", 54.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CursoLabel.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.CursoLabel.Location = New System.Drawing.Point(653, 46)
+        Me.CursoLabel.Location = New System.Drawing.Point(873, 37)
+        Me.CursoLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.CursoLabel.Name = "CursoLabel"
-        Me.CursoLabel.Size = New System.Drawing.Size(173, 83)
+        Me.CursoLabel.Size = New System.Drawing.Size(219, 105)
         Me.CursoLabel.TabIndex = 81
         Me.CursoLabel.Text = "Cita"
         '
@@ -160,9 +172,10 @@ Partial Class Citas
         Me.CancelarBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.CancelarBTN.Font = New System.Drawing.Font("Arial Narrow", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CancelarBTN.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.CancelarBTN.Location = New System.Drawing.Point(792, 585)
+        Me.CancelarBTN.Location = New System.Drawing.Point(1065, 771)
+        Me.CancelarBTN.Margin = New System.Windows.Forms.Padding(4)
         Me.CancelarBTN.Name = "CancelarBTN"
-        Me.CancelarBTN.Size = New System.Drawing.Size(136, 56)
+        Me.CancelarBTN.Size = New System.Drawing.Size(181, 69)
         Me.CancelarBTN.TabIndex = 78
         Me.CancelarBTN.Text = "Cancelar"
         Me.CancelarBTN.UseVisualStyleBackColor = False
@@ -174,9 +187,10 @@ Partial Class Citas
         Me.RegistrarBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.RegistrarBTN.Font = New System.Drawing.Font("Arial Narrow", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RegistrarBTN.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.RegistrarBTN.Location = New System.Drawing.Point(568, 585)
+        Me.RegistrarBTN.Location = New System.Drawing.Point(766, 771)
+        Me.RegistrarBTN.Margin = New System.Windows.Forms.Padding(4)
         Me.RegistrarBTN.Name = "RegistrarBTN"
-        Me.RegistrarBTN.Size = New System.Drawing.Size(136, 56)
+        Me.RegistrarBTN.Size = New System.Drawing.Size(181, 69)
         Me.RegistrarBTN.TabIndex = 77
         Me.RegistrarBTN.Text = "Guardar"
         Me.RegistrarBTN.UseVisualStyleBackColor = False
@@ -185,9 +199,10 @@ Partial Class Citas
         '
         Me.ServicioTextBox.Enabled = False
         Me.ServicioTextBox.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ServicioTextBox.Location = New System.Drawing.Point(646, 160)
+        Me.ServicioTextBox.Location = New System.Drawing.Point(861, 194)
+        Me.ServicioTextBox.Margin = New System.Windows.Forms.Padding(4)
         Me.ServicioTextBox.Name = "ServicioTextBox"
-        Me.ServicioTextBox.Size = New System.Drawing.Size(174, 29)
+        Me.ServicioTextBox.Size = New System.Drawing.Size(231, 34)
         Me.ServicioTextBox.TabIndex = 74
         '
         'CitasBindingNavigator
@@ -205,7 +220,7 @@ Partial Class Citas
         Me.CitasBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
         Me.CitasBindingNavigator.Name = "CitasBindingNavigator"
         Me.CitasBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.CitasBindingNavigator.Size = New System.Drawing.Size(356, 22)
+        Me.CitasBindingNavigator.Size = New System.Drawing.Size(475, 27)
         Me.CitasBindingNavigator.TabIndex = 86
         Me.CitasBindingNavigator.Text = "BindingNavigator1"
         Me.CitasBindingNavigator.Visible = False
@@ -216,7 +231,7 @@ Partial Class Citas
         Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
         Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(24, 19)
+        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(29, 24)
         Me.BindingNavigatorAddNewItem.Text = "Agregar nuevo"
         '
         'CitasBindingSource
@@ -232,7 +247,7 @@ Partial Class Citas
         'BindingNavigatorCountItem
         '
         Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(37, 19)
+        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(48, 24)
         Me.BindingNavigatorCountItem.Text = "de {0}"
         Me.BindingNavigatorCountItem.ToolTipText = "Número total de elementos"
         '
@@ -242,7 +257,7 @@ Partial Class Citas
         Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
         Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(24, 19)
+        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(29, 24)
         Me.BindingNavigatorDeleteItem.Text = "Eliminar"
         '
         'BindingNavigatorMoveFirstItem
@@ -251,7 +266,7 @@ Partial Class Citas
         Me.BindingNavigatorMoveFirstItem.Image = CType(resources.GetObject("BindingNavigatorMoveFirstItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
         Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(24, 19)
+        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(29, 24)
         Me.BindingNavigatorMoveFirstItem.Text = "Mover primero"
         '
         'BindingNavigatorMovePreviousItem
@@ -260,13 +275,13 @@ Partial Class Citas
         Me.BindingNavigatorMovePreviousItem.Image = CType(resources.GetObject("BindingNavigatorMovePreviousItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMovePreviousItem.Name = "BindingNavigatorMovePreviousItem"
         Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(24, 19)
+        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(29, 24)
         Me.BindingNavigatorMovePreviousItem.Text = "Mover anterior"
         '
         'BindingNavigatorSeparator
         '
         Me.BindingNavigatorSeparator.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 22)
+        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 27)
         '
         'BindingNavigatorPositionItem
         '
@@ -274,14 +289,14 @@ Partial Class Citas
         Me.BindingNavigatorPositionItem.AutoSize = False
         Me.BindingNavigatorPositionItem.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BindingNavigatorPositionItem.Name = "BindingNavigatorPositionItem"
-        Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(38, 23)
+        Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(49, 27)
         Me.BindingNavigatorPositionItem.Text = "0"
         Me.BindingNavigatorPositionItem.ToolTipText = "Posición actual"
         '
         'BindingNavigatorSeparator1
         '
         Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator1"
-        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 22)
+        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 27)
         '
         'BindingNavigatorMoveNextItem
         '
@@ -289,7 +304,7 @@ Partial Class Citas
         Me.BindingNavigatorMoveNextItem.Image = CType(resources.GetObject("BindingNavigatorMoveNextItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
         Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(24, 19)
+        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(29, 24)
         Me.BindingNavigatorMoveNextItem.Text = "Mover siguiente"
         '
         'BindingNavigatorMoveLastItem
@@ -298,20 +313,20 @@ Partial Class Citas
         Me.BindingNavigatorMoveLastItem.Image = CType(resources.GetObject("BindingNavigatorMoveLastItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
         Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(24, 19)
+        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(29, 24)
         Me.BindingNavigatorMoveLastItem.Text = "Mover último"
         '
         'BindingNavigatorSeparator2
         '
         Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
-        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 22)
+        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 27)
         '
         'CitasBindingNavigatorSaveItem
         '
         Me.CitasBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.CitasBindingNavigatorSaveItem.Image = CType(resources.GetObject("CitasBindingNavigatorSaveItem.Image"), System.Drawing.Image)
         Me.CitasBindingNavigatorSaveItem.Name = "CitasBindingNavigatorSaveItem"
-        Me.CitasBindingNavigatorSaveItem.Size = New System.Drawing.Size(24, 19)
+        Me.CitasBindingNavigatorSaveItem.Size = New System.Drawing.Size(29, 24)
         Me.CitasBindingNavigatorSaveItem.Text = "Guardar datos"
         '
         'SeleccionBTN
@@ -320,9 +335,10 @@ Partial Class Citas
         Me.SeleccionBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.SeleccionBTN.Font = New System.Drawing.Font("Arial Narrow", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SeleccionBTN.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.SeleccionBTN.Location = New System.Drawing.Point(837, 155)
+        Me.SeleccionBTN.Location = New System.Drawing.Point(1116, 188)
+        Me.SeleccionBTN.Margin = New System.Windows.Forms.Padding(4)
         Me.SeleccionBTN.Name = "SeleccionBTN"
-        Me.SeleccionBTN.Size = New System.Drawing.Size(136, 41)
+        Me.SeleccionBTN.Size = New System.Drawing.Size(181, 50)
         Me.SeleccionBTN.TabIndex = 87
         Me.SeleccionBTN.Text = "Seleccionar"
         Me.SeleccionBTN.UseVisualStyleBackColor = False
@@ -334,16 +350,40 @@ Partial Class Citas
         Me.ServiciosDataGridView.AutoGenerateColumns = False
         Me.ServiciosDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.ServiciosDataGridView.BackgroundColor = System.Drawing.SystemColors.ControlLightLight
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Arial", 16.2!, System.Drawing.FontStyle.Bold)
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.ServiciosDataGridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.ServiciosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ServiciosDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.Categoria_Ser, Me.DataGridViewTextBoxColumn4})
         Me.ServiciosDataGridView.DataSource = Me.ServiciosBindingSource
-        Me.ServiciosDataGridView.Location = New System.Drawing.Point(409, 216)
-        Me.ServiciosDataGridView.Margin = New System.Windows.Forms.Padding(2)
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Arial", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.ServiciosDataGridView.DefaultCellStyle = DataGridViewCellStyle2
+        Me.ServiciosDataGridView.Location = New System.Drawing.Point(253, 251)
+        Me.ServiciosDataGridView.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ServiciosDataGridView.Name = "ServiciosDataGridView"
         Me.ServiciosDataGridView.ReadOnly = True
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Arial", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.ServiciosDataGridView.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
         Me.ServiciosDataGridView.RowHeadersWidth = 51
         Me.ServiciosDataGridView.RowTemplate.Height = 24
-        Me.ServiciosDataGridView.Size = New System.Drawing.Size(630, 44)
+        Me.ServiciosDataGridView.Size = New System.Drawing.Size(1385, 95)
         Me.ServiciosDataGridView.TabIndex = 87
         '
         'DataGridViewTextBoxColumn1
@@ -389,9 +429,10 @@ Partial Class Citas
         Me.SClienteBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.SClienteBTN.Font = New System.Drawing.Font("Arial Narrow", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SClienteBTN.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.SClienteBTN.Location = New System.Drawing.Point(848, 407)
+        Me.SClienteBTN.Location = New System.Drawing.Point(1131, 501)
+        Me.SClienteBTN.Margin = New System.Windows.Forms.Padding(4)
         Me.SClienteBTN.Name = "SClienteBTN"
-        Me.SClienteBTN.Size = New System.Drawing.Size(136, 41)
+        Me.SClienteBTN.Size = New System.Drawing.Size(181, 50)
         Me.SClienteBTN.TabIndex = 90
         Me.SClienteBTN.Text = "Seleccionar"
         Me.SClienteBTN.UseVisualStyleBackColor = False
@@ -400,9 +441,10 @@ Partial Class Citas
         '
         Me.ClienteTextBox.Enabled = False
         Me.ClienteTextBox.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ClienteTextBox.Location = New System.Drawing.Point(646, 419)
+        Me.ClienteTextBox.Location = New System.Drawing.Point(861, 516)
+        Me.ClienteTextBox.Margin = New System.Windows.Forms.Padding(4)
         Me.ClienteTextBox.Name = "ClienteTextBox"
-        Me.ClienteTextBox.Size = New System.Drawing.Size(169, 29)
+        Me.ClienteTextBox.Size = New System.Drawing.Size(224, 34)
         Me.ClienteTextBox.TabIndex = 89
         '
         'ClientesDataGridView
@@ -413,16 +455,32 @@ Partial Class Citas
         Me.ClientesDataGridView.AutoGenerateColumns = False
         Me.ClientesDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.ClientesDataGridView.BackgroundColor = System.Drawing.SystemColors.ControlLightLight
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Arial", 16.2!, System.Drawing.FontStyle.Bold)
+        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.ClientesDataGridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
         Me.ClientesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ClientesDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7})
         Me.ClientesDataGridView.DataSource = Me.ClientesBindingSource
-        Me.ClientesDataGridView.Location = New System.Drawing.Point(296, 473)
-        Me.ClientesDataGridView.Margin = New System.Windows.Forms.Padding(2)
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Arial", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.ClientesDataGridView.DefaultCellStyle = DataGridViewCellStyle5
+        Me.ClientesDataGridView.Location = New System.Drawing.Point(230, 582)
+        Me.ClientesDataGridView.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ClientesDataGridView.Name = "ClientesDataGridView"
         Me.ClientesDataGridView.ReadOnly = True
         Me.ClientesDataGridView.RowHeadersWidth = 51
         Me.ClientesDataGridView.RowTemplate.Height = 24
-        Me.ClientesDataGridView.Size = New System.Drawing.Size(935, 127)
+        Me.ClientesDataGridView.Size = New System.Drawing.Size(1421, 156)
         Me.ClientesDataGridView.TabIndex = 90
         '
         'DataGridViewTextBoxColumn3
@@ -468,9 +526,10 @@ Partial Class Citas
         Me.ClienteLabel.BackColor = System.Drawing.Color.Transparent
         Me.ClienteLabel.Font = New System.Drawing.Font("Arial", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ClienteLabel.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.ClienteLabel.Location = New System.Drawing.Point(524, 412)
+        Me.ClienteLabel.Location = New System.Drawing.Point(699, 507)
+        Me.ClienteLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.ClienteLabel.Name = "ClienteLabel"
-        Me.ClienteLabel.Size = New System.Drawing.Size(116, 32)
+        Me.ClienteLabel.Size = New System.Drawing.Size(140, 40)
         Me.ClienteLabel.TabIndex = 92
         Me.ClienteLabel.Text = "Cliente:"
         '
@@ -483,7 +542,6 @@ Partial Class Citas
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
         Me.TableAdapterManager.CitasTableAdapter = Me.CitasTableAdapter
         Me.TableAdapterManager.ClientesTableAdapter = Nothing
-        Me.TableAdapterManager.CompraTableAdapter = Nothing
         Me.TableAdapterManager.CuentasTableAdapter = Nothing
         Me.TableAdapterManager.CursosTableAdapter = Nothing
         Me.TableAdapterManager.InscripcionesTableAdapter = Nothing
@@ -510,13 +568,32 @@ Partial Class Citas
         '
         Me.SolicitudesTableAdapter.ClearBeforeFill = True
         '
+        'FillByToolStrip
+        '
+        Me.FillByToolStrip.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.FillByToolStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FillByToolStripButton})
+        Me.FillByToolStrip.Location = New System.Drawing.Point(0, 0)
+        Me.FillByToolStrip.Name = "FillByToolStrip"
+        Me.FillByToolStrip.Size = New System.Drawing.Size(1827, 27)
+        Me.FillByToolStrip.TabIndex = 93
+        Me.FillByToolStrip.Text = "FillByToolStrip"
+        Me.FillByToolStrip.Visible = False
+        '
+        'FillByToolStripButton
+        '
+        Me.FillByToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
+        Me.FillByToolStripButton.Name = "FillByToolStripButton"
+        Me.FillByToolStripButton.Size = New System.Drawing.Size(48, 24)
+        Me.FillByToolStripButton.Text = "FillBy"
+        '
         'Citas
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Sistema_CEIJ.My.Resources.Resources.FondoSign
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1370, 749)
+        Me.ClientSize = New System.Drawing.Size(1827, 922)
+        Me.Controls.Add(Me.FillByToolStrip)
         Me.Controls.Add(Me.ClienteLabel)
         Me.Controls.Add(Me.ClientesDataGridView)
         Me.Controls.Add(Me.SClienteBTN)
@@ -533,7 +610,7 @@ Partial Class Citas
         Me.Controls.Add(NombreLabel)
         Me.Controls.Add(Me.ServicioTextBox)
         Me.Controls.Add(Me.CitasBindingNavigator)
-        Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "Citas"
         Me.Text = "Citas"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
@@ -547,6 +624,8 @@ Partial Class Citas
         CType(Me.ClientesDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ClientesBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SolicitudesBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.FillByToolStrip.ResumeLayout(False)
+        Me.FillByToolStrip.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -594,4 +673,6 @@ Partial Class Citas
     Friend WithEvents DataGridViewTextBoxColumn5 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn6 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn7 As DataGridViewTextBoxColumn
+    Friend WithEvents FillByToolStrip As ToolStrip
+    Friend WithEvents FillByToolStripButton As ToolStripButton
 End Class

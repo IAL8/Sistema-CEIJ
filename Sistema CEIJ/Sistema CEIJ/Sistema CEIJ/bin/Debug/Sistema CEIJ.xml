@@ -112,11 +112,6 @@ Represents a strongly typed in-memory cache of data.
 Represents the strongly named DataTable class.
 </summary>
 </member>
-<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.CompraDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
 <member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.CuentasDataTable">
 <summary>
 Represents the strongly named DataTable class.
@@ -168,11 +163,6 @@ Represents the strongly named DataTable class.
 </summary>
 </member>
 <member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.ClientesRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.CompraRow">
 <summary>
 Represents strongly named DataRow class.
 </summary>
@@ -232,11 +222,6 @@ Represents strongly named DataRow class.
 Row event argument class
 </summary>
 </member>
-<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.CompraRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
 <member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSet.CuentasRowChangeEvent">
 <summary>
 Row event argument class
@@ -288,11 +273,6 @@ Row event argument class
 </summary>
 </member>
 <member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.ClientesTableAdapter">
-<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member>
-<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.CompraTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>

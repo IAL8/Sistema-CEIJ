@@ -5,7 +5,7 @@
     End Sub
 
     Private Sub RegistrarBTN_Click(sender As Object, e As EventArgs) Handles RegistrarBTN.Click
-        If (Id_Cliente = 0) Then
+        If (Id_Prodcuto = 0) Then
             Me.InventarioTableAdapter.RInventario(NombreTextBox.Text, CantidadTextBox.Text, PrecioTextBox.Text)
             MsgBox("El producto se ha registrado")
         Else

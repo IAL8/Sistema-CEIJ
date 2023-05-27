@@ -186,7 +186,6 @@ Partial Class Productos
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
         Me.TableAdapterManager.CitasTableAdapter = Nothing
         Me.TableAdapterManager.ClientesTableAdapter = Nothing
-        Me.TableAdapterManager.CompraTableAdapter = Nothing
         Me.TableAdapterManager.CuentasTableAdapter = Nothing
         Me.TableAdapterManager.CursosTableAdapter = Nothing
         Me.TableAdapterManager.InscripcionesTableAdapter = Nothing

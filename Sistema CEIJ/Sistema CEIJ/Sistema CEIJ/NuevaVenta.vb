@@ -30,7 +30,7 @@
         ServiciosDataGridView.Visible = False
         CursosDataGridView.Visible = False
         ClientesDataGridView.Visible = False
-        Id_Curso = 0
+        Curso = 0
         Id_Servicio = 0
         Id_Cliente = 0
     End Sub
@@ -43,7 +43,7 @@
     End Sub
 
     Private Sub AgregarComboBox_SelectedValueChanged(sender As Object, e As EventArgs) Handles AgregarComboBox.SelectedValueChanged
-        Id_Curso = 0
+        Curso = 0
         Id_Servicio = 0
         Id_Prodcuto = 0
         If (AgregarComboBox.Text = "Servicio") Then
@@ -67,7 +67,7 @@
 
     Private Sub CursosDataGridView_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles CursosDataGridView.CellDoubleClick
         If (e.RowIndex >= 0) Then
-            Id_Curso = CursosDataGridView.Item(0, e.RowIndex).Value
+            Curso = CursosDataGridView.Item(0, e.RowIndex).Value
             Cu_Nombre = CursosDataGridView.Item(1, e.RowIndex).Value
             Cu_Precio = CursosDataGridView.Item(5, e.RowIndex).Value
         End If
@@ -101,8 +101,8 @@
             Agregar(Id_Servicio, S_Nombre, "Servicio", S_Precio)
             ServiciosDataGridView.Visible = False
             Tamaño += 1
-        ElseIf (Id_Curso <> 0) Then
-            Agregar(Id_Curso, Cu_Nombre, "Curso", Cu_Precio)
+        ElseIf (Curso <> 0) Then
+            Agregar(Curso, Cu_Nombre, "Curso", Cu_Precio)
             CursosDataGridView.Visible = False
             Tamaño += 1
         End If
@@ -143,7 +143,7 @@
 
     Private Sub RegistrarDetalle(ID, Nombre, Tipo, Precio)
         If (Tipo = "Servicio") Then
-            Me.CitasTableAdapter.ICita(Id_Solicitud, ID, Date.Now, Date.Now.ToShortTimeString, Convert.ToDecimal(Precio))
+            Me.CitasTableAdapter.RCita(Id_Solicitud, ID, Date.Now.ToShortDateString, Date.Now.ToShortTimeString, Convert.ToDecimal(Precio), 2)
             Me.CitasTableAdapter.Fill(Me.BD_Sistema_CEIJDataSet.Citas)
             VentaTotal += Precio
         ElseIf (Tipo = "Curso") Then

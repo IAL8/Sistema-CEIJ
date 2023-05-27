@@ -24,6 +24,8 @@ Partial Class Alumnos
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Alumnos))
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.SalirPictureBox = New System.Windows.Forms.PictureBox()
         Me.EliminarBTN = New System.Windows.Forms.Button()
         Me.CursosLabel = New System.Windows.Forms.Label()
@@ -47,6 +49,9 @@ Partial Class Alumnos
         Me.Ref_CursoToolStripTextBox = New System.Windows.Forms.ToolStripTextBox()
         Me.FillAlumnosToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.AlumnosDataTableDataGridView = New System.Windows.Forms.DataGridView()
+        Me.Id_S = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.FillAlumnosToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.Ref_CursoToolStripLabel1 = New System.Windows.Forms.ToolStripLabel()
         Me.Ref_CursoToolStripTextBox1 = New System.Windows.Forms.ToolStripTextBox()
@@ -55,9 +60,6 @@ Partial Class Alumnos
         Me.TableAdapterManager = New Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.TableAdapterManager()
         Me.InscripcionesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.InscripcionesTableAdapter = New Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.InscripcionesTableAdapter()
-        Me.Id_S = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.SalirPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AlumnosDataTableBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.AlumnosDataTableBindingNavigator.SuspendLayout()
@@ -74,9 +76,9 @@ Partial Class Alumnos
         Me.SalirPictureBox.BackColor = System.Drawing.Color.Transparent
         Me.SalirPictureBox.Cursor = System.Windows.Forms.Cursors.Hand
         Me.SalirPictureBox.Image = CType(resources.GetObject("SalirPictureBox.Image"), System.Drawing.Image)
-        Me.SalirPictureBox.Location = New System.Drawing.Point(12, 405)
+        Me.SalirPictureBox.Location = New System.Drawing.Point(30, 751)
         Me.SalirPictureBox.Name = "SalirPictureBox"
-        Me.SalirPictureBox.Size = New System.Drawing.Size(64, 68)
+        Me.SalirPictureBox.Size = New System.Drawing.Size(120, 116)
         Me.SalirPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.SalirPictureBox.TabIndex = 39
         Me.SalirPictureBox.TabStop = False
@@ -86,12 +88,12 @@ Partial Class Alumnos
         Me.EliminarBTN.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.EliminarBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.EliminarBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.EliminarBTN.Font = New System.Drawing.Font("Arial Narrow", 13.0!, System.Drawing.FontStyle.Bold)
+        Me.EliminarBTN.Font = New System.Drawing.Font("Arial Narrow", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.EliminarBTN.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.EliminarBTN.Location = New System.Drawing.Point(195, 415)
+        Me.EliminarBTN.Location = New System.Drawing.Point(1000, 678)
         Me.EliminarBTN.Margin = New System.Windows.Forms.Padding(4)
         Me.EliminarBTN.Name = "EliminarBTN"
-        Me.EliminarBTN.Size = New System.Drawing.Size(137, 44)
+        Me.EliminarBTN.Size = New System.Drawing.Size(176, 63)
         Me.EliminarBTN.TabIndex = 37
         Me.EliminarBTN.Text = "Eliminar"
         Me.EliminarBTN.UseVisualStyleBackColor = False
@@ -102,7 +104,7 @@ Partial Class Alumnos
         Me.CursosLabel.BackColor = System.Drawing.Color.Transparent
         Me.CursosLabel.Font = New System.Drawing.Font("Arial", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CursosLabel.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.CursosLabel.Location = New System.Drawing.Point(123, 18)
+        Me.CursosLabel.Location = New System.Drawing.Point(927, 9)
         Me.CursosLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.CursosLabel.Name = "CursosLabel"
         Me.CursosLabel.Size = New System.Drawing.Size(289, 68)
@@ -272,16 +274,56 @@ Partial Class Alumnos
         Me.AlumnosDataTableDataGridView.AutoGenerateColumns = False
         Me.AlumnosDataTableDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.AlumnosDataTableDataGridView.BackgroundColor = System.Drawing.SystemColors.ControlLightLight
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Arial", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.AlumnosDataTableDataGridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.AlumnosDataTableDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.AlumnosDataTableDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Id_S, Me.ID, Me.DataGridViewTextBoxColumn1})
         Me.AlumnosDataTableDataGridView.DataSource = Me.AlumnosDataTableBindingSource
-        Me.AlumnosDataTableDataGridView.Location = New System.Drawing.Point(48, 135)
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Arial", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.AlumnosDataTableDataGridView.DefaultCellStyle = DataGridViewCellStyle2
+        Me.AlumnosDataTableDataGridView.Location = New System.Drawing.Point(231, 247)
         Me.AlumnosDataTableDataGridView.Name = "AlumnosDataTableDataGridView"
         Me.AlumnosDataTableDataGridView.ReadOnly = True
         Me.AlumnosDataTableDataGridView.RowHeadersWidth = 51
         Me.AlumnosDataTableDataGridView.RowTemplate.Height = 24
-        Me.AlumnosDataTableDataGridView.Size = New System.Drawing.Size(417, 220)
+        Me.AlumnosDataTableDataGridView.Size = New System.Drawing.Size(1533, 329)
         Me.AlumnosDataTableDataGridView.TabIndex = 41
+        '
+        'Id_S
+        '
+        Me.Id_S.DataPropertyName = "Id_S"
+        Me.Id_S.HeaderText = "Solicitd"
+        Me.Id_S.MinimumWidth = 6
+        Me.Id_S.Name = "Id_S"
+        Me.Id_S.ReadOnly = True
+        '
+        'ID
+        '
+        Me.ID.DataPropertyName = "ID"
+        Me.ID.HeaderText = "ID"
+        Me.ID.MinimumWidth = 6
+        Me.ID.Name = "ID"
+        Me.ID.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "Nombre"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "Nombre"
+        Me.DataGridViewTextBoxColumn1.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        Me.DataGridViewTextBoxColumn1.ReadOnly = True
         '
         'FillAlumnosToolStrip1
         '
@@ -322,7 +364,6 @@ Partial Class Alumnos
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
         Me.TableAdapterManager.CitasTableAdapter = Nothing
         Me.TableAdapterManager.ClientesTableAdapter = Nothing
-        Me.TableAdapterManager.CompraTableAdapter = Nothing
         Me.TableAdapterManager.Connection = Nothing
         Me.TableAdapterManager.CuentasTableAdapter = Nothing
         Me.TableAdapterManager.CursosTableAdapter = Nothing
@@ -342,37 +383,13 @@ Partial Class Alumnos
         '
         Me.InscripcionesTableAdapter.ClearBeforeFill = True
         '
-        'Id_S
-        '
-        Me.Id_S.DataPropertyName = "Id_S"
-        Me.Id_S.HeaderText = "Solicitd"
-        Me.Id_S.MinimumWidth = 6
-        Me.Id_S.Name = "Id_S"
-        Me.Id_S.ReadOnly = True
-        '
-        'ID
-        '
-        Me.ID.DataPropertyName = "ID"
-        Me.ID.HeaderText = "ID"
-        Me.ID.MinimumWidth = 6
-        Me.ID.Name = "ID"
-        Me.ID.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn1
-        '
-        Me.DataGridViewTextBoxColumn1.DataPropertyName = "Nombre"
-        Me.DataGridViewTextBoxColumn1.HeaderText = "Nombre"
-        Me.DataGridViewTextBoxColumn1.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        Me.DataGridViewTextBoxColumn1.ReadOnly = True
-        '
         'Alumnos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Sistema_CEIJ.My.Resources.Resources.v748_toon_111
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(518, 493)
+        Me.ClientSize = New System.Drawing.Size(1827, 922)
         Me.Controls.Add(Me.FillAlumnosToolStrip1)
         Me.Controls.Add(Me.AlumnosDataTableDataGridView)
         Me.Controls.Add(Me.SalirPictureBox)
@@ -382,6 +399,7 @@ Partial Class Alumnos
         Me.Controls.Add(Me.AlumnosDataTableBindingNavigator)
         Me.Name = "Alumnos"
         Me.Text = "Alumnos"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.SalirPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AlumnosDataTableBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
         Me.AlumnosDataTableBindingNavigator.ResumeLayout(False)
