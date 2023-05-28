@@ -81,7 +81,6 @@ Partial Class NuevaVenta
         Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Tipo = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Precio = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.CancelarBTN = New System.Windows.Forms.Button()
         Me.EliminarBTN = New System.Windows.Forms.Button()
         Me.RegistrarBTN = New System.Windows.Forms.Button()
         Me.ConfirmarBTN = New System.Windows.Forms.Button()
@@ -641,20 +640,6 @@ Partial Class NuevaVenta
         Me.Precio.Name = "Precio"
         Me.Precio.ReadOnly = True
         '
-        'CancelarBTN
-        '
-        Me.CancelarBTN.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.CancelarBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CancelarBTN.Font = New System.Drawing.Font("Arial Narrow", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CancelarBTN.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.CancelarBTN.Location = New System.Drawing.Point(1068, 704)
-        Me.CancelarBTN.Margin = New System.Windows.Forms.Padding(4)
-        Me.CancelarBTN.Name = "CancelarBTN"
-        Me.CancelarBTN.Size = New System.Drawing.Size(204, 69)
-        Me.CancelarBTN.TabIndex = 98
-        Me.CancelarBTN.Text = "Cancelar"
-        Me.CancelarBTN.UseVisualStyleBackColor = False
-        '
         'EliminarBTN
         '
         Me.EliminarBTN.BackColor = System.Drawing.SystemColors.ControlLightLight
@@ -662,7 +647,7 @@ Partial Class NuevaVenta
         Me.EliminarBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.EliminarBTN.Font = New System.Drawing.Font("Arial Narrow", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.EliminarBTN.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.EliminarBTN.Location = New System.Drawing.Point(501, 704)
+        Me.EliminarBTN.Location = New System.Drawing.Point(619, 693)
         Me.EliminarBTN.Margin = New System.Windows.Forms.Padding(4)
         Me.EliminarBTN.Name = "EliminarBTN"
         Me.EliminarBTN.Size = New System.Drawing.Size(204, 69)
@@ -677,7 +662,7 @@ Partial Class NuevaVenta
         Me.RegistrarBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.RegistrarBTN.Font = New System.Drawing.Font("Arial Narrow", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RegistrarBTN.ForeColor = System.Drawing.Color.DarkKhaki
-        Me.RegistrarBTN.Location = New System.Drawing.Point(783, 704)
+        Me.RegistrarBTN.Location = New System.Drawing.Point(901, 693)
         Me.RegistrarBTN.Margin = New System.Windows.Forms.Padding(4)
         Me.RegistrarBTN.Name = "RegistrarBTN"
         Me.RegistrarBTN.Size = New System.Drawing.Size(204, 69)
@@ -767,7 +752,6 @@ Partial Class NuevaVenta
         Me.Controls.Add(Me.ConfirmarBTN)
         Me.Controls.Add(Me.RegistrarBTN)
         Me.Controls.Add(Me.EliminarBTN)
-        Me.Controls.Add(Me.CancelarBTN)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.ClientesDataGridView)
         Me.Controls.Add(Me.ClienteLabel)
@@ -859,7 +843,6 @@ Partial Class NuevaVenta
     Friend WithEvents DataGridViewTextBoxColumn20 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn21 As DataGridViewTextBoxColumn
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents CancelarBTN As Button
     Friend WithEvents EliminarBTN As Button
     Friend WithEvents CarritoLabel As Label
     Friend WithEvents VentaDataGridView As DataGridView

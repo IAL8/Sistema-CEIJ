@@ -153,14 +153,4 @@
         End If
     End Sub
 
-    Private Sub CancelarBTN_Click(sender As Object, e As EventArgs) Handles CancelarBTN.Click
-        If (Tamaño <> 0) Then
-            For Each r As DataGridViewRow In VentaDataGridView.SelectedRows
-                VentaDataGridView.Rows.Remove(r)
-            Next
-            Tamaño = 0
-        Else
-            MsgBox("No hay nada que eliminar")
-        End If
-    End Sub
 End Class

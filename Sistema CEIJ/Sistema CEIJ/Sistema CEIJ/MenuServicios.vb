@@ -28,13 +28,14 @@
     End Sub
 
     Private Sub EliminarBTN_Click(sender As Object, e As EventArgs) Handles EliminarBTN.Click
-        Me.ServiciosTableAdapter.DServicio(Id_Servicio)
+        Me.ServiciosTableAdapter.BServicio(Id_Servicio)
         Me.ServiciosTableAdapter.Fill(Me.BD_Sistema_CEIJDataSet.Servicios)
-        MsgBox("El servicio se ha eliminado")
+        MsgBox("El servicio se ha deshabilitado")
+        Me.ServiciosTableAdapter.FillByAll(Me.BD_Sistema_CEIJDataSet.Servicios)
     End Sub
 
     Private Sub MenuServicios_VisibleChanged(sender As Object, e As EventArgs) Handles MyBase.VisibleChanged
-        Me.ServiciosTableAdapter.Fill(Me.BD_Sistema_CEIJDataSet.Servicios)
+        Me.ServiciosTableAdapter.FillByAll(Me.BD_Sistema_CEIJDataSet.Servicios)
     End Sub
 
     Private Sub NuevoBTN_Click(sender As Object, e As EventArgs) Handles NuevoBTN.Click
