@@ -90,6 +90,11 @@
     <Compile Include="BD_Sistema_CEIJDataSet.vb">
       <DependentUpon>BD_Sistema_CEIJDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="BD_Sistema_CEIJDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BD_Sistema_CEIJDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Citas.Designer.vb">
       <DependentUpon>Citas.vb</DependentUpon>
     </Compile>
@@ -272,8 +277,8 @@
     </None>
     <None Include="BD_Sistema_CEIJDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>BD_Sistema_CEIJDataSet.Designer.vb</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>BD_Sistema_CEIJDataSet1.Designer.vb</LastGenOutput>
     </None>
     <None Include="BD_Sistema_CEIJDataSet.xss">
       <DependentUpon>BD_Sistema_CEIJDataSet.xsd</DependentUpon>

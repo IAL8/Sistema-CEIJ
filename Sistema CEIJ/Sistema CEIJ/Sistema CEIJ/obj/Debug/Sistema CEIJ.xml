@@ -272,12 +272,7 @@ Row event argument class
 Row event argument class
 </summary>
 </member>
-<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.ClientesTableAdapter">
-<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member>
-<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.CuentasTableAdapter">
+<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.CitasTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
@@ -287,7 +282,22 @@ Represents the connection and commands used to retrieve and save data.
 Represents the connection and commands used to retrieve and save data.
 </summary>
 </member>
+<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.AlumnosDataTableTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
 <member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.InscripcionesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.ClientesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.CuentasTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
@@ -308,16 +318,6 @@ Represents the connection and commands used to retrieve and save data.
 </summary>
 </member>
 <member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.OrdenTableAdapter">
-<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member>
-<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.CitasTableAdapter">
-<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member>
-<member name="T:Sistema_CEIJ.BD_Sistema_CEIJDataSetTableAdapters.AlumnosDataTableTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
